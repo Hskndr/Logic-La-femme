@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* universal */
+html {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Futura Md BT;
+  font-style: normal;
+  src: local('Futura Md BT'), url('assets/font/futura_lt_bt_light-webfont.woff') format('woff');
+}
+
+/* background body */
+
+.body-back {
+  background-color: rgba(32, 21, 61, 0.728);
+  background-size: cover;
+  min-height: 55rem;
+
+}
+
+.body-back-reltype {
+  background-color: rgba(32, 21, 61, 0.728);
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* body width */
+
+.body-width {
+  width: 55rem;
+  padding: 0;
+
+}
