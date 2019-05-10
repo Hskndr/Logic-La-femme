@@ -107,6 +107,82 @@ footer a:hover {
 /*End Header*/
 
 
-app-home-body {
-  border: 1px solid teal;
+
+
+
+
+
+.button1 {
+  margin: 1.5em 0em 1.5em 0em;
+  border-radius: 0.75em;
+  background-color: #dc127b;
+  border-color: #dc127b;
+  color: white;
+  height: 3em;
+  min-width: 30em;
+}
+
+main p, a, h2, .blue a {
+  color: darkblue;
+}
+
+.section-1 {
+  background-color: white;
+}
+
+#secImageSmall {
+  background-image:url('../../../assets/image/LF15.jpg');
+  background-size: cover;
+}
+
+.section-2 {
+  background-color: rgb(246, 244, 244);
+}
+
+.section-3 {
+  background-image: url('../../../assets/image/LF61.jpg');
+  background-position: left;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+  color: rgb(27,34,84);
+  font-size: 0.8rem;
+  margin-top: 2em;
+  height: 24rem;
+  display: flex;
+  justify-items: center;
+  align-content: initial;
+  padding: 0;
+}
+.section-3 p{
+  font-size: 1.2rem;
+  color: rgb(27,34,84);
+  margin: 0;
+
+}
+.section-3 li {
+  list-style: none;
+}
+.section-3 img{
+  height: 23rem;
+}
+
+.bttn-img {
+  width: 145px;
+  height: 40px;
+}
+
+.big-pic {
+  height: 30rem;
+}
+
+.small-pic {
+  height: 13rem;
+}
+.small-pic2 {
+  height: 13rem;
+  width: 16rem;
+}
+.medium-pic {
+  height: 200px;
 }
