@@ -4,6 +4,10 @@ import {NotFoundComponent} from './home/not-found/not-found.component';
 
 const routes: Routes = [
   {
+    path: 'login',
+    loadChildren: './login/login.module#LoginModule'
+  },
+  {
     path: 'memberSignIn',
     loadChildren: './member-sign-in/member-sign-in.module#MemberSignInModule'
   },
