@@ -4,6 +4,42 @@ import {NotFoundComponent} from './home/not-found/not-found.component';
 
 const routes: Routes = [
   {
+    path: 'tellUsMore',
+    loadChildren: './tell-us-more/tell-us-more.module#TellUsMoreModule'
+  },
+  {
+    path: 'relationType',
+    loadChildren: './relation-type/relation-type.module#RelationTypeModule'
+  },
+  {
+    path: 'Profile',
+    loadChildren: './profile/profile.module#ProfileModule'
+  },
+  {
+    path: 'manageProfile',
+    loadChildren: './manage-profile/manage-profile.module#ManageProfileModule'
+  },
+  {
+    path: 'mailBox',
+    loadChildren: './mail-box/mail-box.module#MailBoxModule'
+  },
+  {
+    path: 'datingLafemme',
+    loadChildren: './dating-lafemme/dating-lafemme.module#DatingLafemmeModule'
+  },
+  {
+    path: 'affiliateSignIn',
+    loadChildren: './affiliate-sign-in/affiliate-sign-in.module#AffiliateSignInModule'
+  },
+  {
+    path: 'affiliateProgram',
+    loadChildren: './affiliate-program/affiliate-program.module#AffiliateProgramModule'
+  },
+  {
+    path: 'aboutUs',
+    loadChildren: './about-us/about-us.module#AboutUsModule'
+  },
+  {
     path: 'login',
     loadChildren: './login/login.module#LoginModule'
   },

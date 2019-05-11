@@ -28,6 +28,7 @@ p {
   background-size: cover;
   min-height: 55rem;
 
+
 }
 
 .body-back-reltype {
@@ -42,5 +43,6 @@ p {
 .body-width {
   width: 55rem;
   padding: 0;
+
 
 }

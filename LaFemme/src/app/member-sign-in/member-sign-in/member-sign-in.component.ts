@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {COUNTRIES, STATES_ARGENTINA, STATES_COLOMBIA, STATES_USA, STATES_VENEZUELA} from '../../mock/mock-country';
 
 @Component({
   selector: 'app-member-sign-in',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemberSignInComponent implements OnInit {
   /* countries and states mock */
+  countries = COUNTRIES;
+  statesUsa = STATES_USA;
+  statesArg = STATES_ARGENTINA;
+  statesCol = STATES_COLOMBIA;
+  statesVen = STATES_VENEZUELA;
 
   /*Calculate age*/
   CalculateAge() {}
