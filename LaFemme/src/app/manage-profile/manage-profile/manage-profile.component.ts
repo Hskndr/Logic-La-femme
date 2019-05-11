@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-manage-profile',
   templateUrl: './manage-profile.component.html',
-  styles: []
+  styleUrls: ['./manage-profile.component.css']
 })
 export class ManageProfileComponent implements OnInit {
 

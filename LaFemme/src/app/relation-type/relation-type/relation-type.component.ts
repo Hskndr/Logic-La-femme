@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-relation-type',
   templateUrl: './relation-type.component.html',
-  styles: []
+  styleUrls: ['./relation-type.component.css']
 })
 export class RelationTypeComponent implements OnInit {
 
