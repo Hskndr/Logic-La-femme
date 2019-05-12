@@ -1,0 +1,33 @@
+/* header "AboutUs"*/
+
+#header, header {
+  background-color: black;
+  color: white;
+  height: 10rem;
+  font-size: 1rem;
+}
+
+
+header img {
+  height: 8rem;
+}
+
+header a, header li, header a:hover, span {
+  font-size: 0.7rem;
+  color: white;
+}
+
+/* logo */
+
+#sub-img {
+  height: 4rem;
+
+}
+
+#logo-text {
+  position: absolute;
+  left: 11rem;
+  top: 4.5rem;
+}
+
+/* header "AboutUs"*/

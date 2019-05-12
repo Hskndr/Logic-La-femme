@@ -3,15 +3,16 @@
 #header, header {
   background-color: black;
   color: white;
-  height: 10em;
+  height: 10rem;
+  font-size: 1rem;
 }
 
 header img {
-  height: 8em;
+  height: 8rem;
 }
 
-header a, header li, header a:hover, header p {
-  font-size: 12px;
+header a, header li, header a:hover {
+  font-size: 0.8rem;
   color: white;
 }
 
@@ -23,12 +24,13 @@ header a, header li, header a:hover, header p {
 
 #logo-text {
   position: absolute;
-  right: 45px;
-  top: 60px;
+  right: 3rem;
+  top: 4.5rem;
 }
 /* header "Affiliate Program"*/
 .float {
   position: absolute;
+  bottom: 0;
 }
 
 main {

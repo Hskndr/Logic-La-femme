@@ -61,15 +61,15 @@
 
         <form class="container-fluid col-md-9" action="" name="form1">
 
-          <!--  <div class="form-group row">
+           <div class="form-group row">
               <label class="col-sm-4 col-form-label">CHOOSE RELATIONSHIP </label>
-              <select class="form-control col-sm-8" name="typeRelation" [(ngModel)="newMember.typeRelation"]>
+              <select class="form-control col-sm-8" name="typeRelation" >
                 <option *ngFor="let typRel of typeRelation" [value]="typRel.id">
                   <span>{{typRel.description}}</span>
                 </option>
 
               </select>
-            </div>-->
+            </div>
 
           <p class="h4"> Explore </p>
           <div class="row">
@@ -227,9 +227,9 @@
         </form>
       </div>
     </main>
-    <!--
+
         <pre>{{ member | json }}</pre>
-    -->
+
 
    <app-sign-in-footer></app-sign-in-footer>
 

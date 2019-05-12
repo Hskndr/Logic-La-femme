@@ -1,0 +1,11 @@
+/* navbar */
+nav a, nav, nav a:hover {
+  color: white;
+
+}
+
+nav, .nav-link {
+  background-color: rgb(60, 55, 73);
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}

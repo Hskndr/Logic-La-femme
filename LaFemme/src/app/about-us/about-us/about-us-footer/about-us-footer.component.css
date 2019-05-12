@@ -1,0 +1,25 @@
+/* footer */
+footer {
+  color: white;
+  background-color: rgb(25, 26, 39);
+}
+
+.footer-img {
+  height: 7em;
+}
+
+footer h5 {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.mini-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.mid-icon {
+  height: 1.5em;
+}
+
+/* footer */
