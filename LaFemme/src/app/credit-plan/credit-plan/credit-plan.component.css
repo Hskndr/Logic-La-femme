@@ -1,0 +1,87 @@
+/* header */
+#header, header {
+  background-color: black;
+  color: white;
+  height: 18rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 1em;
+
+  background-image: url('../../../assets/image/LF02.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+
+}
+
+header h1 {
+  font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3em;
+  letter-spacing: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+}
+
+header img {
+  height: 8em;
+}
+
+/* Main */
+main {
+  background-color: white;
+}
+/*article*/
+
+.sectionBlue{
+  color: darkblue;
+}
+.sectionRed{
+  color: red;
+}
+.plan-section{
+  font-size: 0.8rem;
+  margin: 0;
+  background-color: rgb(57,55,75);
+  color: white;
+
+}
+.plan-section img{
+  height: 4rem;
+  width: 4rem;
+  border: 2px solid white;
+  margin: 0.3rem;
+}
+.cards label{
+  font-size: 0.5rem;
+}
+.cards img{
+  height: 2.5rem;
+  width: 4.5rem;
+}
+/*aside*/
+aside {
+  background-color: black;
+  color: white;
+}
+aside h2{
+  font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-decoration-line: underline;
+  margin-top: 1rem;
+}
+aside img{
+  width: 60%;
+  height: 15rem;
+  margin-top: 12rem;
+
+
+}

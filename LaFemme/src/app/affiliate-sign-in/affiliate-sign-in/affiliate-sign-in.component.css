@@ -1,0 +1,31 @@
+
+/* header */
+#header,header {background-color: black;
+  color: white;
+  height: 11em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 1em;
+  width: 100%;
+
+}
+header a{
+  font-size: 10px;
+  color: white;
+
+}
+
+header img {
+  height: 8em;
+}
+
+main{
+  background-color: white;
+}
+
+form{
+  background-color: rgb(31,21,58);
+  color: white;
+  padding: 1em;
+  margin-bottom: 2em;
+}

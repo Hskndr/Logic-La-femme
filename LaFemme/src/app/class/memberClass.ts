@@ -1,18 +1,27 @@
 /* class member */
 
-export class Member {
-    id: number;
-    name: string;
-    lastname: string;
-    age: number;
-    zodiacsign: string;
-    bodytype: string;
-    heigth: string;
-    weight: string;
-    eyes: string;
-    haircolor: string;
-    hairlenght: string;
-    raceethnic: string;
-    tattos: string;
-    locatedin: string;
-  }
+export interface Member {
+  id: number;
+  name: string;
+  lastName: string;
+  age: number;
+  zodiacSign: string;
+  bodyType: string;
+  height: string;
+  weight: string;
+  eyes: string;
+  hairColor: string;
+  hairLength: string;
+  raceEthnic: string;
+  tattoos: string;
+  locatedIn: string;
+  numContact: number;
+  typeRelation: number;
+  invitationCode: number;
+  password: string;
+  country: string;
+  state: string;
+  postalZipCode: string;
+  dateOfBirth: string;
+  email: string;
+}

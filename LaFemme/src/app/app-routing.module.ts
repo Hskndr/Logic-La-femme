@@ -12,7 +12,7 @@ const routes: Routes = [
     loadChildren: './relation-type/relation-type.module#RelationTypeModule'
   },
   {
-    path: 'Profile',
+    path: 'profile',
     loadChildren: './profile/profile.module#ProfileModule'
   },
   {
@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'datingLafemme',
     loadChildren: './dating-lafemme/dating-lafemme.module#DatingLafemmeModule'
+  },
+  {
+    path: 'creditPlan',
+    loadChildren: './credit-plan/credit-plan.module#CreditPlanModule'
   },
   {
     path: 'affiliateSignIn',

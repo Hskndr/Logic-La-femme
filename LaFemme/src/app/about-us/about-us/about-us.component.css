@@ -1,0 +1,90 @@
+/* header "AboutUs"*/
+
+#header, header {
+  background-color: black;
+  color: white;
+  height: 10em;
+}
+
+header img {
+  height: 8em;
+}
+
+header a, header li, header a:hover, header p {
+  font-size: 12px;
+  color: white;
+}
+
+/* logo */
+
+#sub-img {
+  height: 4em;
+}
+
+#logo-text {
+  position: absolute;
+  right: 45px;
+  top: 60px;
+}
+
+/* header "AboutUs"*/
+
+
+/* navbar */
+nav a, nav, nav a:hover {
+  color: white;
+
+}
+
+nav, .nav-link {
+  background-color: rgb(60, 55, 73);
+  font-size: 8.49px;
+}
+
+
+/* main */
+main {
+  color: rgb(25, 26, 39);
+  background-color: white;
+  padding: 5px;
+}
+main p{
+  font-size: 11px;
+}
+.three-img {
+  height: 10rem;
+
+
+}
+
+.two-img {
+  height: 13em;
+  margin: 1em 0em 1em 0em;
+}
+
+
+/* footer */
+footer {
+  color: white;
+  background-color: rgb(25, 26, 39);
+}
+
+.footer-img {
+  height: 7em;
+}
+
+footer h5 {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.mini-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.mid-icon {
+  height: 1.5em;
+}
+
+/* footer */

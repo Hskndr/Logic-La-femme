@@ -1,0 +1,77 @@
+/* header "Dating"*/
+
+#header, header {
+  background-color: black;
+  color: white;
+  height: 10em;
+}
+
+header img {
+  height: 8em;
+}
+
+header a, header li, header a:hover{
+  font-size: 12px;
+  color: white;
+}
+
+header p {
+  font-size: 12px;
+  color: white;
+}
+
+/* logo */
+
+#sub-img {
+  height: 4em;
+}
+
+#logo-text {
+  position: absolute;
+  right: 45px;
+  top: 60px;
+  font-size: 0.9rem;
+}
+/* header "Dating"*/
+/* main */
+
+main{
+  background-color: white;
+}
+.section1 {
+  margin: 1em 0em 1em 0em;
+  height: 8em;
+}
+.genImg{
+  height: 7em;
+}
+main p{
+  font-size: 12px;
+  text-align: justify;
+}
+.section2{
+  height: 12em;
+  margin: 1em 0em 1em 0em;
+
+}
+.section2 img{
+  height: 10rem;
+}
+
+.section3 {
+  margin: 1em;
+}
+
+.section4 {
+  margin: 2em;
+}
+/* main */
+/* footer */
+footer {color: white;background-color: rgb(25, 26, 39);}
+.footer-img{ height: 7em;}
+footer h5 {font-size: 2em;font-style: italic;}
+
+.mini-icon {width: 1.2em;height: 1.2em;}
+
+.mid-icon {height: 1.5em;}
+/* footer */

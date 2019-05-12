@@ -1,0 +1,111 @@
+/* header "Dating"*/
+
+#header, header {
+  background-color: black;
+  color: white;
+  height: 10em;
+}
+
+header img {
+  height: 8em;
+}
+
+header a, header li, header a:hover, header p {
+  font-size: 12px;
+  color: white;
+}
+
+/* logo */
+
+#sub-img {
+  height: 4em;
+}
+
+#logo-text {
+  position: absolute;
+  right: 45px;
+  top: 60px;
+}
+/* header "Dating"*/
+
+main {background-color: rgb(32, 21, 61);
+  color:white;}
+
+/*Section 1*/
+.section1 {
+  padding: 10px 0px 0px 10px;
+  background-color: rgb(25, 26, 39);
+}
+
+.rela-type {
+  background-color: rgb(213, 21, 104);
+  height: 1.2em;
+  text-align: center;
+  color: white;
+  font-size: 1.2em
+}
+.section1 label{
+  margin: 0px;
+  padding: 0px;
+}
+.dataprofile {
+  background-color: white;
+  color: rgb(32, 18, 74);
+  height: 2.5em;
+  font-size: 10px;
+  margin: 6px 0px 6px 0px;
+}
+
+
+#profile-pic {
+  width: 9em;
+  height: 9em;
+  margin-bottom: 2em;
+}
+
+.last-online {
+  background-color: rgb(32, 18, 74);
+  border: 1px solid white;
+  height: 2em;
+  font-size: 12px;
+
+}
+
+.section2 p  {font-size: 12px;;}
+
+.htop {
+  background-color: rgb(32, 18, 74);
+  color: white;
+  margin-bottom: 0.5em;
+  border: 2px solid white;
+  padding: 0.5em, 0.5em, 0.5em, 0.5em;
+  height: 3em;
+}
+
+.section2 div {
+  color: rgb(25, 26, 39);
+  background-color: white;
+  margin-bottom: 1em;
+  padding: 10px;
+  min-height: 4em;
+
+}
+/* button center */
+.btn-cent {
+  margin: 1em 0em 1em 0em;
+  background-color: rgb(32, 18, 74);
+  width: 14em;
+  border-color: white;
+  font-size: 12px;;
+
+}
+
+/* footer */
+footer {color: white;background-color: rgb(25, 26, 39);}
+.footer-img{ height: 7em;}
+footer h5 {font-size: 1.5em;font-style: italic;}
+footer small{font-size: 10px;}
+.mini-icon {width: 1.2em;height: 1.2em;}
+
+.mid-icon {height: 1.5em;}
+/* footer */

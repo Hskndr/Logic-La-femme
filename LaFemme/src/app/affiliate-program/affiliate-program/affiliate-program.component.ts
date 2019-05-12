@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-affiliate-program',
   templateUrl: './affiliate-program.component.html',
-  styles: []
+  styleUrls: ['./affiliate-program.component.css']
 })
 export class AffiliateProgramComponent implements OnInit {
 

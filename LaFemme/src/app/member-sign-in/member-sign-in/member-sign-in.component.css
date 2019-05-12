@@ -91,3 +91,9 @@ footer img {
   height: 1.5em;
   margin-right: 0.2rem;
 }
+
+/* new style*/
+
+.hidden{
+  color:red;
+}

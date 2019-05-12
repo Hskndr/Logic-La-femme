@@ -11,7 +11,7 @@ html {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 /* Fonts */
@@ -41,7 +41,7 @@ p {
 /* body width */
 
 .body-width {
-  width: 55rem;
+  width: 55rem !important;
   padding: 0;
 
 

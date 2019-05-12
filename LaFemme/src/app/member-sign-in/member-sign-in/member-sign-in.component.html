@@ -79,20 +79,15 @@
 
         <form class="container-fluid col-md-9" action="" name="form1">
 
-          <div class="form-group row">
+        <!--  <div class="form-group row">
             <label class="col-sm-4 col-form-label">CHOOSE RELATIONSHIP </label>
-            <select class="form-control col-sm-8" name="chooseRelationship">
-              <option value="" disabled selected>--Please Select--</option>
-              <option value="AttachedMaleSeekingFemales"> Attached Male Seeking Females </option>
-              <option value="AttachedFemaleSeekingMales"> Attached Female Seeking Males </option>
-              <option value="MaleSeekingMales"> Male Seeking Males </option>
-              <option value="FemaleSeekingFemales"> Female Seeking Females </option>
-              <option value="SugarDaddiesSeekingFemales"> Sugar Daddies Seeking Females </option>
-              <option value="FemaleSeekingSugarDaddies"> Female Seeking Sugar Daddies </option>
-              <option value="SugarMommiesSeekingMales"> Sugar Mommies Seeking Males </option>
-              <option value="SugarMommiesSeekingMales"> Male Seeking Sugar Mommies </option>
+            <select class="form-control col-sm-8" name="typeRelation" [(ngModel)="newMember.typeRelation"]>
+              <option *ngFor="let typRel of typeRelation" [value]="typRel.id">
+                <span>{{typRel.description}}</span>
+              </option>
+
             </select>
-          </div>
+          </div>-->
 
           <p class="h4"> Explore </p>
           <div class="row">
@@ -110,16 +105,16 @@
           </div>
 
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="" class="col-sm-3 col-form-label"> User Name </label>
+            <label for="name" class="col-sm-3 col-form-label"> User Name </label>
             <div class="col-sm-9">
-              <input type="text" class="form-control"  placeholder="Insert your name" required>
+              <input id="name" name="userName" type="text" [(ngModel)]="member.name" class="form-control"  placeholder="Insert your name" required>
             </div>
           </div>
 
           <div class="form-group row d-flex align-items-center field-form">
             <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
             <div class="col-sm-9">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Password"
+              <input id="inputPassword" name="password" type="password"  [(ngModel)]="member.password" class="form-control"  placeholder="Password"
                      required>
             </div>
           </div>
@@ -128,7 +123,7 @@
             <label for="" class="col-sm-3 col-form-label"> Country</label>
             <div class=" col-sm-9">
               <select name="country" class="form-control">
-                <!-- show mock-country -->
+                <!-- show mock-country  -->
                 <option *ngFor="let country of countries">
                   {{country.name}}
                 </option>
@@ -139,7 +134,7 @@
           <div class="form-group row d-flex align-items-center field-form">
             <label for="" class="col-sm-3 col-form-label"> State</label>
             <div class=" col-sm-3">
-              <select name="state"  class="form-control">
+              <select [ngClass]="{ 'hidden' : formHidden }" name="state"  class="form-control">
                 <!-- add selected condition -->
                 <option *ngFor="let country of statesUsa">
                   {{country.name}}
@@ -156,7 +151,7 @@
           <div class="form-group row d-flex align-items-center field-form">
             <label for="" class="col-sm-3 col-form-label"> Date of Birth </label>
             <div class="col-sm-9">
-              <input type="date" class="form-control" name="user_date" id="user_date"/>
+              <input type="date" class="form-control" [(ngModel)]="member.dateBirth" name="user_date" id="user_date"/>
             </div>
           </div>
 
@@ -248,6 +243,9 @@
         </form>
       </div>
     </main>
+
+    <pre>{{ member | json }}</pre>
+
 
     <footer class="row pt-5">
       <div><img src="assets/image/icon/icon11.png" alt="image">Safe,
