@@ -1,0 +1,19 @@
+
+/*header "Creating Profile"*/
+header {
+  background-color: black;
+  color: white;
+  height: 8em;
+}
+
+header img {
+  height: 7em;
+}
+
+.subtitle{
+  font-size: 12px;
+}
+.h7{
+  font-size: 12px;
+}
+/*header "Creating Profile"*/

@@ -1,44 +1,8 @@
-.body-width{
-  width: 55rem;
-}
-/*header "Creating Profile"*/
-header {
-  background-color: black;
-  color: white;
-  height: 8em;
-}
-
-header img {
-  height: 7em;
-}
-
-.subtitle{
-  font-size: 12px;
-}
-.h7{
-  font-size: 12px;
-}
-/*header "Creating Profile"*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 main {
   padding: 0.5em;
   background-color: rgb(32, 21, 61);
+  height: 95rem;
 }
 
 section {
@@ -77,20 +41,6 @@ section {
   width: 20em;
 }
 
-footer {
-  display: flex;
-  color: white;
-  justify-content: space-evenly;
-  font-size: 1rem;
-  background-color: rgb(32, 21, 61);
-  padding-bottom: 2em;
-}
-
-footer img {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 0.2rem;
-}
 
 /* new style*/
 
