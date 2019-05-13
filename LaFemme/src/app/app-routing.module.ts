@@ -4,6 +4,10 @@ import {NotFoundComponent} from './home/not-found/not-found.component';
 
 const routes: Routes = [
   {
+    path: 'travelPlan',
+    loadChildren: './travel-plan/travel-plan.module#TravelPlanModule'
+  },
+  {
     path: 'tellUsMore',
     loadChildren: './tell-us-more/tell-us-more.module#TellUsMoreModule'
   },
