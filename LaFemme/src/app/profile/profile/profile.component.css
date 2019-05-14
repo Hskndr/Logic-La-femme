@@ -6,11 +6,15 @@
   height: 10em;
 }
 
-header img {
-  height: 8em;
+header p {
+  font-size: 1rem;
 }
 
-header a, header li, header a:hover, header p {
+header img {
+  height: 8rem;
+}
+
+header a, header li, header a:hover {
   font-size: 12px;
   color: white;
 }
@@ -23,31 +27,45 @@ header a, header li, header a:hover, header p {
 
 #logo-text {
   position: absolute;
-  right: 45px;
-  top: 60px;
+  right: 3.3rem;
+  top: 4.3rem;
 }
+
 /* header "Dating"*/
 
-main {background-color: rgb(32, 21, 61);
-  color:white;}
+main {
+  background-color: rgb(32, 21, 61);
+  color: white;
+}
 
 /*Section 1*/
 .section1 {
-  padding: 10px 0px 0px 10px;
-  background-color: rgb(25, 26, 39);
+  padding: 0;
+  background-color: white;
+}
+
+.sectionSub1 {
+  background-color: black;
+  padding: 0.5rem;
+  height: 16.5rem;
 }
 
 .rela-type {
   background-color: rgb(213, 21, 104);
-  height: 1.2em;
+  height: 2rem;
   text-align: center;
   color: white;
-  font-size: 1.2em
+  font-size: 1.1em
 }
-.section1 label{
-  margin: 0px;
-  padding: 0px;
+.section1 span {
+  font-size: 0.8rem;
 }
+.section1 label {
+  font-size: 0.85rem;
+  margin: auto;
+  padding: 0;
+}
+
 .dataprofile {
   background-color: white;
   color: rgb(32, 18, 74);
@@ -71,7 +89,9 @@ main {background-color: rgb(32, 21, 61);
 
 }
 
-.section2 p  {font-size: 12px;;}
+.section2 p {
+  font-size: 12px;;
+}
 
 .htop {
   background-color: rgb(32, 18, 74);
@@ -90,6 +110,7 @@ main {background-color: rgb(32, 21, 61);
   min-height: 4em;
 
 }
+
 /* button center */
 .btn-cent {
   margin: 1em 0em 1em 0em;
@@ -101,11 +122,31 @@ main {background-color: rgb(32, 21, 61);
 }
 
 /* footer */
-footer {color: white;background-color: rgb(25, 26, 39);}
-.footer-img{ height: 7em;}
-footer h5 {font-size: 1.5em;font-style: italic;}
-footer small{font-size: 10px;}
-.mini-icon {width: 1.2em;height: 1.2em;}
+footer {
+  color: white;
+  background-color: rgb(25, 26, 39);
+}
 
-.mid-icon {height: 1.5em;}
+.footer-img {
+  height: 7em;
+}
+
+footer h5 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+footer small {
+  font-size: 10px;
+}
+
+.mini-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.mid-icon {
+  height: 1.5em;
+}
+
 /* footer */

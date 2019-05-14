@@ -1,79 +1,76 @@
 <div class="body-back">
   <div class="body-width container">
     <header class=" sticky-top row d-flex justify-content-around">
-
       <div class="col-md-5 ">
         <img src="assets/image/LF289.png" class="rounded float-left">
         <p class="h6" id="logo-text"> Fantasies.......<br>Everybody has One!</p>
       </div>
-
       <div class="col-md-5 p-3">
         <h1 class="text-center h1"> Profile </h1>
         <p class="text-center font-italic h6"> Private Affairs Club</p>
         <p class="text-center h6"> Private Affairs Club, our members find <br> Snazzy Men & Women</p>
       </div>
-
       <div class="col-md-2 pt-1">
-
-
       </div>
-
     </header>
+
+
 
     <main class="row">
       <h5 class="pl-3 m-2">Profile</h5>
 
-      <section class="container-fluid section1 d-flex justify-content-around">
-        <div class="col-md-3">
-          <div class="pt-5 pl-3">
+      <section class="container-fluid section1 d-flex justify-content-around border">
+        <div class="col-md-3 border p-1">
+          <div class="border">
             <img id="profile-pic" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
 
           </div>
-          <p class=" row d-flex text-center align-self-end last-online mt-3">Last on line: 3 hours ago</p>
+          <p class=" d-flex text-center align-self-end last-online mt-3">Last on line: 3 hours ago</p>
         </div>
 
-        <div class="col-md-5 ">
+        <div class="col-md-5 border sectionSub1">
           <div class="h6 rela-type d-flex align-items-center justify-content-center">
             {{typeRelation}}
           </div>
-          <div class="h4">{{member.name}} {{member.lastName}}</div>
-          <div class="h6">Life time member</div>
-          <div class="h6">Looking forward an Exciting Affair</div>
+          <div class="h5">{{member.name}} {{member.lastName}}</div>
+          <span class="">Life time member</span> <br>
+          <span class="h6">Looking forward an Exciting Affair</span>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Age</label>
-            <div class="col-6">{{member.age}} </div>
+            <div class="col-6 form-control-sm">{{member.age}} </div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Zodiac Sign </label>
-            <div class="col-6"> {{member.zodiacSign}} </div>
+            <div class="col-6 form-control-sm"> {{member.zodiacSign}} </div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Body type </label>
-            <div class="col-6">  {{member.bodyType}}</div>
+            <div class="col-6 form-control-sm">  {{member.bodyType}}</div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Heigth </label>
-            <div class="col-6"> {{member.height}}</div>
+            <div class="col-6 form-control-sm"> {{member.height}}</div>
           </div>
 
         </div>
-        <div class="col-md-4 ">
-          <div class="dataprofile container d-flex align-items-left"><label class="col-6">Weight </label>
-            <div class="col-6">  {{member.weight}}</div>
+
+        <div class="col-md-4 border sectionSub1">
+          <div class="dataprofile container d-flex"><label class="col-6">Weight </label>
+            <div class="col-6 form-control-sm">  {{member.weight}}</div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Eyes</label>
-            <div class="col-6">{{member.eyes}}</div>
+            <div class="col-6 form-control-sm">{{member.eyes}}</div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Hair Color</label>
-            <div class="col-6">{{member.hairColor}}</div>
+            <div class="col-6 form-control-sm">{{member.hairColor}}</div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Hair lenght</label>
-            <div class="col-6">{{member.hairLength}}</div>
+            <div class="col-6 form-control-sm">{{member.hairLength}}</div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Race/ Ethnic</label>
-            <div class="col-6">{{member.raceEthnic}}</div>
+            <div class="col-6 form-control-sm">{{member.raceEthnic}}</div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Tattoos</label>
-            <div class="col-6">{{member.tattoos}}</div>
+            <div class="col-6 form-control-sm">{{member.tattoos}}</div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Located In:</label>
-            <div class="col-6">{{member.locatedIn}}</div>
+            <div class="col-6 form-control-sm">{{member.locatedIn}}</div>
           </div>
         </div>
 
