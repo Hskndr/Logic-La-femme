@@ -73,19 +73,28 @@ main {
   font-size: 10px;
   margin: 6px 0px 6px 0px;
 }
+.dataprofile1 {
+  background-color: white;
+  color: rgb(32, 18, 74);
+  height: 2.5em;
+  font-size: 10px;
+  margin: 6px 0px 10px 0px;
+}
 
 
 #profile-pic {
-  width: 9em;
-  height: 9em;
-  margin-bottom: 2em;
+  width: 10rem;
+  height: 10rem;
 }
 
 .last-online {
   background-color: rgb(32, 18, 74);
   border: 1px solid white;
-  height: 2em;
-  font-size: 12px;
+  height: 3rem;
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
 
 }
 

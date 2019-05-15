@@ -1,8 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {COUNTRIES, STATES_ARGENTINA, STATES_COLOMBIA, STATES_USA, STATES_VENEZUELA} from '../../mock/mock-country';
 import {Option} from '../../models/option.model';
 import {Member} from '../../class/memberClass';
 import {state} from '@angular/animations';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-member-sign-in',
@@ -11,11 +12,8 @@ import {state} from '@angular/animations';
 })
 export class MemberSignInComponent implements OnInit {
   public formHidden = false;
-
+  /* Options relation */
   public typeRelation: Option[];
-  public member: Member;
-  public members: Member[];
-
   /* countries and states mock */
   countries = COUNTRIES;
   statesUsa = STATES_USA;
@@ -26,8 +24,35 @@ export class MemberSignInComponent implements OnInit {
   /*Calculate age*/
   CalculateAge() {
   }
+  @ViewChild('formmemb') formmemb: NgForm;
+  member: any;
 
   constructor() {
+    this.member = {
+      id: '',
+      name: '',
+      lastName: '',
+      age: '',
+      zodiacSign: '',
+      bodyType: '',
+      height: '',
+      weight: '',
+      eyes: '',
+      hairColor: '',
+      hairLength: '',
+      raceEthnic: '',
+      tattoos: '',
+      locatedIn: '',
+      numContact: '',
+      typeRelation: '',
+      invitationCode: '',
+      password: '',
+      country: '',
+      state: '',
+      postalZipCode: '',
+      dateOfBirth: '',
+      email: '',
+    };
   }
 
   public ngOnInit() {
@@ -41,35 +66,13 @@ export class MemberSignInComponent implements OnInit {
       {id: 6, description: 'Sugar Mommies Seeking Males'},
       {id: 7, description: 'Male Seeking Sugar Mommies'}
     ];
-
-    this.member = {
-      id: 1,
-      name: '',
-      lastName: '',
-      age: 0,
-      zodiacSign: '',
-      bodyType: '',
-      height: '',
-      weight: '',
-      eyes: '',
-      hairColor: '',
-      hairLength: '',
-      raceEthnic: '',
-      tattoos: '',
-      locatedIn: '',
-      numContact: 0,
-      typeRelation: 0,
-      invitationCode: 100,
-      password: '',
-      country: '',
-      state: '',
-      postalZipCode: '',
-      dateOfBirth: '',
-      email: '',
   }
-    ;
-    this.members = [];
-
+  onSubmit() {
+    this.member.name = this.formmemb.value.name;
+    this.member.password = this.formmemb.value.password;
+    this.member.dateOfBirth = this.formmemb.value.dateOfBirth;
+    this.formmemb.reset();
   }
-
 }
+
+

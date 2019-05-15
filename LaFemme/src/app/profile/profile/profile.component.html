@@ -19,16 +19,18 @@
     <main class="row">
       <h5 class="pl-3 m-2">Profile</h5>
 
-      <section class="container-fluid section1 d-flex justify-content-around border">
-        <div class="col-md-3 border p-1">
-          <div class="border">
-            <img id="profile-pic" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
+
+      <!-- REPLACE THE DIRECTIVE *ngFor they be show the selected member -->
+      <section class="container-fluid section1 d-flex justify-content-around border" *ngFor="let member of members">
+        <div class="col-md-3 border p-1 d-flex flex-column">
+          <div class=" text-center mt-3">
+            <img id="profile-pic" class="img-thumbnail" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
 
           </div>
-          <p class=" d-flex text-center align-self-end last-online mt-3">Last on line: 3 hours ago</p>
+          <p class=" last-online mt-auto">Last on line: 3 hours ago</p>
         </div>
 
-        <div class="col-md-5 border sectionSub1">
+        <div class="col-md-5 sectionSub1 ">
           <div class="h6 rela-type d-flex align-items-center justify-content-center">
             {{typeRelation}}
           </div>
@@ -51,22 +53,22 @@
         </div>
 
         <div class="col-md-4 border sectionSub1">
-          <div class="dataprofile container d-flex"><label class="col-6">Weight </label>
+          <div class="dataprofile1 container d-flex"><label class="col-6 ">Weight </label>
             <div class="col-6 form-control-sm">  {{member.weight}}</div>
           </div>
-          <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Eyes</label>
+          <div class=" dataprofile1 container d-flex align-items-left"><label class="col-6"> Eyes</label>
             <div class="col-6 form-control-sm">{{member.eyes}}</div>
           </div>
-          <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Hair Color</label>
+          <div class="dataprofile1 container d-flex align-items-left"><label class="col-6"> Hair Color</label>
             <div class="col-6 form-control-sm">{{member.hairColor}}</div>
           </div>
-          <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Hair lenght</label>
+          <div class="dataprofile1 container d-flex align-items-left"><label class="col-6"> Hair lenght</label>
             <div class="col-6 form-control-sm">{{member.hairLength}}</div>
           </div>
-          <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Race/ Ethnic</label>
+          <div class="dataprofile1 container d-flex align-items-left"><label class="col-6"> Race/ Ethnic</label>
             <div class="col-6 form-control-sm">{{member.raceEthnic}}</div>
           </div>
-          <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Tattoos</label>
+          <div class="dataprofile1 container d-flex align-items-left"><label class="col-6"> Tattoos</label>
             <div class="col-6 form-control-sm">{{member.tattoos}}</div>
           </div>
           <div class="dataprofile container d-flex align-items-left"><label class="col-6"> Located In:</label>
@@ -119,7 +121,7 @@
         </div>
       </section>
     </main>
-
+    <p>{{message}}</p>
     <footer class="row ">
       <div class="col-10 d-flex justify-content-around ">
 

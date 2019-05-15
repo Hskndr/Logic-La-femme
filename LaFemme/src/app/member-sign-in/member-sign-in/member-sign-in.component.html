@@ -59,10 +59,13 @@
         <h2 class="h4 pb-3"> CREATE YOUR PROFILE </h2>
         <p class="h5 pb-3"> Someone will acknowledge you with Desire, Passion and Excitement. </p>
 
-        <form class="container-fluid col-md-9" action="" name="form1">
+        <form class="container-fluid col-md-9" action="" name="formmemb" (ngSubmit)="onSubmit()" #formmemb="ngForm">
 
           <div class="form-group row">
             <label class="col-sm-4 col-form-label">CHOOSE RELATIONSHIP </label>
+
+            <!-- ADD id="typeRelation"-->
+
             <select class="form-control col-sm-8" name="typeRelation">
               <option *ngFor="let typRel of typeRelation" [value]="typRel.id">
                 <span>{{typRel.description}}</span>
@@ -78,7 +81,7 @@
             </div>
 
             <div class="col-4">
-              <input type="number" required class="w-75">
+              <input id="invitationCode" type="number" required class="w-75">
             </div>
 
             <div class="col-4">
@@ -89,22 +92,24 @@
           <div class="form-group row d-flex align-items-center field-form">
             <label for="name" class="col-sm-3 col-form-label"> User Name </label>
             <div class="col-sm-9">
-              <input id="name" name="userName" type="text" [(ngModel)]="member.name" class="form-control"
+              <input id="name" name="userName" type="text" ngModel name="name" class="form-control"
                      placeholder="Insert your name" required>
             </div>
           </div>
 
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+            <label for="password" class="col-sm-3 col-form-label">Password</label>
             <div class="col-sm-9">
-              <input id="inputPassword" name="password" type="password" [(ngModel)]="member.password"
+              <input id="password" name="password" type="password" ngModel password="password"
                      class="form-control" placeholder="Password"
                      required>
             </div>
           </div>
 
+          <!-- ADD id="country" -->
+
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="" class="col-sm-3 col-form-label"> Country</label>
+            <label class="col-sm-3 col-form-label"> Country</label>
             <div class=" col-sm-9">
               <select name="country" class="form-control">
                 <!-- show mock-country  -->
@@ -115,8 +120,10 @@
             </div>
           </div>
 
+          <!-- ADD id="state" -->
+
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="" class="col-sm-3 col-form-label"> State</label>
+            <label class="col-sm-3 col-form-label"> State</label>
             <div class=" col-sm-3">
               <select [ngClass]="{ 'hidden' : formHidden }" name="state" class="form-control">
                 <!-- add selected condition -->
@@ -126,30 +133,32 @@
               </select>
             </div>
 
-            <label for="" class="col-sm-3 col-form-label"> Postal Zip Code</label>
+            <label for="postalZipCode" class="col-sm-3 col-form-label"> Postal Zip Code</label>
             <div class="col-sm-3">
-              <input type="text" class="form-control" placeholder=" ">
+              <input id="postalZipCode" type="text" class="form-control" placeholder=" ">
             </div>
           </div>
 
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="" class="col-sm-3 col-form-label"> Date of Birth </label>
+            <label for="dateOfBirth" class="col-sm-3 col-form-label"> Date of Birth </label>
             <div class="col-sm-9">
-              <input type="date" class="form-control" [(ngModel)]="member.dateOfBirth" name="user_date" id="user_date"/>
+              <input id="dateOfBirth" type="date" class="form-control" ngModel dateOfBirth="dateOfBirth"
+                     name="dateOfBirth"/>
             </div>
           </div>
 
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="" class="col-sm-3 col-form-label"> Age </label>
+            <label for="age" class="col-sm-3 col-form-label"> Age </label>
             <div class="col-sm-9 text-left">
-              <input class="form-control" id="result"
+              <input class="form-control" id="age"
                      readonly type="text" [value]="CalculateAge()">
             </div>
-
           </div>
 
+          <!-- ADD id="zodiacSign" -->
+
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="" class="col-sm-3 col-form-label"> Zodiac Sign</label>
+            <label class="col-sm-3 col-form-label"> Zodiac Sign</label>
             <div class="col-sm-9">
               <select class="form-control " name="zodiac">
                 <option value="" disabled selected>--Please Select--</option>
@@ -169,8 +178,10 @@
             </div>
           </div>
 
+          <!-- ADD id="raceEthnic" -->
+
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="" class="col-sm-3 col-form-label"> Race /Ethnic</label>
+            <label class="col-sm-3 col-form-label"> Race /Ethnic</label>
             <div class="col-sm-9">
               <select class="form-control " name="chooseRelationship">
                 <option value="" disabled selected>I identify my ethnicity as:</option>
@@ -187,9 +198,10 @@
           </div>
 
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="" class="col-sm-3 col-form-label"> Email</label>
+            <label for="email" class="col-sm-3 col-form-label"> Email</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="" value="email@example.com " required>
+              <input type="text" class="form-control" id="email" value="email@example.com " required ngModel
+                     email="email">
             </div>
           </div>
 
@@ -221,8 +233,8 @@
 
 
           <div class="d-flex justify-content-end">
-            <button routerLink="/tellUsMore" type="submit"
-                    class="btn btn-light btn-lg " disabled="disabled">I Agree
+            <button type="submit"
+                    class="btn btn-light btn-lg " > I Agree
             </button>
           </div>
 
