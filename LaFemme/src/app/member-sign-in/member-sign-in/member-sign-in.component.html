@@ -100,7 +100,7 @@
           <div class="form-group row d-flex align-items-center field-form">
             <label for="password" class="col-sm-3 col-form-label">Password</label>
             <div class="col-sm-9">
-              <input id="password" name="password" type="password" ngModel password="password"
+              <input id="password" ngModel name="password" type="password"
                      class="form-control" placeholder="Password"
                      required>
             </div>
@@ -111,21 +111,22 @@
           <div class="form-group row d-flex align-items-center field-form">
             <label class="col-sm-3 col-form-label"> Country</label>
             <div class=" col-sm-9">
-              <select name="country" class="form-control">
+              <select name="country" class="form-control" id="country" ngModel name="country">
                 <!-- show mock-country  -->
-                <option *ngFor="let country of countries">
+                <option value="">Select country</option>
+                <option *ngFor="let country of countries" [value]="country">
                   {{country.name}}
                 </option>
               </select>
             </div>
           </div>
 
-          <!-- ADD id="state" -->
+          <!-- ADD id="state" should change when select the country -->
 
           <div class="form-group row d-flex align-items-center field-form">
             <label class="col-sm-3 col-form-label"> State</label>
             <div class=" col-sm-3">
-              <select [ngClass]="{ 'hidden' : formHidden }" name="state" class="form-control">
+              <select [ngClass]="{ 'hidden' : formHidden }"  name="state" class="form-control">
                 <!-- add selected condition -->
                 <option *ngFor="let country of statesUsa">
                   {{country.name}}
@@ -142,8 +143,7 @@
           <div class="form-group row d-flex align-items-center field-form">
             <label for="dateOfBirth" class="col-sm-3 col-form-label"> Date of Birth </label>
             <div class="col-sm-9">
-              <input id="dateOfBirth" type="date" class="form-control" ngModel dateOfBirth="dateOfBirth"
-                     name="dateOfBirth"/>
+              <input id="dateOfBirth" type="date" class="form-control" ngModel name="dateOfBirth"/>
             </div>
           </div>
 
@@ -198,10 +198,20 @@
           </div>
 
           <div class="form-group row d-flex align-items-center field-form">
-            <label for="email" class="col-sm-3 col-form-label"> Email</label>
+            <div class="col-sm-3">
+            <label for="email" class="col-form-label"> Email</label>
+            <!-- icon -->
+            <i class="fa fa-check-circle check" *ngIf="email.valid"></i>
+            <i class="fa fa-exclamation-circle uncheck" *ngIf="email.invalid && email.touched"></i>
+            </div>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="email" value="email@example.com " required ngModel
-                     email="email">
+              <input type="text"
+                     class="form-control"
+                     id="email"
+                     required
+                     ngModel
+                     name="email"
+                      email #email="ngModel">
             </div>
           </div>
 
@@ -233,19 +243,33 @@
 
 
           <div class="d-flex justify-content-end">
+           <!-- ACTIVE WHEN THE INPUTS ARE VALID-->
             <button type="submit"
-                    class="btn btn-light btn-lg " > I Agree
+                    class="btn btn-light btn-lg "
+                    [disabled]="!formmemb.valid"> I Agree
             </button>
+
           </div>
+          <p class="alert alert-danger " *ngIf="!formmemb.valid"> Please complete all fileds
+          </p>
+          <hr>
+          <div style="background-color: #fff;">
+            
+          
+          <pre> Estado Dirty: {{ formmemb.controls.email.dirty }}</pre>
+          <pre> Estado Pristine: {{ formmemb.controls.email.pristine }}</pre>
+          <pre> Estado Touched: {{ formmemb.controls.email.touched }}</pre>
+          <pre> Estado Valid: {{ formmemb.controls.email.valid }}</pre>
+          <pre> Estado Invalid: {{ formmemb.controls.email.invalid }}</pre>
 
-
+            <pre>{{ member | json }}</pre>
+          </div>
         </form>
       </div>
     </main>
-    <!--
-            <pre>{{ member | json }}</pre>
+           
 
-    -->
+
     <app-sign-in-footer></app-sign-in-footer>
 
   </div>
