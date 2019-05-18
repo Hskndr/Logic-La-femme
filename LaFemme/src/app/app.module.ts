@@ -1,12 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
 // Http
 import {HttpClientModule} from '@angular/common/http';
 
 // Routing
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {HomeModule} from './home/home.module';
 
 // services
@@ -18,6 +18,9 @@ import {FormsModule} from '@angular/forms';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {environment} from '../environments/environment';
+// ng Material and Bootstrap
+import {MaterialModule} from './modules/material/material.module';
+import {BootstrapModule} from './modules/bootstrap/bootstrap.module';
 
 
 @NgModule({
@@ -31,7 +34,10 @@ import {environment} from '../environments/environment';
     FormsModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    MaterialModule,
+    BootstrapModule
+
   ],
   providers: [
     MembersService,
@@ -39,4 +45,5 @@ import {environment} from '../environments/environment';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
