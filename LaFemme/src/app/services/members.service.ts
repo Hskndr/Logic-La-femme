@@ -39,3 +39,7 @@ export class MembersService {
     return this.members;
   }
 }
+
+/*
+*  Iniciar el post ruta a firebase https://console.firebase.google.com/project/lafemme-dd935/database/firestore/data/
+* */

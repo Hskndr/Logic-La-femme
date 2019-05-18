@@ -59,6 +59,7 @@
         <h2 class="h4 pb-3"> CREATE YOUR PROFILE </h2>
         <p class="h5 pb-3"> Someone will acknowledge you with Desire, Passion and Excitement. </p>
 
+
         <form class="container-fluid col-md-9" action="" name="formmemb" (ngSubmit)="onSubmit()" #formmemb="ngForm">
 
           <div class="form-group row">
@@ -66,12 +67,12 @@
 
             <!-- ADD id="typeRelation"-->
 
-            <select class="form-control col-sm-8" name="typeRelation">
-              <option *ngFor="let typRel of typeRelation" [value]="typRel.id">
-                <span>{{typRel.description}}</span>
-              </option>
+           <!-- <select class="form-control col-sm-8" id="typeRelation" ngModel name="typeRelation">
 
-            </select>
+              <option value="">Select your Match</option>
+              <option *ngFor="let typRel of typeRelation" [value]="typRel.id">{{typRel.description}}</option>
+
+            </select>-->
           </div>
 
           <p class="h4"> Explore </p>
@@ -80,9 +81,9 @@
               <label>Invitation ID Code </label>
             </div>
 
-            <div class="col-4">
+          <!--  <div class="col-4">
               <input id="invitationCode" type="number" required class="w-75">
-            </div>
+            </div>-->
 
             <div class="col-4">
               <label class=" justify-content-end ">If no one invited you, use ID Code 100</label>
@@ -92,42 +93,47 @@
           <div class="form-group row d-flex align-items-center field-form">
             <label for="name" class="col-sm-3 col-form-label"> User Name </label>
             <div class="col-sm-9">
-              <input id="name" name="userName" type="text" ngModel name="name" class="form-control"
-                     placeholder="Insert your name" required>
+              <input id="name"
+                     name="userName"
+                     type="text"
+                     ngModel name="name"
+                     class="form-control"
+                     placeholder="Insert your name"
+                     required>
             </div>
           </div>
 
-          <div class="form-group row d-flex align-items-center field-form">
+         <!-- <div class="form-group row d-flex align-items-center field-form">
             <label for="password" class="col-sm-3 col-form-label">Password</label>
             <div class="col-sm-9">
               <input id="password" ngModel name="password" type="password"
                      class="form-control" placeholder="Password"
                      required>
             </div>
-          </div>
+          </div>-->
 
           <!-- ADD id="country" -->
 
-          <div class="form-group row d-flex align-items-center field-form">
+         <!-- <div class="form-group row d-flex align-items-center field-form">
             <label class="col-sm-3 col-form-label"> Country</label>
             <div class=" col-sm-9">
               <select name="country" class="form-control" id="country" ngModel name="country">
-                <!-- show mock-country  -->
+                &lt;!&ndash; show mock-country  &ndash;&gt;
                 <option value="">Select country</option>
                 <option *ngFor="let country of countries" [value]="country">
                   {{country.name}}
                 </option>
               </select>
             </div>
-          </div>
+          </div>-->
 
           <!-- ADD id="state" should change when select the country -->
 
-          <div class="form-group row d-flex align-items-center field-form">
+         <!-- <div class="form-group row d-flex align-items-center field-form">
             <label class="col-sm-3 col-form-label"> State</label>
             <div class=" col-sm-3">
               <select [ngClass]="{ 'hidden' : formHidden }"  name="state" class="form-control">
-                <!-- add selected condition -->
+                &lt;!&ndash; add selected condition &ndash;&gt;
                 <option *ngFor="let country of statesUsa">
                   {{country.name}}
                 </option>
@@ -138,9 +144,9 @@
             <div class="col-sm-3">
               <input id="postalZipCode" type="text" class="form-control" placeholder=" ">
             </div>
-          </div>
+          </div>-->
 
-          <div class="form-group row d-flex align-items-center field-form">
+          <!--<div class="form-group row d-flex align-items-center field-form">
             <label for="dateOfBirth" class="col-sm-3 col-form-label"> Date of Birth </label>
             <div class="col-sm-9">
               <input id="dateOfBirth" type="date" class="form-control" ngModel name="dateOfBirth"/>
@@ -153,15 +159,15 @@
               <input class="form-control" id="age"
                      readonly type="text" [value]="CalculateAge()">
             </div>
-          </div>
+          </div>-->
 
           <!-- ADD id="zodiacSign" -->
 
-          <div class="form-group row d-flex align-items-center field-form">
+         <!-- <div class="form-group row d-flex align-items-center field-form">
             <label class="col-sm-3 col-form-label"> Zodiac Sign</label>
             <div class="col-sm-9">
               <select class="form-control " name="zodiac">
-                <option value="" disabled selected>--Please Select--</option>
+                <option value="" disabled selected>&#45;&#45;Please Select&#45;&#45;</option>
                 <option value="aries">Aries (March 21 - April 19)</option>
                 <option value="taurus">Taurus (April 20 - May 20)</option>
                 <option value="gemini">Gemini (May 21 - June 20)</option>
@@ -176,11 +182,11 @@
                 <option value="pisces">Pisces (February 19 - March 20)</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
           <!-- ADD id="raceEthnic" -->
 
-          <div class="form-group row d-flex align-items-center field-form">
+         <!-- <div class="form-group row d-flex align-items-center field-form">
             <label class="col-sm-3 col-form-label"> Race /Ethnic</label>
             <div class="col-sm-9">
               <select class="form-control " name="chooseRelationship">
@@ -195,7 +201,7 @@
                 <option value="">Other</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
           <div class="form-group row d-flex align-items-center field-form">
             <div class="col-sm-3">
@@ -205,7 +211,7 @@
             <i class="fa fa-exclamation-circle uncheck" *ngIf="email.invalid && email.touched"></i>
             </div>
             <div class="col-sm-9">
-              <input type="text"
+              <input type="email"
                      class="form-control"
                      id="email"
                      required
@@ -215,7 +221,7 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <!--<div class="form-group">
             <label>For maximum discretion we recommend using an email specific to this account.
             </label>
           </div>
@@ -239,23 +245,19 @@
                 <a routerLink="/termCondition">terms and
                   conditions </a></label>
             </div>
-          </div>
+          </div>-->
 
 
           <div class="d-flex justify-content-end">
            <!-- ACTIVE WHEN THE INPUTS ARE VALID-->
-            <button type="submit"
-                    class="btn btn-light btn-lg "
-                    [disabled]="!formmemb.valid"> I Agree
-            </button>
+            <button type="submit" class="btn btn-light btn-lg "> I Agree</button>
 
           </div>
-          <p class="alert alert-danger " *ngIf="!formmemb.valid"> Please complete all fileds
-          </p>
+<!--          <p class="alert alert-danger " *ngIf="!formmemb.valid"> Please complete all fileds</p>-->
           <hr>
           <div style="background-color: #fff;">
-            
-          
+
+
           <pre> Estado Dirty: {{ formmemb.controls.email.dirty }}</pre>
           <pre> Estado Pristine: {{ formmemb.controls.email.pristine }}</pre>
           <pre> Estado Touched: {{ formmemb.controls.email.touched }}</pre>
@@ -265,9 +267,13 @@
             <pre>{{ member | json }}</pre>
           </div>
         </form>
+
+
+
+
       </div>
     </main>
-           
+
 
 
     <app-sign-in-footer></app-sign-in-footer>

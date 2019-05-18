@@ -71,8 +71,10 @@ export class MemberSignInComponent implements OnInit {
     this.member.name = this.formmemb.value.name;
     this.member.password = this.formmemb.value.password;
     this.member.dateOfBirth = this.formmemb.value.dateOfBirth;
+    this.member.email = this.formmemb.value.email;
     this.formmemb.reset();
   }
 }
+
 
 
