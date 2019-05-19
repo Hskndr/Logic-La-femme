@@ -33,7 +33,7 @@ import {BootstrapModule} from './modules/bootstrap/bootstrap.module';
     HomeModule,
     FormsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    //AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     MaterialModule,
     BootstrapModule
