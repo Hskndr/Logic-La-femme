@@ -115,6 +115,17 @@
     display: none !important;
     visibility: hidden !important;
   }
+  .home-back-responsive-medium {
+   
+    height: 100%;
+
+  }
+
+  .mainImageNormal {
+    z-index: -1;
+    height: 100%;
+    float: right;
+  }
 
   /* header */
   header {
@@ -192,7 +203,7 @@
   }
 
   .copyright {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     margin-top: 0.6rem;
     margin-right: 0.6rem;
   }
@@ -522,10 +533,11 @@
     background-size: contain;
     margin: 0;
     padding: 0;
-    z-index: -1;
+    z-index: 0;
     margin-bottom: auto;
 
   }
+
 
   .home-back-responsive, .home-back-responsive-medium, .section-3-responsive {
     display: none !important;
@@ -533,7 +545,7 @@
   }
 
   .contentabsolute {
-    z-index: 10;
+    z-index: 0;
     position: absolute;
     top: 0;
     bottom: 0;

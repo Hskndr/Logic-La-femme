@@ -11,7 +11,7 @@ section {
 }
 
 .sect-img {
-  height: 6.5em;
+  height: 10rem;
 }
 
 .border-bottom {
@@ -19,11 +19,12 @@ section {
 }
 
 .section-middle {
-  background-color: rgb(32, 21, 61);
+  color: rgb(32, 21, 61);
   margin: 0.5em;
-  color: white;
+  background-color: white;
   height: 2em;
   margin-top: 1em;
+  text-transform: uppercase;
 }
 
 .section-form {

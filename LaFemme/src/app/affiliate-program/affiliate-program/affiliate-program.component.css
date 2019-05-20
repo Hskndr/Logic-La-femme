@@ -47,7 +47,9 @@ main {
   display: block;
   width: 100%;
 }
-
+.img-thumbnail{
+  border: none;
+}
 .om-img {
   height: 7em;
 }
