@@ -1,45 +1,34 @@
 import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MembersService {
-  members: any = [
-    {
-      id: 1,
-      name: 'Robin',
-      lastName: 'Ohara',
-      age: 51,
-      zodiacSign: 'picis',
-      bodyType: 'slim',
-      height: 'tall',
-      weight: 'weight',
-      eyes: 'blue',
-      hairColor: 'black',
-      hairLength: 'long',
-      raceEthnic: 'asian',
-      tattoos: 'none',
-      locatedIn: 'east blue',
-      numContact: 0,
-      typeRelation: 0,
-      invitationCode: 100,
-      password: 'poneglyph',
-      country: 'Arabasta',
-      state: 'Baltigo',
-      postalZipCode: '032',
-      dateOfBirth: '06/02/1988',
-      email: 'robin@oop.com',
-    }
-  ];
+  // base api url
+  public url = 'http://localhost/web_api/';
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
 
   getMembers() {
-    return this.members;
+    return this.http.get(this.url + 'view.php');
   }
-}
 
-/*
-*  Iniciar el post ruta a firebase https://console.firebase.google.com/project/lafemme-dd935/database/firestore/data/
-* */
+  getMemberDetails(id) {
+    return this.http.get(this.url + 'view_one.php?id=' + id);
+  }
+
+  createMember(data) {
+    return this.http.post(this.url + 'create.php', data);
+  }
+
+  updateMember(data) {
+    return this.http.post(this.url + 'update.php', data);
+  }
+
+  deleteMember(id) {
+    return this.http.get(this.url + 'delete.php?id=' + id);
+  }
+
+}

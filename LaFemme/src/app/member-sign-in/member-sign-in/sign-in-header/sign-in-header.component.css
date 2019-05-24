@@ -1,19 +1,102 @@
+@media (max-width: 575.98px) {
+  /*header "Creating Profile"*/
+.px1200{display: none}
+.px575{
+    background-color: black;
+    color: white;
 
-/*header "Creating Profile"*/
-header {
-  background-color: black;
-  color: white;
-  height: 8em;
+  }
+  /*header "Creating Profile"*/
 }
 
-header img {
-  height: 7em;
+/* #################################################### */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*header "Creating Profile"*/
+  .px1200{display: none}
+  .px575{
+    background-color: black;
+    color: white;
+
+  }
+
+  /*header "Creating Profile"*/
 }
 
-.subtitle{
-  font-size: 12px;
+/* #################################################### */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*header "Creating Profile"*/
+  header {
+    background-color: blueviolet;
+    color: white;
+    height: 8em;
+  }
+
+  header img {
+    height: 7em;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .h7 {
+    font-size: 12px;
+  }
+  .px575{display: none;}
+  /*header "Creating Profile"*/
 }
-.h7{
-  font-size: 12px;
+
+/* #################################################### */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /*header "Creating Profile"*/
+  header {
+    background-color: blue;
+    color: white;
+    height: 8em;
+  }
+
+  header img {
+    height: 7em;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .h7 {
+    font-size: 12px;
+  }
+  .px575{display: none;}
+  /*header "Creating Profile"*/
 }
-/*header "Creating Profile"*/
+
+/* #################################################### */
+
+@media (min-width: 1200px) {
+  /*header "Creating Profile"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8em;
+  }
+
+  header img {
+    height: 7em;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .h7 {
+    font-size: 12px;
+  }
+  .px575{display: none;}
+  /*header "Creating Profile"*/
+}
+
+
+

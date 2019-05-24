@@ -7,7 +7,7 @@
     </div>
     <!-- Header "Creating Profile"-->
 
-    <main class="row">
+    <main class="row ">
       <section class="p-2 m-2">
 
 
@@ -210,7 +210,7 @@
             <label>For maximum discretion we recommend using an email specific to this account.
             </label>
           </div>
-          <div class="d-flex p-2 bd-highlight row ">
+          <div class="d-flex p-2 bd-highlight row checkBox ">
             <div class="p-2 bd-highlight">
               <input type="checkbox" name="verifyage" value="">
             </div>
@@ -220,14 +220,14 @@
           </div>
 
 
-          <div class="d-flex p-2 bd-highlight row">
+          <div class="d-flex p-2 bd-highlight row checkBox">
             <div class="p-2 bd-highlight">
               <input type="checkbox" name="chtermsandconditions" value="1">
             </div>
             <div class="p-2 bd-highlight">
-              <label> I have read the La Femme Policy and agree
+              <label class="terCond"> I have read the La Femme Policy and agree
                 to all
-                <a routerLink="/termCondition">terms and
+                <a routerLink="/termAndCondition">terms and
                   conditions </a></label>
             </div>
           </div>
@@ -235,28 +235,13 @@
 
           <div class="d-flex justify-content-end">
            <!-- ACTIVE WHEN THE INPUTS ARE VALID-->
-            <button type="submit" class="btn btn-light btn-lg "> I Agree</button>
+            <button type="submit" class="btn btn-light btn-lg btn-block"> I Agree</button>
 
 
           </div>
 <!--          <p class="alert alert-danger " *ngIf="!formmemb.valid"> Please complete all fileds</p>-->
-          <hr>
-          <div style="background-color: #fff;">
 
-          <!--
-          <pre> Estado Dirty: {{ formmemb.controls.email.dirty }}</pre>
-          <pre> Estado Pristine: {{ formmemb.controls.email.pristine }}</pre>
-          <pre> Estado Touched: {{ formmemb.controls.email.touched }}</pre>
-          <pre> Estado Valid: {{ formmemb.controls.email.valid }}</pre>
-          <pre> Estado Invalid: {{ formmemb.controls.email.invalid }}</pre>
-            <pre>{{ member | json }}</pre>
-          -->
-          </div>
         </form>
-
-
-
-
       </div>
     </main>
 

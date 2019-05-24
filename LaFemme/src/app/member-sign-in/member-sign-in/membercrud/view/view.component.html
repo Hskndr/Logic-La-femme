@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+      <button class="btn btn-success" (click)="getNavigation('create', '')">Create New Member</button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+      <table #membersTable class="display" style="width:100%">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let member of members; let i =index;">
+          <td>{{i + 1}}</td>
+          <td>{{member.p_name}}</td>
+          <td>{{member.p_email}}</td>
+          <td>$ {{member.p_password}}</td>
+          <td>
+            <button type="button" class="btn btn-success" (click)="getNavigation('view', member.p_id)">View</button>
+            <button type="button" class="btn btn-warning" (click)="getNavigation('update', member.p_id)">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

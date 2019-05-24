@@ -1,46 +1,133 @@
+@media (max-width: 575.98px) {
+  section{
+    display: none;
+  }
+  .body-width{
+    max-width: 575.98px;
+    margin: 0;
+    padding: 0;
+  }
+ *{
+    margin: 0;
+    padding: 0;
+   text-align: center;
+  }
+  form{
+    margin: 0;
+    padding: 0;
 
-main {
-  padding: 0.5em;
-  background-color: rgb(32, 21, 61);
-  height: 95rem;
+  }
+  label{
+    width: 100%;
+    background-color: rgba(5,5,5,0);
+    margin: 0.5rem;
+  }
+  select, option{
+    text-align: center;
+  }
+  .field-form{
+    background-color: rgba(5,5,5,0)!important;
+    color: #ffffff!important;
+  }
+  .checkBox label{
+    margin: 0;
+    font-size: 0.8rem
+  }
+
+
 }
+/* #################################################### */
 
-section {
-  background-color: white;
-  color: rgb(33, 21, 60);
+@media (min-width: 576px) and (max-width: 767.98px) {
+  section{
+    display: none;
+  }
+  .body-width{
+    max-width: 767.98px;
+    margin: 0;
+    padding: 0;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  form{
+    margin: 0;
+    padding: 0;
+
+  }
+  label{
+    width: 100%;
+    background-color: rgba(5,5,5,0);
+    margin: 0.5rem;
+  }
+  select, option{
+    text-align: center;
+  }
+  .field-form{
+    background-color: rgba(5,5,5,0)!important;
+    color: #ffffff!important;
+  }
+  .checkBox label{
+    margin: 0;
+    font-size: 0.8rem
+  }
+
 }
+/* #################################################### */
 
-.sect-img {
-  height: 10rem;
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+/* #################################################### */
 
-.border-bottom {
-  border-color: rgb(32, 21, 61);
-}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
-.section-middle {
-  color: rgb(32, 21, 61);
-  margin: 0.5em;
-  background-color: white;
-  height: 2em;
-  margin-top: 1em;
-  text-transform: uppercase;
-}
 
-.section-form {
-  text-align: center;
-  color: white;
-  padding: 1em;
-}
+@media (max-width: 1200px) {
+  main {
+    padding: 0.5em;
+    background-color: rgb(32, 21, 61);
+    height: 95rem;
+  }
 
-.field-form {
-  background-color: white;
-  color: rgb(32, 21, 61);
-  border-radius: 2.5px;
-}
+  section {
+    background-color: white;
+    color: rgb(33, 21, 60);
+  }
 
-#submit {
-  width: 20em;
+  .sect-img {
+    height: 10rem;
+  }
+
+  .border-bottom {
+    border-color: rgb(32, 21, 61);
+  }
+
+  .section-middle {
+    color: rgb(32, 21, 61);
+    margin: 0.5em;
+    background-color: white;
+    height: 2em;
+    margin-top: 1em;
+    text-transform: uppercase;
+  }
+
+  .section-form {
+    text-align: center;
+    color: white;
+    padding: 1em;
+  }
+
+  .field-form {
+    background-color: white;
+    color: rgb(32, 21, 61);
+    border-radius: 2.5px;
+  }
+
+  #submit {
+    width: 20em;
+  }
+
 }
 
 

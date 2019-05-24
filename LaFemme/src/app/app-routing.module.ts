@@ -1,8 +1,14 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {NotFoundComponent} from './home/not-found/not-found.component';
+import {TermsAndConditionsComponent} from './components/terms-and-conditions/terms-and-conditions.component';
+import {ViewComponent} from './member-sign-in/member-sign-in/membercrud/view/view.component';
 
 const routes: Routes = [
+  {
+    path: 'termAndCondition',
+    component: TermsAndConditionsComponent
+  },
   {
     path: 'travelPlan',
     loadChildren: './travel-plan/travel-plan.module#TravelPlanModule'
