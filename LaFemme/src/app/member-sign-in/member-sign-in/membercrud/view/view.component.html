@@ -12,8 +12,8 @@
         <tr>
           <th>#</th>
           <th>Name</th>
-          <th>Description</th>
-          <th>Price</th>
+          <th>Email</th>
+          <th>Password</th>
           <th>Action</th>
         </tr>
         </thead>
@@ -22,11 +22,11 @@
           <td>{{i + 1}}</td>
           <td>{{member.p_name}}</td>
           <td>{{member.p_email}}</td>
-          <td>$ {{member.p_password}}</td>
+          <td>{{member.p_password}}</td>
           <td>
             <button type="button" class="btn btn-success" (click)="getNavigation('view', member.p_id)">View</button>
             <button type="button" class="btn btn-warning" (click)="getNavigation('update', member.p_id)">Edit</button>
-            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-danger" (click)="deleteMember(member.p_id)">Delete</button>
           </td>
         </tr>
         </tbody>

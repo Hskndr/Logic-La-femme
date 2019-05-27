@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class MembersService {
   // base api url
-  public url = 'http://localhost/web_api/';
+  public url = 'http://lafemme1.com/testapp/backend/Web_API_Member/';
 
   constructor(private http: HttpClient) {
   }

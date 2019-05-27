@@ -1,3 +1,44 @@
-<p>
-  update works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 sol-sm-12">
+      <form [formGroup]="memberForm" (ngSubmit)="updateMemberData(memberForm.value)">
+
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Enter Name" formControlName="name" required>
+          <div class="alert-danger" *ngIf="!memberForm.controls['name'].valid && (memberForm.controls['name'].touched)">
+            <div [hidden]="!memberForm.controls['name'].errors.required">
+              Name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>email</label>
+          <input type="text" class="form-control" placeholder="email" formControlName="email" required>
+          <div class="alert-danger" *ngIf="!memberForm.controls['email'].valid && (memberForm.controls['email'].touched)">
+            <div [hidden]="!memberForm.controls['email'].errors.required">
+              email is required.
+            </div>
+            <div [hidden]="!memberForm.controls['email'].errors.minlength">
+              email must be have 10 character length.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>password</label>
+          <input type="number" class="form-control" placeholder="password" formControlName="password" required>
+          <div class="alert-danger" *ngIf="!memberForm.controls['password'].valid && (memberForm.controls['password'].touched)">
+            <div [hidden]="!memberForm.controls['password'].errors.required">
+              password is required.
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!memberForm.valid">Submit</button>
+
+      </form>
+    </div>
+  </div>
+</div>

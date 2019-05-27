@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {NotFoundComponent} from './home/not-found/not-found.component';
+// Delete
 import {TermsAndConditionsComponent} from './components/terms-and-conditions/terms-and-conditions.component';
 import {ViewComponent} from './member-sign-in/member-sign-in/membercrud/view/view.component';
 

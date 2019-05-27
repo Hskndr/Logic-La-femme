@@ -22,7 +22,8 @@ import {environment} from '../environments/environment';
 import {MaterialModule} from './modules/material/material.module';
 import {BootstrapModule} from './modules/bootstrap/bootstrap.module';
 import { TermsAndConditionsComponent } from './components/terms-and-conditions/terms-and-conditions.component';
-
+// Delelte
+import * as $ from 'jquery';
 
 @NgModule({
   declarations: [
