@@ -1,11 +1,11 @@
 @media (max-width: 575.98px) {
-  section {
+  section, .section-form h2 {
     display: none;
     visibility: hidden;
   }
 
   .body-width {
-    max-width: 575.98px;
+    max-width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -15,13 +15,31 @@
     padding: 0;
     text-align: center;
   }
-  main{
+
+  main {
     height: 100%;
+    color: white;
   }
+
+  .section-form {
+    padding: 1rem;
+    background-color: rgb(32, 21, 61);
+  }
+
+  .section-form p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
   form {
     margin: 0;
     padding: 0;
 
+  }
+
+  form button {
+    margin-bottom: 3rem;
   }
 
   label {
@@ -43,8 +61,8 @@
     margin: 0;
     font-size: 0.8rem
   }
-  /* new style*/
 
+  /* new style*/
   .hidden {
     color: red;
   }
@@ -72,7 +90,7 @@
 /* #################################################### */
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  section {
+  section, .section-form h2 {
     display: none;
     visibility: hidden;
   }
@@ -82,51 +100,60 @@
     margin: 0;
     padding: 0;
   }
-  main{
-    height: 100%;
-  }
+
   * {
     margin: 0;
     padding: 0;
     text-align: center;
   }
 
+  main {
+    height: 100%;
+    color: white;
+  }
+
+  .section-form {
+    padding: 1rem;
+    background-color: rgb(32, 21, 61);
+  }
+
+  .section-form p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
   form {
     margin: 0;
-    padding: 1rem;
+    padding: 0;
 
+  }
+
+  form button {
+    margin-bottom: 3rem;
   }
 
   label {
     width: 100%;
     background-color: rgba(5, 5, 5, 0);
     margin: 0.5rem;
-
   }
 
   select, option {
     text-align: center;
   }
 
-  .form-group {
+  .field-form {
     background-color: rgba(5, 5, 5, 0) !important;
     color: #ffffff !important;
-
-  }
-
-  .field-form label {
-  }
-
-  .field-form input {
-    width: 100% !important;
   }
 
   .checkBox label {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.8rem
   }
-  /* new style*/
 
+  /* new style*/
   .hidden {
     color: red;
   }
@@ -160,24 +187,34 @@
 
   .body-width {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
+    background-color: rgb(32, 21, 61);
   }
-  main{
+
+  main {
     height: 100%;
-    margin: 0;
+    color: #ffffff;
+
 
   }
+
   * {
-    margin: 0;
-    padding: 0;
+
     text-align: center;
   }
 
+  .section-form {
+    padding: 1rem;
+    background-color: rgb(32, 21, 61);
+  }
+
   form {
-    margin: 0;
+
     padding: 1rem;
     margin: auto;
+  }
+
+  form button {
+    margin-bottom: 4rem;
   }
 
   label {
@@ -208,8 +245,8 @@
     margin: 0;
     font-size: 0.8rem;
   }
-  /* new style*/
 
+  /* new style*/
   .hidden {
     color: red;
   }
@@ -237,6 +274,10 @@
 /* #################################################### */
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .body-width {
+    background-color: rgb(32, 21, 61);
+  }
+
   main {
     padding: 0.5em;
     background-color: rgb(32, 21, 61);
@@ -256,6 +297,7 @@
     border-color: rgb(32, 21, 61);
   }
 
+
   .section-middle {
     color: rgb(32, 21, 61);
     margin: 0.5em;
@@ -271,6 +313,11 @@
     padding: 1em;
   }
 
+  form button {
+    margin-bottom: 4rem;
+    width: 50%;
+  }
+
   .field-form {
     background-color: white;
     color: rgb(32, 21, 61);
@@ -280,8 +327,8 @@
   #submit {
     width: 20em;
   }
-  /* new style*/
 
+  /* new style*/
   .hidden {
     color: red;
   }
@@ -307,11 +354,17 @@
 
 /* #################################################### */
 
-@media (max-width: 1200px) {
-  main {
-    padding: 0.5em;
+@media (min-width: 1200px) {
+  .body-width {
     background-color: rgb(32, 21, 61);
-    height: 95rem;
+  }
+
+  main {
+
+    background-color: rgb(32, 21, 61);
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   section {
@@ -348,12 +401,16 @@
     border-radius: 2.5px;
   }
 
+  form button {
+    margin-bottom: 4rem;
+    width: 50%;
+  }
+
   #submit {
     width: 20em;
   }
 
   /* new style*/
-
   .hidden {
     color: red;
   }

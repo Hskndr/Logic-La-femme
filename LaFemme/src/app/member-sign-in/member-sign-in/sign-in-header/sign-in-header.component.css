@@ -42,7 +42,7 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /*header "Creating Profile"*/
   header {
-    background-color: blue;
+    background-color: black;
     color: white;
     height: 8em;
   }

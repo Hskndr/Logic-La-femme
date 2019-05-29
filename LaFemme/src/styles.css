@@ -27,8 +27,8 @@ p {
   background-color: rgba(32, 21, 61, 0.728);
   background-size: cover;
   min-height: 55rem;
-
-
+  /*Delete
+  border: 1px solid red;*/
 }
 
 .body-back-reltype {
@@ -36,6 +36,7 @@ p {
   position: absolute;
   width: 100%;
   min-height: 100%;
+
 }
 
 /* body width */
@@ -43,6 +44,8 @@ p {
 .body-width {
   width: 58rem!important;
   padding: 0;
+  /*Delete
+  border: 1px solid blue;*/
 
 
 }
