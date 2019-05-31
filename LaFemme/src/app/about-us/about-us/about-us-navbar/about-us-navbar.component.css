@@ -1,11 +1,15 @@
 /* navbar */
-nav a, nav, nav a:hover {
-  color: white;
+nav a, nav, nav a:hover, .navbar-toggler-icon {
+  color: white!important;
 
 }
 
+.navbar-toggler{
+  border-color: white;
+}
+
 nav, .nav-link {
-  background-color: rgb(60, 55, 73);
+  background-color: rgb(60, 55, 73) !important;
   font-size: 0.8rem;
   padding: 0.5rem;
 }
