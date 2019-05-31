@@ -1,4 +1,10 @@
-
+@media (max-width: 575.98px) {
+  .body-width{
+    max-width: 574.98px;
+    margin: 0;
+    padding:0;
+  }
+}
 
 main,
 header {
@@ -6,21 +12,21 @@ header {
 }
 
 p {
-  font-size: 10px;
+  font-size: 0.7rem;
 }
 
 h5 {
-  font-size: 11px;
+  font-size: 0.8rem;
 }
 
 h4 {
-  font-size: 12px;
+  font-size: 0.9rem;
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 1rem;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 1.1rem;
 }

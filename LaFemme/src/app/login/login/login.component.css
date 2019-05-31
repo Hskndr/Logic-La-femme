@@ -14,7 +14,11 @@
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     padding: 20px;
-    width: 90%!important;
+    width: 30rem!important;
+  }
+
+  span {
+    font-size: 0.7rem;
   }
 }
 
@@ -35,7 +39,11 @@
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     padding: 20px;
-    width: 80% !important;
+    width: 30rem!important;
+  }
+
+  span {
+    font-size: 0.7rem;
   }
 }
 
@@ -56,7 +64,11 @@
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     padding: 20px;
-    width: 55% !important;
+    width: 30rem!important;
+  }
+
+  span {
+    font-size: 0.7rem;
   }
 }
 
@@ -73,11 +85,16 @@
   }
 
   .body-width {
+
     background-color: white;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     padding: 20px;
-    width: 40% !important;
+    width: 30rem!important;
+  }
+
+  span {
+    font-size: 0.7rem;
   }
 }
 
@@ -94,15 +111,12 @@
   }
 
   .body-width {
+
     background-color: white;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     padding: 20px;
-    width: 30% !important;
-  }
-
-  form {
-    background-color: gray;
+    width: 30rem!important;
   }
 
   span {
