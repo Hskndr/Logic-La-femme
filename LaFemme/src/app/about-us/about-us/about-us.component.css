@@ -1,23 +1,135 @@
 
-/* main */
-main {
-  color: rgb(25, 26, 39);
-  background-color: white;
-  padding: 5px;
-}
-main p{
-  font-size: 0.8rem;
-}
-.three-img {
-  height: 10rem;
+@media (max-width: 575.98px) {
+
+  /* main */
+  main {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    padding: 5px;
+    width: 100vw;
+  }
+  main p{
+    font-size: 0.8rem;
+  }
+  .three-img {
+    height: 10rem;
+
+  }
+  .hidden{
+    display: none;
+  }
+
+  .two-img {
+    height: 8rem;
+  }
 
 
 }
 
-.two-img {
-  height: 13em;
-  margin: 1em 0em 1em 0em;
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* main */
+  main {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    padding: 5px;
+  }
+  main p{
+    font-size: 0.8rem;
+  }
+  .three-img {
+    height: 10rem;
+
+  }
+  .hidden{
+    display: none;
+  }
+
+  .two-img {
+    height: 8rem;
+  }
+
 }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* main */
+  main {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    padding: 5px;
+  }
+  main p{
+    font-size: 0.8rem;
+  }
+  .three-img {
+    height: 10rem;
+
+  }
+  .hidden{
+    display: none;
+  }
+
+  .two-img {
+    height: 13em;
+    margin: 1em 0em 1em 0em;
+  }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /* main */
+  main {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    padding: 5px;
+  }
+  main p{
+    font-size: 0.8rem;
+  }
+  .three-img {
+    height: 10rem;
+
+
+  }
+
+  .two-img {
+    height: 13em;
+    margin: 1em 0em 1em 0em;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  /* main */
+  main {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    padding: 5px;
+  }
+  main p{
+    font-size: 0.8rem;
+  }
+  .three-img {
+    height: 10rem;
+
+
+  }
+
+  .two-img {
+    height: 13em;
+    margin: 1em 0em 1em 0em;
+  }
+
+}
+
+
+
 
 
 

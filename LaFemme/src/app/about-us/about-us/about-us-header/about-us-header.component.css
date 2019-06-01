@@ -1,3 +1,73 @@
+
+
+@media (max-width: 575.98px) {
+  /* header "AboutUs"*/
+
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 5rem;
+    font-size: 1rem;
+    width: 100vw;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header a, header li, header a:hover, span {
+    font-size: 0.7rem;
+    color: white;
+  }
+  .last{
+    display: none;
+  }
+  /* logo */
+  #sub-img, .last li, .last a {
+    display: none;
+  }
+
+  #logo-text, p, span  {
+    display: none;
+  }
+  /* header "AboutUs"*/
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* header "AboutUs"*/
+
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 5rem;
+    font-size: 1rem;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header a, header li, header a:hover, span {
+    font-size: 0.7rem;
+    color: white;
+  }
+  .last{
+    display: none;
+  }
+  /* logo */
+  #sub-img, .last li, .last a {
+    display: none;
+  }
+
+  #logo-text, p, span  {
+    display: none;
+  }
+  /* header "AboutUs"*/
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
 /* header "AboutUs"*/
 
 #header, header {
@@ -7,7 +77,6 @@
   font-size: 1rem;
 }
 
-
 header img {
   height: 8rem;
 }
@@ -16,12 +85,12 @@ header a, header li, header a:hover, span {
   font-size: 0.7rem;
   color: white;
 }
-
+.last{
+  display: none;
+}
 /* logo */
-
-#sub-img {
-  height: 4rem;
-
+#sub-img, .last li, .last a {
+  display: none;
 }
 
 #logo-text {
@@ -30,4 +99,88 @@ header a, header li, header a:hover, span {
   top: 4.5rem;
 }
 
+  .resp{
+    display: none;
+  }
 /* header "AboutUs"*/
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* header "AboutUs"*/
+
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    font-size: 1rem;
+
+  }
+
+  header img {
+    height: 8rem;
+  }
+
+  header a, header li, header a:hover, span {
+    font-size: 0.7rem;
+    color: white;
+  }
+
+  /* logo */
+
+  #sub-img {
+    height: 4rem;
+
+  }
+
+  #logo-text {
+    position: absolute;
+    left: 11rem;
+    top: 4.5rem;
+  }
+  .resp{
+    display: none;
+  }
+
+  /* header "AboutUs"*/
+}
+
+
+@media (min-width: 1200px) {
+  /* header "AboutUs"*/
+
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    font-size: 1rem;
+  }
+
+
+  header img {
+    height: 8rem;
+  }
+
+  header a, header li, header a:hover, span {
+    font-size: 0.7rem;
+    color: white;
+  }
+
+  /* logo */
+
+  #sub-img {
+    height: 4rem;
+
+  }
+
+  #logo-text {
+    position: absolute;
+    left: 11rem;
+    top: 4.5rem;
+  }
+
+  .resp{
+    display: none;
+  }
+
+  /* header "AboutUs"*/
+}

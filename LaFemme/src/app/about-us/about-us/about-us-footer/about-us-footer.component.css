@@ -1,25 +1,155 @@
-/* footer */
-footer {
-  color: white;
-  background-color: rgb(25, 26, 39);
+
+@media (max-width: 575.98px) {
+
+  /* footer */
+  footer {
+    color: white;
+    background-color: rgb(25, 26, 39);
+    width: 100vw;
+  }
+
+  .footer-img {
+    display: none;
+  }
+
+  footer h5 {
+    font-size: 2em;
+    font-style: italic;
+  }
+
+  .mini-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .mid-icon, p, .hidden {
+    display: none;
+  }
+
 }
 
-.footer-img {
-  height: 7em;
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* footer */
+  footer {
+    color: white;
+    background-color: rgb(25, 26, 39);
+  }
+
+  .footer-img {
+    display: none;
+  }
+
+  footer h5 {
+    font-size: 2em;
+    font-style: italic;
+  }
+
+  .mini-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .mid-icon, p, .hidden {
+    display: none;
+  }
+
+  /* footer */
+
 }
 
-footer h5 {
-  font-size: 2em;
-  font-style: italic;
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* footer */
+  footer {
+    color: white;
+    background-color: rgb(25, 26, 39);
+  }
+
+  .footer-img {
+  display: none;
+  }
+
+  footer h5 {
+    font-size: 2em;
+    font-style: italic;
+  }
+
+  .mini-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .mid-icon {
+    display: none;
+  }
+
+  /* footer */
+
 }
 
-.mini-icon {
-  width: 1.2em;
-  height: 1.2em;
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /* footer */
+  footer {
+    color: white;
+    background-color: rgb(25, 26, 39);
+  }
+
+  .footer-img {
+    height: 7em;
+  }
+
+  footer h5 {
+    font-size: 2em;
+    font-style: italic;
+  }
+
+  .mini-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .mid-icon {
+    height: 1.5em;
+  }
+
+  /* footer */
+
 }
 
-.mid-icon {
-  height: 1.5em;
+
+@media (min-width: 1200px) {
+
+  /* footer */
+  footer {
+    color: white;
+    background-color: rgb(25, 26, 39);
+  }
+
+  .footer-img {
+    height: 7em;
+  }
+
+  footer h5 {
+    font-size: 2em;
+    font-style: italic;
+  }
+
+  .mini-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .mid-icon {
+    height: 1.5em;
+  }
+
+  /* footer */
+
 }
 
-/* footer */
+
