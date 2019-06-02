@@ -1,6 +1,9 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12 col-lg-12 col-md-12 sol-sm-12">
+
+      <p class="border">Create Member</p>
+
       <form [formGroup]="memberForm" (ngSubmit)="saveMember(memberForm.value)">
         <div class="form-group">
           <label>Name</label>
@@ -14,7 +17,8 @@
         <div class="form-group">
           <label>Email</label>
           <input type="text" class="form-control" placeholder="Email" formControlName="email" required>
-          <div class="alert-danger" *ngIf="!memberForm.controls['email'].valid && (memberForm.controls['email'].touched)">
+          <div class="alert-danger"
+               *ngIf="!memberForm.controls['email'].valid && (memberForm.controls['email'].touched)">
             <div [hidden]="!memberForm.controls['email'].errors.required">
               Description is required.
             </div>

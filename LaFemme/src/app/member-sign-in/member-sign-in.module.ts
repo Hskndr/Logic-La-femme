@@ -29,7 +29,8 @@ import {ReadComponent} from './member-sign-in/membercrud/read/read.component';
     ViewComponent,
     CreateComponent,
     UpdateComponent,
-    ReadComponent
+    ReadComponent,
+    SignInFooterComponent
   ],
   imports: [
     CommonModule,

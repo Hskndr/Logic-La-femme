@@ -1,7 +1,7 @@
 <div class="body-back">
 
   <div class="body-width container border">
-    <form>
+    <form (submit)="loginUser($event)">
       <div class="form-group">
         <h3 class="text-center">Login</h3>
         <label for="username">Username</label>
@@ -10,17 +10,18 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
       </div>
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="rememberme">
         <label class="form-check-label" for="rememberme">Remember Me</label>
       </div>
-      <button routerLink="/home" type="submit" class="btn btn-block btn-primary">LOGIN</button>
+      <button type="submit" value="submit" class="btn btn-block btn-primary">LOGIN</button>
       <div class="form-group form-check text-center">
     <span>
       <a href="#">Lost Login?</a>
+      <a routerLink="admin">admin</a>
     </span>
       </div>
 
