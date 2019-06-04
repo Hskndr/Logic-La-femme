@@ -1,0 +1,226 @@
+
+@media (max-width: 575.98px) {
+  /* header */
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 1em;
+    position: relative;
+    text-align: center;
+  }
+
+  .title  {
+    position: absolute;
+    text-align: center;
+    margin-left: 5rem;
+    width: 30rem!important;
+  }
+  .secret p, .secret h3, .secret h6 {
+    display: none;
+  }
+
+  header h2 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+
+  header img {
+    height: 8em;
+    display: none;
+  }
+  header div div:last-child{
+    margin-left: -1rem;
+  }
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* header */
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 1em;
+    position: relative;
+    text-align: center;
+  }
+
+   .title  {
+    position: absolute;
+     text-align: center;
+     margin-left: 5rem;
+      width: 30rem!important;
+  }
+  .secret p, .secret h3, .secret h6 {
+    display: none;
+  }
+
+  header h2 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+
+  header img {
+    height: 8em;
+    display: none;
+  }
+  header div div:last-child{
+    margin-left: -1rem;
+  }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* header */
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 1em;
+    background-image: url('../../../../assets/image/LF02.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+  }
+
+  header h2 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+
+  header img {
+    height: 8em;
+  }
+  header div div:last-child{
+    margin-left: -1rem;
+  }
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /* header */
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 1em;
+    background-image: url('../../../../assets/image/LF02.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+  }
+
+  header h2 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+
+  header img {
+    height: 8em;
+  }
+  header div div:last-child{
+    margin-left: -1rem;
+  }
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+  /* header */
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 1em;
+    background-image: url('../../../../assets/image/LF02.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+  }
+
+  header h2 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+
+  header img {
+    height: 8em;
+  }
+  header div div:last-child{
+    margin-left: -1rem;
+  }
+
+
+}
+
+

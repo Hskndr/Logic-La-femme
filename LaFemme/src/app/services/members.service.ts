@@ -1,3 +1,7 @@
+
+
+/* Backend*/
+
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
@@ -30,5 +34,6 @@ export class MembersService {
   deleteMember(id) {
     return this.http.get(this.url + 'delete.php?id=' + id);
   }
+
 
 }

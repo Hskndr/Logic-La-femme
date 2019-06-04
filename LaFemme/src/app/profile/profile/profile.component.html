@@ -1,17 +1,7 @@
 <div class="body-back">
   <div class="body-width container">
-    <header class=" sticky-top row d-flex justify-content-around">
-      <div class="col-md-5 ">
-        <img src="assets/image/LF289.png" class="rounded float-left">
-        <p class="h6" id="logo-text"> Fantasies.......<br>Everybody has One!</p>
-      </div>
-      <div class="col-md-5 p-3">
-        <h1 class="text-center h1"> Profile </h1>
-        <p class="text-center font-italic h6"> Private Affairs Club</p>
-        <p class="text-center h6"> Private Affairs Club, our members find <br> Snazzy Men & Women</p>
-      </div>
-      <div class="col-md-2 pt-1">
-      </div>
+    <header class="sticky-top">
+     <app-profile-header></app-profile-header>
     </header>
 
 
@@ -22,6 +12,7 @@
 
       <!-- REPLACE THE DIRECTIVE *ngFor they be show the selected member -->
       <section class="container-fluid section1 d-flex justify-content-around border" *ngFor="let member of members">
+<!--      <section class="container-fluid section1 d-flex justify-content-around border" *ngFor="let member of members">-->
         <div class="col-md-3 border p-1 d-flex flex-column">
           <div class=" text-center mt-3">
             <img id="profile-pic" class="img-thumbnail" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
@@ -121,44 +112,8 @@
         </div>
       </section>
     </main>
-    <p>{{message}}</p>
-    <footer class="row ">
-      <div class="col-10 d-flex justify-content-around ">
-
-        <div class="row ">
-          <div class="col-3">
-            <p class=" h4 pt-3 font-italic "> A Touch of <br> Class</p>
-          </div>
-          <div class="col-9 d-flex flex-wrap pt-3 ">
-            <div>
-              <img class="mini-icon" src="assets/image/icon/icon11.png">
-              <small class="">Safe, Secure and Anonymous</small>
-            </div>
-            <div>
-              <img class="mini-icon" src="assets/image/icon/icon11.png">
-              <small class="">Real People, we verify Profiles</small>
-            </div>
-            <div>
-              <img class="mini-icon" src="assets/image/icon/icon11.png">
-              <small class="">Designed Specially for Extramarital Encounters</small>
-            </div>
-          </div>
-
-          <div class="row d-flex col-12 justify-content-between">
-            <small class="pl-3">Secret desires ignites the circuits of our highest potential to enjoy our
-              lives as we see it. Life is too short, enjoy every moment of it.
-            </small>
-
-          </div>
-
-        </div>
-      </div>
-      <div class="col-2 d-flex align-items-baseline ">
-        <img class=" mid-icon mr-2" src="assets/image/icon/icon10.png">
-        <img class="footer-img float-right" src="assets/image/LF37.jpg">
-      </div>
-
-    </footer>
+   <!-- <p>{{message}}</p>-->
+    <app-about-us-footer></app-about-us-footer>
 
   </div>
 </div>

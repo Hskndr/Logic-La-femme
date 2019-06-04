@@ -1,0 +1,300 @@
+
+@media (max-width: 575.98px) {
+
+
+  .body-width{
+    min-height: 100vh;
+    max-width: 100vw;
+  }
+
+  main {
+    background-color: rgb(32, 18, 74);
+
+
+  }
+
+  section {
+    color: rgb(33, 21, 60);
+    background-color: white;
+    padding-top: 2.5px;
+  }
+
+  #type-rel {
+    border: 2px solid rgb(33, 21, 60);
+    height: 8em;
+    margin: 3px;
+
+
+  }
+  .genImg{
+    height: 7em;
+    display: none;
+  }
+  .btn {
+    font-size: 12px;
+  }
+
+  #select-pic-men {
+    background-color: gray;
+    height: 6em;
+  }
+  #select-pic-women {
+    background-color: #dc127b;
+    color: white;
+    height: 6em;
+  }
+
+  .content-avatar{
+    min-height: 19.8rem;
+    margin: 0.5rem;
+    align-items: center;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
+
+  }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+  .body-width{
+    min-height: 100vh;
+  }
+
+  main {
+    background-color: rgb(32, 18, 74);
+
+  }
+
+  section {
+    color: rgb(33, 21, 60);
+    background-color: white;
+    padding-top: 2.5px;
+  }
+
+  #type-rel {
+    border: 2px solid rgb(33, 21, 60);
+    height: 8em;
+    margin: 3px;
+
+
+  }
+  .genImg{
+    height: 7em;
+    display: none;
+  }
+  .btn {
+    font-size: 12px;
+  }
+
+  #select-pic-men {
+    background-color: gray;
+    height: 6em;
+  }
+  #select-pic-women {
+    background-color: #dc127b;
+    color: white;
+    height: 6em;
+  }
+
+  .content-avatar{
+    min-height: 19.8rem;
+    margin: 0.5rem;
+    align-items: center;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
+
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+  .body-width{
+    min-height: 100vh;
+  }
+
+  main {
+    background-color: rgb(32, 18, 74);
+
+  }
+
+  section {
+    color: rgb(33, 21, 60);
+    background-color: white;
+    padding-top: 2.5px;
+  }
+
+  #type-rel {
+    border: 2px solid rgb(33, 21, 60);
+    height: 8em;
+    margin: 3px;
+
+
+  }
+  .genImg{
+    height: 7em;
+    display: none;
+  }
+  .btn {
+    font-size: 12px;
+  }
+
+  #select-pic-men {
+    background-color: gray;
+    height: 6em;
+  }
+  #select-pic-women {
+    background-color: #dc127b;
+    color: white;
+    height: 6em;
+  }
+
+  .content-avatar{
+    min-height: 19.8rem;
+    margin: 0.5rem;
+    align-items: center;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
+    margin: 0.5rem;
+
+  }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+  .body-width{
+    min-height: 100vh;
+  }
+
+  main {
+    background-color: rgb(32, 18, 74);
+
+  }
+
+  section {
+    color: rgb(33, 21, 60);
+    background-color: white;
+    padding-top: 2.5px;
+  }
+
+  #type-rel {
+    border: 2px solid rgb(33, 21, 60);
+    height: 8em;
+    margin: 3px;
+
+
+  }
+  .genImg{
+    height: 7em;
+  }
+  .btn {
+    font-size: 12px;
+  }
+
+  #select-pic-men {
+    background-color: gray;
+    height: 6em;
+  }
+  #select-pic-women {
+    background-color: #dc127b;
+    color: white;
+    height: 6em;
+  }
+
+  .content-avatar{
+    min-height: 19.8rem;
+    margin: 0.5rem;
+    align-items: center;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
+
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+
+  .body-width{
+    min-height: 100vh;
+  }
+
+  main {
+    background-color: rgb(32, 18, 74);
+
+  }
+
+  section {
+    color: rgb(33, 21, 60);
+    background-color: white;
+    padding-top: 2.5px;
+  }
+
+  #type-rel {
+    border: 2px solid rgb(33, 21, 60);
+    height: 8em;
+    margin: 3px;
+
+
+  }
+  .genImg{
+    height: 7em;
+  }
+  .btn {
+    font-size: 12px;
+  }
+
+  #select-pic-men {
+    background-color: gray;
+    height: 6em;
+  }
+  #select-pic-women {
+    background-color: #dc127b;
+    color: white;
+    height: 6em;
+  }
+
+  .content-avatar{
+    min-height: 19.8rem;
+    margin: 0.5rem;
+    align-items: center;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
+
+  }
+
+}
+
+
+
+
+

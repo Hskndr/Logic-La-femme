@@ -1,37 +1,4 @@
-/* header "Dating"*/
 
-#header, header {
-  background-color: black;
-  color: white;
-  height: 10em;
-}
-
-header p {
-  font-size: 1rem;
-}
-
-header img {
-  height: 8rem;
-}
-
-header a, header li, header a:hover {
-  font-size: 12px;
-  color: white;
-}
-
-/* logo */
-
-#sub-img {
-  height: 4em;
-}
-
-#logo-text {
-  position: absolute;
-  right: 3.3rem;
-  top: 4.3rem;
-}
-
-/* header "Dating"*/
 
 main {
   background-color: rgb(32, 21, 61);
@@ -130,32 +97,3 @@ main {
 
 }
 
-/* footer */
-footer {
-  color: white;
-  background-color: rgb(25, 26, 39);
-}
-
-.footer-img {
-  height: 7em;
-}
-
-footer h5 {
-  font-size: 1.5em;
-  font-style: italic;
-}
-
-footer small {
-  font-size: 10px;
-}
-
-.mini-icon {
-  width: 1.2em;
-  height: 1.2em;
-}
-
-.mid-icon {
-  height: 1.5em;
-}
-
-/* footer */

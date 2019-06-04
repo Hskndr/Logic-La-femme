@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 // Services
-import {MembersService} from '../../services/members.service';
+import {MembersFakeService} from '../../services/members-fake.service';
 
 
 @Component({
@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
   public typeRelation = 'Attached Female Seeking Male';
   message: string;
   members: any;
-  constructor( private membersService: MembersService) { }
+  constructor( private membersService: MembersFakeService) { }
 
   ngOnInit() {
     this.members = this.membersService.getMembers();
