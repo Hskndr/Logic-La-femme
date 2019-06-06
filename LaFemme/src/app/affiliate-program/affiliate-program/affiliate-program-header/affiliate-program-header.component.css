@@ -1,0 +1,271 @@
+@media (max-width: 575.98px) {
+
+  /* header "Affiliate Program"*/
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    font-size: 1rem;
+  }
+
+  header img {
+    height: 8rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  header a, header li, header a:hover {
+    font-size: 0.8rem;
+    color: white;
+  }
+
+  .first-column {
+    margin-left: -2rem;
+    display: none;
+  }
+
+  .second-column {
+    margin: auto;
+    margin-top: 0;
+  }
+
+  .second-column p {
+    text-align: center!important;
+    width: 100%!important;
+  }
+
+  .third-column {
+    display: none;
+  }
+
+  /* logo */
+  #sub-img {
+    height: 4em;
+  }
+
+  #logo-text {
+    position: absolute;
+    left: 12rem;
+    top: 4.5rem;
+    width: 10rem!important;
+  }
+
+  .float {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* header "Affiliate Program"*/
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* header "Affiliate Program"*/
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    font-size: 1rem;
+  }
+
+  header img {
+    height: 8rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  header a, header li, header a:hover {
+    font-size: 0.8rem;
+    color: white;
+  }
+
+  .first-column {
+    margin-left: -2rem;
+    display: none;
+  }
+
+  .second-column {
+    margin: auto;
+    margin-top: 0;
+  }
+
+  .second-column p {
+    text-align: center!important;
+    width: 100%!important;
+  }
+
+  .third-column {
+    display: none;
+  }
+
+  /* logo */
+  #sub-img {
+    height: 4em;
+  }
+
+  #logo-text {
+    position: absolute;
+    left: 12rem;
+    top: 4.5rem;
+    width: 10rem!important;
+  }
+
+  .float {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* header "Affiliate Program"*/
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* header "Affiliate Program"*/
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    font-size: 1rem;
+  }
+
+  header img {
+    height: 8rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  header a, header li, header a:hover {
+    font-size: 0.8rem;
+    color: white;
+  }
+
+  .first-column {
+    margin-left: -2rem;
+  }
+
+  .second-column {
+    margin-right: -2rem;
+  }
+
+  .second-column p {
+    position: absolute;
+    width: 20rem!important;
+    margin-left: -3rem;
+  }
+
+  .third-column {
+    display: none;
+  }
+
+  /* logo */
+  #sub-img {
+    height: 4em;
+  }
+
+  #logo-text {
+    position: absolute;
+    left: 12rem;
+    top: 4.5rem;
+    width: 10rem!important;
+  }
+
+  .float {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* header "Affiliate Program"*/
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /* header "Affiliate Program"*/
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    font-size: 1rem;
+  }
+
+  header img {
+    height: 8rem;
+  }
+
+  header a, header li, header a:hover {
+    font-size: 0.8rem;
+    color: white;
+  }
+
+  /* logo */
+  #sub-img {
+    height: 4em;
+  }
+
+  #logo-text {
+    position: absolute;
+    right: 3rem;
+    top: 4.5rem;
+  }
+
+  .float {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* header "Affiliate Program"*/
+
+}
+
+@media (min-width: 1200px) {
+
+  /* header "Affiliate Program"*/
+  #header, header {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    font-size: 1rem;
+  }
+
+  header img {
+    height: 8rem;
+  }
+
+  header a, header li, header a:hover {
+    font-size: 0.8rem;
+    color: white;
+  }
+
+  /* logo */
+  #sub-img {
+    height: 4em;
+  }
+
+  #logo-text {
+    position: absolute;
+    right: 3rem;
+    top: 4.5rem;
+  }
+
+  .float {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* header "Affiliate Program"*/
+
+}
+
+
+
