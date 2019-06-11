@@ -1,73 +1,15 @@
-/* header "MailBox"*/
-header {
-  background-color: black;
-  color: white;
-  height: 8rem;
 
-}
-header p {
-  font-size: 0.72rem;
-}
-header span {
-  font-size: 0.72rem;
-}
+@media (max-width: 575.98px) {
 
-header img {
-  height: 7rem;
-}
-
-/* logo */
-
-#sub-img {
-  height: 4rem;
-}
-
-#logo-text {
-  position: absolute;
-  right: 45px;
-  top: 60px;
-}
-
-/* header "MailBox"*/
-
-
-main {
+  .body-width{
+    max-width: 100vw;
+  }
+  main {
   border-top: 2px solid white;
   color: white;
 
 }
 
-/*nav top*/
-nav {
-  background-color: black;
-}
-
-/*Buttons top*/
-
-.bttn-top {
-  width: 50px !important;
-  height: 45px !important;
-
-}
-
-.bttn-top img {
-  width: 1em; /*put icons cdn*/
-  height: 1em;
-
-}
-
-.bttn-top span {
-  font-size: 10px;
-}
-
-/*Buttons Logout*/
-
-.btn-logout {
-  position: absolute;
-  right: 0;
-  font-size: 12px;
-  margin-right: 24px;
-}
 
 /*sub-nav*/
 .sub-nav {
@@ -107,23 +49,6 @@ nav {
   background-color: rgb(40,50,54);
 }
 
-.btn-nav-lat {
-  background-color: rgb(40, 50, 54);
-  border-color: rgb(40, 50, 54);
-  color: white;
-  text-align: left;
-  height: 30px;
-}
-
-.btn-nav-lat:hover{
-  text-decoration-line: underline;
-}
-
-.btn-nav-lat img {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 1em;
-}
 
 /*nav-lateral*/
 
@@ -137,35 +62,271 @@ nav {
   max-height: 50em; /* review */
 }
 /*box-mail*/
-.box-mail {
-  background-color: rgb(30, 35, 40);
-  height: 7em;
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  main {
+  border-top: 2px solid white;
   color: white;
-  font-size: 9px;
-  border-bottom: 2px solid  rgb(22,27,31);
 
 }
-.box-mail-avatar {
-  width: 2.5em;
-  height: 2.5em;
-}
 
-.box-mail-notification{
-  width: 1.5em;
-  height: 1.5em;
-}
 
-.box-mail span, .box-mail time {
+/*sub-nav*/
+.sub-nav {
+  background-color: black;
   font-size: 11px;
-
+  height: 30px;
 }
 
-.box-mail time{
-  color: orange;
+.sub-nav-right {
+  background-color: rgb(50, 80, 110);
 }
-.mail-icons {
+
+.bttn-top-select {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   width: 1.5em;
   height: 1.5em;
-  margin-right: 1em;
 }
+
+
+.bttn-top-select img {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+/*sub-nav*/
+
+/*mail-container*/
+
+.mail-content {
+  max-height: 50em; /* review */
+}
+
+/*nav-lateral*/
+.nav-lateral{
+  background-color: rgb(40,50,54);
+}
+
+
+/*nav-lateral*/
+
+
+/*Messages*/
+
+/*box-content*/
+.box-content{
+  background-color: rgb(22,27,31);
+  overflow: scroll;
+  max-height: 50em; /* review */
+}
+/*box-mail*/
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  main {
+  border-top: 2px solid white;
+  color: white;
+
+}
+
+
+/*sub-nav*/
+.sub-nav {
+  background-color: black;
+  font-size: 11px;
+  height: 30px;
+}
+
+.sub-nav-right {
+  background-color: rgb(50, 80, 110);
+}
+
+.bttn-top-select {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+.bttn-top-select img {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+/*sub-nav*/
+
+/*mail-container*/
+
+.mail-content {
+  max-height: 50em; /* review */
+}
+
+/*nav-lateral*/
+.nav-lateral{
+  background-color: rgb(40,50,54);
+}
+
+
+/*nav-lateral*/
+
+
+/*Messages*/
+
+/*box-content*/
+.box-content{
+  background-color: rgb(22,27,31);
+  overflow: scroll;
+  max-height: 50em; /* review */
+}
+/*box-mail*/
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  main {
+  border-top: 2px solid white;
+  color: white;
+
+}
+
+
+/*sub-nav*/
+.sub-nav {
+  background-color: black;
+  font-size: 11px;
+  height: 30px;
+}
+
+.sub-nav-right {
+  background-color: rgb(50, 80, 110);
+}
+
+.bttn-top-select {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+.bttn-top-select img {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+/*sub-nav*/
+
+/*mail-container*/
+
+.mail-content {
+  max-height: 50em; /* review */
+}
+
+/*nav-lateral*/
+.nav-lateral{
+  background-color: rgb(40,50,54);
+}
+
+
+/*nav-lateral*/
+
+
+/*Messages*/
+
+/*box-content*/
+.box-content{
+  background-color: rgb(22,27,31);
+  overflow: scroll;
+  max-height: 50em; /* review */
+}
+/*box-mail*/
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+  main {
+  border-top: 2px solid white;
+  color: white;
+
+}
+
+
+/*sub-nav*/
+.sub-nav {
+  background-color: black;
+  font-size: 11px;
+  height: 30px;
+}
+
+.sub-nav-right {
+  background-color: rgb(50, 80, 110);
+}
+
+.bttn-top-select {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+.bttn-top-select img {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+/*sub-nav*/
+
+/*mail-container*/
+
+.mail-content {
+  max-height: 50em; /* review */
+}
+
+/*nav-lateral*/
+.nav-lateral{
+  background-color: rgb(40,50,54);
+}
+
+
+/*nav-lateral*/
+
+
+/*Messages*/
+
+/*box-content*/
+.box-content{
+  background-color: rgb(22,27,31);
+  overflow: scroll;
+  max-height: 50em; /* review */
+}
+/*box-mail*/
+
+
+}
+
+
+
+
 

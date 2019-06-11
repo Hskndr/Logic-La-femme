@@ -15,8 +15,18 @@
     margin: 2px;
     border: 1px solid rgb(25, 26, 39);
     display: block;
+  }
+  .section1 div {
+    width: 95vw;
+    margin-left: -6.3rem;
+  }
+
+  .h3 {
+    font-size: 1.3rem;
+
     width: 100%;
   }
+
   .img-thumbnail{
     border: none;
   }
@@ -30,11 +40,22 @@
     background-image: url('../../../assets/image/LF40.jpg');
     background-repeat: no-repeat;
     background-size:contain;
-    height: 13.5em;
+    height: 7.5em;
     margin-top: 1em;
     color: white;
     padding-top: 1em;
     width: 100%;
+  }
+
+  .section2 .h2{
+    font-size: 1rem;
+    margin-bottom: 0;
+
+  }
+
+  .section2 .h5 {
+    font-size: 0.7rem!important;
+    width: 10rem;
   }
 
   .section3 {
@@ -46,25 +67,46 @@
   .section3 img {
     height: 6em;
     color: rgb(25, 26, 39);
+    display: none;
+  }
+  .section3 p {
+    display: none;
+  }
+
+  .section3-div{
+    width: 110%!important;
+    text-align: justify;
+
   }
 
   .section4 {
-    margin: 1em 0em 0em 1em;
+    margin: 1em 0em 0em 0.5em;
     color: rgb(25, 26, 39);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section4 p{
+
+    width: 100vw;
+    margin-left: -1rem;
   }
 
   .section4 li {
     margin: 1em 0em 1em 0em;
+    width: 85vw;
   }
 
   .section4 img {
     height: 12em;
+    align-items: center;
   }
 
   .section5 {
     background-color: rgb(60, 55, 73);
     padding: 1em 2em 1em 2em;
     color: white;
+    text-align: justify;
   }
 
   .section5 p {
@@ -73,8 +115,14 @@
   }
 
   .section5 img {
-    height: 9.5em;
+
+    display: none;
   }
+
+.contentButtons div {
+  display: flex;
+  flex-direction: column;
+}
 
   .badge {
     width: 7rem;
@@ -96,8 +144,18 @@
     margin: 2px;
     border: 1px solid rgb(25, 26, 39);
     display: block;
+  }
+  .section1 div {
+    width: 95vw;
+    margin-left: -6.3rem;
+  }
+
+  .h3 {
+    font-size: 1.3rem;
+
     width: 100%;
   }
+
   .img-thumbnail{
     border: none;
   }
@@ -111,11 +169,22 @@
     background-image: url('../../../assets/image/LF40.jpg');
     background-repeat: no-repeat;
     background-size:contain;
-    height: 13.5em;
+    height: 7.5em;
     margin-top: 1em;
     color: white;
     padding-top: 1em;
     width: 100%;
+  }
+
+  .section2 .h2{
+    font-size: 1rem;
+    margin-bottom: 0;
+
+  }
+
+  .section2 .h5 {
+    font-size: 0.7rem!important;
+    width: 10rem;
   }
 
   .section3 {
@@ -127,25 +196,47 @@
   .section3 img {
     height: 6em;
     color: rgb(25, 26, 39);
+    display: none;
+  }
+  .section3 p {
+    display: none;
+  }
+
+  .section3-div{
+    width: 110%!important;
+    text-align: justify;
+
   }
 
   .section4 {
-    margin: 1em 0em 0em 1em;
+    margin: 1em 0em 0em 0.5em;
     color: rgb(25, 26, 39);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section4 p{
+
+    width: 100vw;
+    margin-left: -1rem;
   }
 
   .section4 li {
     margin: 1em 0em 1em 0em;
+    width: 65vw;
+    border: 1px solid red;
   }
 
   .section4 img {
     height: 12em;
+    align-items: center;
   }
 
   .section5 {
     background-color: rgb(60, 55, 73);
     padding: 1em 2em 1em 2em;
     color: white;
+    text-align: justify;
   }
 
   .section5 p {
@@ -154,12 +245,19 @@
   }
 
   .section5 img {
-    height: 9.5em;
+
+    display: none;
+  }
+
+  .contentButtons div {
+    display: flex;
+    flex-direction: column;
   }
 
   .badge {
     width: 7rem;
   }
+
 }
 
 
@@ -241,6 +339,7 @@
   .badge {
     width: 7rem;
   }
+
 }
 
 

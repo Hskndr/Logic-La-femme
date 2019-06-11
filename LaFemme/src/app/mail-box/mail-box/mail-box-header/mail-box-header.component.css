@@ -1,0 +1,190 @@
+
+@media (max-width: 575.98px) {
+  /* header "MailBox"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8rem;
+
+  }
+  header p {
+    font-size: 0.72rem;
+  }
+  header span {
+    font-size: 0.72rem;
+  }
+
+  header img, h6, p, span {
+    height: 7rem;
+    display: none!important;
+  }
+
+  h3{
+    font-size: 2rem!important;
+  }
+  /* logo */
+
+  #sub-img {
+    height: 4rem;
+  }
+
+  #logo-text {
+    position: absolute;
+    right: 45px;
+    top: 60px;
+  }
+
+  /* header "MailBox"*/
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* header "MailBox"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8rem;
+
+  }
+  header p {
+    font-size: 0.72rem;
+  }
+  header span {
+    font-size: 0.72rem;
+  }
+
+  header img, h6, p, span {
+    height: 7rem;
+    display: none!important;
+  }
+
+  h3{
+    font-size: 2rem!important;
+  }
+  /* logo */
+
+  #sub-img {
+    height: 4rem;
+  }
+
+  #logo-text {
+    position: absolute;
+    right: 45px;
+    top: 60px;
+  }
+
+  /* header "MailBox"*/
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* header "MailBox"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8rem;
+
+  }
+  header p {
+    font-size: 0.72rem;
+  }
+  header span {
+    font-size: 0.72rem;
+  }
+
+  header img {
+    height: 7rem;
+  }
+  h3{
+    font-size: 1.5rem!important;
+  }
+  h6{
+    font-size: 0.9rem!important;
+  }
+
+  /* logo */
+
+  #sub-img {
+    height: 4rem;
+  }
+
+  #logo-text {
+    position: absolute;
+    right: 45px;
+    top: 60px;
+  }
+
+  /* header "MailBox"*/
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* header "MailBox"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8rem;
+
+  }
+  header p {
+    font-size: 0.72rem;
+  }
+  header span {
+    font-size: 0.72rem;
+  }
+
+  header img {
+    height: 7rem;
+  }
+
+  /* logo */
+
+  #sub-img {
+    height: 4rem;
+  }
+
+  #logo-text {
+    position: absolute;
+    right: 45px;
+    top: 60px;
+  }
+
+  /* header "MailBox"*/
+}
+
+
+@media (min-width: 1200px) {
+  /* header "MailBox"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8rem;
+
+  }
+  header p {
+    font-size: 0.72rem;
+  }
+  header span {
+    font-size: 0.72rem;
+  }
+
+  header img {
+    height: 7rem;
+  }
+
+  /* logo */
+
+  #sub-img {
+    height: 4rem;
+  }
+
+  #logo-text {
+    position: absolute;
+    right: 45px;
+    top: 60px;
+  }
+
+  /* header "MailBox"*/
+}
+
+

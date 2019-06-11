@@ -1,0 +1,24 @@
+/*nav-lateral*/
+.nav-lateral{
+  background-color: rgb(40,50,54);
+}
+
+.btn-nav-lat {
+  background-color: rgb(40, 50, 54);
+  border-color: rgb(40, 50, 54);
+  color: white;
+  text-align: left;
+  height: 30px;
+}
+
+.btn-nav-lat:hover{
+  text-decoration-line: underline;
+}
+
+.btn-nav-lat img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+}
+
+/*nav-lateral*/

@@ -1,0 +1,31 @@
+/*nav top*/
+nav {
+  background-color: black;
+}
+
+/*Buttons top*/
+
+.bttn-top {
+  width: 50px !important;
+  height: 45px !important;
+
+}
+
+.bttn-top img {
+  width: 1em; /*put icons cdn*/
+  height: 1em;
+
+}
+
+.bttn-top span {
+  font-size: 10px;
+}
+
+/*Buttons Logout*/
+
+.btn-logout {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  margin-right: 24px;
+}

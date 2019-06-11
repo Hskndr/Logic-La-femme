@@ -1,0 +1,40 @@
+/*Messages*/
+
+/*box-content*/
+.box-content{
+  background-color: rgb(22,27,31);
+  overflow: scroll;
+  max-height: 50em; /* review */
+}
+/*box-mail*/
+.box-mail {
+  background-color: rgb(30, 35, 40);
+  height: 7em;
+  color: white;
+  font-size: 9px;
+  border-bottom: 2px solid  rgb(22,27,31);
+
+}
+.box-mail-avatar {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.box-mail-notification{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.box-mail span, .box-mail time {
+  font-size: 11px;
+
+}
+
+.box-mail time{
+  color: orange;
+}
+.mail-icons {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+}
