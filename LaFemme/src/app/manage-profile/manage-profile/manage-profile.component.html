@@ -1,29 +1,13 @@
 <div class="body-back">
   <div class="body-width container">
     <!-- Header "Manage Profile"-->
-    <header class="row sticky-top">
-      <div class="col-md-1">
-        <img src="assets/image/LF28.png" class="rounded float-left" alt="image">
-      </div>
-
-      <div class="col-md-3 pt-1 pl-5 ">
-        <p class="h3 mb-0"> La Femme </p>
-        <p class="ml-3 ">Private Affairs Club</p>
-        <p class="float-left m-0 h7">Here you'll find your person that meets every fantasy and desire </p>
-      </div>
-
-      <div class="col-md-5 text-center mt-3">
-        <p class="h5 mt-3"> MANAGE PROFILE </p>
-        <p class="h5"> COMMAND & CONTROL CENTER </p>
-      </div>
-      <div class="col-md-3">
-        <img src="assets/image/LF29.png" class="rounded float-right" alt="image">
-      </div>
-    </header>
-    <!-- Header "Manage Profile"-->
+    <div class=" sticky-top">
+     <app-manage-profile-header></app-manage-profile-header>
+    </div>
+    <!--  Header "Manage Profile"-->
 
     <main class="row">
-      <div class=" container text-center">
+      <div class="firstChild container text-center">
         <p class="h6 pt-3">Secret desires ignites the
           circuits of our highest potential to enjoy our lives as we see it.<br> Life is too short, enjoy
           every
@@ -33,7 +17,7 @@
 
       <section class="row section1 border p-1">
 
-        <div class="w-50 p-1  ">
+        <div class="sectionsBoth w-50 p-1  ">
           <div>
             <div class=" htop  d-flex ">
               <h5 class="pr-4">Welcome: </h5>
@@ -56,7 +40,7 @@
                 Profile
               </button>
               <button type="button" class="text-left btn btn-secondary btn-lg btn-block">My Account</button>
-              <button routerLink="/manageProfilr" type="button" class="text-left btn btn-secondary btn-lg btn-block">Manage
+              <button routerLink="/manageProfile" type="button" class="text-left btn btn-secondary btn-lg btn-block">Manage
                 Profile
               </button>
               <button type="button" class="text-left btn btn-secondary btn-lg btn-block">Change Profile
@@ -67,8 +51,8 @@
         </div>
 
 
-        <div class="w-50 p-1 ">
-          <div class=" htop ">
+        <div class="sectionsBoth w-50 p-1 ">
+          <div class=" htop d-flex">
             <h5>View relevant information</h5>
           </div>
           <div class="p-1 ">
@@ -99,7 +83,7 @@
 
       </section>
 
-      <div class="row section2 justify-content-end m-2">
+      <div class="buttonContent">
         <button routerLink="/creditPlan" class=" btnrimary btn-lg btn-secondary">
           <img src="assets/image/LF34.jpg" alt=""> Buy Credits
         </button>
@@ -107,24 +91,11 @@
 
       <section class=" row section2 border p-1">
 
-        <div class="col-6 p-1 border">
-          <div class="d-flex p-2 htop ">
-            <h5>Contacts</h5>
+        <div class="col-lg-6 col-md-6 col-sm-12 p-1 border">
+          <div class="d-flex htop ">
+            <h5 >Contacts</h5>
           </div>
-          <div class="container c-img overflow-auto d-flex align-content-start flex-wrap">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
-            <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
+          <div class="container-fluid c-img overflow-auto d-flex align-content-start flex-wrap">
             <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
             <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
             <img class="avatar-contact" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
@@ -140,8 +111,8 @@
         </div>
 
 
-        <div class="col-6 p-1 border">
-          <div class="d-flex p-2 htop border">
+        <div class="col-lg-6 col-md-6 col-sm-12 p-1 sect2div2 border">
+          <div class="d-flex htop border">
             <h5>Read Below</h5>
           </div>
           <div class="control-center p-2">

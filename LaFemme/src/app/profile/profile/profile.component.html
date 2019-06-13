@@ -6,13 +6,147 @@
 
 
 
-    <main class="row">
+    <main class="row ">
       <h5 class="pl-3 m-2">Profile</h5>
 
 
       <!-- REPLACE THE DIRECTIVE *ngFor they be show the selected member -->
       <section class="container-fluid section1 d-flex justify-content-around border" *ngFor="let member of members">
 <!--      <section class="container-fluid section1 d-flex justify-content-around border" *ngFor="let member of members">-->
+        <div class="col-md-3 border p-1 d-flex flex-column">
+          <div class=" text-center mt-3">
+            <img id="profile-pic" class="img-thumbnail" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
+
+          </div>
+          <p class=" last-online mt-auto">Last on line: 3 hours ago</p>
+        </div>
+
+        <div class="col-md-5 sectionSub1 ">
+          <div class="h6 rela-type d-flex align-items-center justify-content-center">
+            {{typeRelation}}
+          </div>
+          <div class="h5">{{member.name}} {{member.lastName}}</div>
+          <span class="">Life time member</span> <br>
+          <span class="h6">Looking forward an Exciting Affair</span>
+          <div class="dataprofile container-fluid d-flex align-items-left">
+            <label class="col-6"> Age</label>
+            <div class="col-6 form-control-sm">{{member.age}} </div>
+          </div>
+          <div class="dataprofile container-fluid d-flex align-items-left"><label class="col-6"> Zodiac Sign </label>
+            <div class="col-6 form-control-sm"> {{member.zodiacSign}} </div>
+          </div>
+          <div class="dataprofile container-fluid d-flex align-items-left"><label class="col-6"> Body type </label>
+            <div class="col-6 form-control-sm">  {{member.bodyType}}</div>
+          </div>
+          <div class="dataprofile container-fluid d-flex align-items-left"><label class="col-6"> Heigth </label>
+            <div class="col-6 form-control-sm"> {{member.height}}</div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 border sectionSub1">
+          <div class="dataprofile1 container-fluid d-flex"><label class="col-6 ">Weight </label>
+            <div class="col-6 form-control-sm">  {{member.weight}}</div>
+          </div>
+          <div class=" dataprofile1 container-fluid d-flex align-items-left"><label class="col-6"> Eyes</label>
+            <div class="col-6 form-control-sm">{{member.eyes}}</div>
+          </div>
+          <div class="dataprofile1 container-fluid d-flex align-items-left"><label class="col-6"> Hair Color</label>
+            <div class="col-6 form-control-sm">{{member.hairColor}}</div>
+          </div>
+          <div class="dataprofile1 container-fluid d-flex align-items-left"><label class="col-6"> Hair lenght</label>
+            <div class="col-6 form-control-sm">{{member.hairLength}}</div>
+          </div>
+          <div class="dataprofile1 container-fluid d-flex align-items-left"><label class="col-6"> Race/ Ethnic</label>
+            <div class="col-6 form-control-sm">{{member.raceEthnic}}</div>
+          </div>
+          <div class="dataprofile1 container-fluid d-flex align-items-left"><label class="col-6"> Tattoos</label>
+            <div class="col-6 form-control-sm">{{member.tattoos}}</div>
+          </div>
+          <div class="dataprofile container-fluid d-flex align-items-left"><label class="col-6"> Located In:</label>
+            <div class="col-6 form-control-sm">{{member.locatedIn}}</div>
+          </div>
+        </div>
+
+
+      </section>
+
+
+      <div class="container-fluid d-flex justify-content-around">
+        <button class="btn-cent btn btn-primary btn-lg ">Change Profile Picture
+        </button>
+        <button class="btn-cent btn btn-primary btn-lg "> Edit My Profile
+        </button>
+        <button class="btn-cent btn btn-primary btn-lg "> Travel Notice
+        </button>
+        <button class="btn-cent btn btn-primary btn-lg "> Control Center
+        </button>
+      </div>
+
+      <section class=" container-fluid section2">
+
+        <h6 class="htop col-md-12 d-flex align-items-center">DESCRIBE YOURSELF(VES) "GREETING"</h6>
+
+        <div class="col-md-12 ">
+          <p>I keep my self in good shape, don't smoke, only socially. After a few trips overseas i realized how
+            much i was missing out in this boring life; so i decided to explore local and overseas communities
+            and see if i can find the same kind of feelings, emotions, activities, and pleasures.</p>
+        </div>
+      </section>
+
+      <section class=" container-fluid section2">
+        <h6 class="htop col-md-12 d-flex align-items-center">WHAT ARE YOU LOOKING FOR?</h6>
+
+        <div class="col-md-12">
+          <p>Hoping to meet a like-minded easy-going person that i can go out with and explore our erotic
+            fantasies together.</p>
+        </div>
+      </section>
+
+      <section class=" container-fluid section2">
+
+        <h6 class="htop col-md-12 d-flex align-items-center">MY TRAVEL PLANS</h6>
+
+        <div class="col-md-12 var">
+          <p>Odesa, Odesa Oblast, Ukraine <br> December 27, 2018 - December 29, 2018 <br><br> Sun, beach and
+            exciting memories. Please let me know if you want to join.</p>
+        </div>
+      </section>
+    </main>
+
+
+
+
+   <!-- <p>{{message}}</p>-->
+
+
+      <app-about-us-footer></app-about-us-footer>
+
+
+
+  </div>
+</div>
+
+
+
+
+<!--
+BACK UP
+<div class="body-back">
+  <div class="body-width container">
+    <header class="sticky-top">
+      <app-profile-header></app-profile-header>
+    </header>
+
+
+
+    <main class="row ">
+      <h5 class="pl-3 m-2">Profile</h5>
+
+
+      &lt;!&ndash; REPLACE THE DIRECTIVE *ngFor they be show the selected member &ndash;&gt;
+      <section class="container-fluid section1 d-flex justify-content-around border" *ngFor="let member of members">
+        &lt;!&ndash;      <section class="container-fluid section1 d-flex justify-content-around border" *ngFor="let member of members">&ndash;&gt;
         <div class="col-md-3 border p-1 d-flex flex-column">
           <div class=" text-center mt-3">
             <img id="profile-pic" class="img-thumbnail" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg" alt="">
@@ -112,8 +246,18 @@
         </div>
       </section>
     </main>
-   <!-- <p>{{message}}</p>-->
+
+
+
+
+    &lt;!&ndash; <p>{{message}}</p>&ndash;&gt;
+
+
     <app-about-us-footer></app-about-us-footer>
+
+
 
   </div>
 </div>
+-->
+

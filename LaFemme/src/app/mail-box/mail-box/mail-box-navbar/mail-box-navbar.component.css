@@ -1,31 +1,183 @@
-/*nav top*/
-nav {
-  background-color: black;
+@media (max-width: 575.98px) {
+  /*nav top*/
+  nav {
+    background-color: black;
+  }
+
+  /*Buttons top*/
+  .bttn-top {
+    width: 50px !important;
+    height: 45px !important;
+
+  }
+
+  .bttn-top img {
+    width: 1em; /*put icons cdn*/
+    height: 1em;
+
+  }
+
+  .bttn-top span {
+    font-size: 10px;
+  }
+
+  /*Buttons Logout*/
+  .btn-logout {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    margin-right: 24px;
+  }
+
 }
 
-/*Buttons top*/
 
-.bttn-top {
-  width: 50px !important;
-  height: 45px !important;
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*nav top*/
+  nav {
+    background-color: black;
+  }
+
+  /*Buttons top*/
+  .bttn-top {
+    width: 50px !important;
+    height: 45px !important;
+
+  }
+
+  .bttn-top img {
+    width: 1em; /*put icons cdn*/
+    height: 1em;
+
+  }
+
+  .bttn-top span {
+    font-size: 10px;
+  }
+
+  /*Buttons Logout*/
+  .btn-logout {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    margin-right: 24px;
+  }
 
 }
 
-.bttn-top img {
-  width: 1em; /*put icons cdn*/
-  height: 1em;
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*nav top*/
+  nav {
+    background-color: black;
+  }
+
+  .lower {
+    display: none;
+  }
+
+  /*Buttons top*/
+  .bttn-top {
+    width: 50px !important;
+    height: 45px !important;
+
+  }
+
+  .bttn-top img {
+    width: 1em; /*put icons cdn*/
+    height: 1em;
+
+  }
+
+  .bttn-top span {
+    font-size: 10px;
+  }
+
+  /*Buttons Logout*/
+  .btn-logout {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    margin-right: 24px;
+  }
 
 }
 
-.bttn-top span {
-  font-size: 10px;
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /*nav top*/
+  nav {
+    background-color: black;
+  }
+
+  .lower {
+    display: none;
+  }
+
+  /*Buttons top*/
+  .bttn-top {
+    width: 50px !important;
+    height: 45px !important;
+
+  }
+
+  .bttn-top img {
+    width: 1em; /*put icons cdn*/
+    height: 1em;
+
+  }
+
+  .bttn-top span {
+    font-size: 10px;
+  }
+
+  /*Buttons Logout*/
+  .btn-logout {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    margin-right: 24px;
+  }
+
 }
 
-/*Buttons Logout*/
 
-.btn-logout {
-  position: absolute;
-  right: 0;
-  font-size: 12px;
-  margin-right: 24px;
+@media (min-width: 1200px) {
+  /*nav top*/
+  nav {
+    background-color: black;
+  }
+
+  .lower {
+    display: none;
+  }
+
+  /*Buttons top*/
+  .bttn-top {
+    width: 50px !important;
+    height: 45px !important;
+
+  }
+
+  .bttn-top img {
+    width: 1em; /*put icons cdn*/
+    height: 1em;
+
+  }
+
+  .bttn-top span {
+    font-size: 10px;
+  }
+
+  /*Buttons Logout*/
+  .btn-logout {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    margin-right: 24px;
+  }
+
 }
+
+
+

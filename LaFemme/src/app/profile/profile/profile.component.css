@@ -1,99 +1,528 @@
-
-
-main {
-  background-color: rgb(32, 21, 61);
-  color: white;
-}
-
-/*Section 1*/
-.section1 {
-  padding: 0;
-  background-color: white;
-}
-
-.sectionSub1 {
-  background-color: black;
-  padding: 0.5rem;
-  height: 16.5rem;
-}
-
-.rela-type {
-  background-color: rgb(213, 21, 104);
-  height: 2rem;
-  text-align: center;
-  color: white;
-  font-size: 1.1em
-}
-.section1 span {
-  font-size: 0.8rem;
-}
-.section1 label {
-  font-size: 0.85rem;
+.body-width {
+  max-width: 100vw;
   margin: auto;
   padding: 0;
 }
 
-.dataprofile {
-  background-color: white;
-  color: rgb(32, 18, 74);
-  height: 2.5em;
-  font-size: 10px;
-  margin: 6px 0px 6px 0px;
+
+@media (max-width: 575.98px) {
+  main {
+    background-color: rgb(32, 21, 61);
+    color: white;
+    padding: 2rem;
+  }
+
+  /*Section 1*/
+  .section1 {
+    padding: 0;
+    background-color: white;
+    flex-direction: column;
+  }
+
+  .sectionSub1 {
+    background-color: black;
+    padding: 0.5rem;
+    height: 16.5rem;
+  }
+
+  .rela-type {
+    background-color: rgb(213, 21, 104);
+    height: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 1.1em
+  }
+
+  .section1 span {
+    font-size: 0.8rem;
+  }
+
+  .section1 label {
+    font-size: 0.85rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .dataprofile {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 6px 0px;
+  }
+
+  .dataprofile1 {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 10px 0px;
+  }
+
+
+  #profile-pic {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .last-online {
+    background-color: rgb(32, 18, 74);
+    border: 1px solid white;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+
+  }
+
+  .section2 p {
+    font-size: 12px;;
+  }
+
+  .htop {
+    background-color: rgb(32, 18, 74);
+    color: white;
+    margin-bottom: 0.5em;
+    border: 2px solid white;
+    padding: 0.5em, 0.5em, 0.5em, 0.5em;
+    height: 3em;
+  }
+
+  .section2 div {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 10px;
+    min-height: 4em;
+
+  }
+
+  /* button center */
+  .btn-cent {
+    margin: 1em 0em 1em 0em;
+    background-color: rgb(32, 18, 74);
+    width: 14em;
+    border-color: white;
+    font-size: 12px;;
+
+  }
 }
-.dataprofile1 {
-  background-color: white;
-  color: rgb(32, 18, 74);
-  height: 2.5em;
-  font-size: 10px;
-  margin: 6px 0px 10px 0px;
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  main {
+    background-color: rgb(32, 21, 61);
+    color: white;
+
+  }
+
+  /*Section 1*/
+  .section1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: white;
+    flex-direction: column;
+
+  }
+
+  .sectionSub1 {
+    background-color: black;
+    padding: 0.5rem;
+    height: 16.5rem;
+  }
+
+  .rela-type {
+    background-color: rgb(213, 21, 104);
+    height: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 1.1em
+  }
+
+  .section1 span {
+    font-size: 0.8rem;
+  }
+
+  .section1 label {
+    font-size: 0.85rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .dataprofile {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 6px 0px;
+  }
+
+  .dataprofile1 {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 10px 0px;
+  }
+
+
+  #profile-pic {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .last-online {
+    background-color: rgb(32, 18, 74);
+    border: 1px solid white;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+
+  }
+
+  .section2 p {
+    font-size: 12px;;
+  }
+
+  .htop {
+    background-color: rgb(32, 18, 74);
+    color: white;
+    margin-bottom: 0.5em;
+    border: 2px solid white;
+    padding: 0.5em, 0.5em, 0.5em, 0.5em;
+    height: 3em;
+  }
+
+  .section2 div {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 10px;
+    min-height: 4em;
+
+  }
+
+  /* button center */
+  .btn-cent {
+    margin: 1em 0em 1em 0em;
+    background-color: rgb(32, 18, 74);
+    width: 14em;
+    border-color: white;
+    font-size: 12px;;
+
+  }
 }
 
 
-#profile-pic {
-  width: 10rem;
-  height: 10rem;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  main {
+    background-color: rgb(32, 21, 61);
+    color: white;
+  }
+
+  /*Section 1*/
+  .section1 {
+    padding: 0;
+    background-color: white;
+  }
+
+  .sectionSub1 {
+    background-color: black;
+    padding: 0.5rem;
+    height: 16.5rem;
+  }
+
+  .rela-type {
+    background-color: rgb(213, 21, 104);
+    height: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 1.1em
+  }
+
+  .section1 span {
+    font-size: 0.8rem;
+  }
+
+  .section1 label {
+    font-size: 0.85rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .dataprofile {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 6px 0px;
+  }
+
+  .dataprofile1 {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 10px 0px;
+  }
+
+
+  #profile-pic {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .last-online {
+    background-color: rgb(32, 18, 74);
+    border: 1px solid white;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+
+  }
+
+  .section2 p {
+    font-size: 12px;;
+  }
+
+  .htop {
+    background-color: rgb(32, 18, 74);
+    color: white;
+    margin-bottom: 0.5em;
+    border: 2px solid white;
+    padding: 0.5em, 0.5em, 0.5em, 0.5em;
+    height: 3em;
+  }
+
+  .section2 div {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 10px;
+    min-height: 4em;
+
+  }
+
+  /* button center */
+  .btn-cent {
+    margin: 1em 0em 1em 0em;
+    background-color: rgb(32, 18, 74);
+    width: 14em;
+    border-color: white;
+    font-size: 12px;;
+
+  }
 }
 
-.last-online {
-  background-color: rgb(32, 18, 74);
-  border: 1px solid white;
-  height: 3rem;
-  font-size: 1rem;
-  text-align: center;
-  align-items: center;
-  padding: 0.5rem;
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  main {
+    background-color: rgb(32, 21, 61);
+    color: white;
+  }
+
+  /*Section 1*/
+  .section1 {
+    padding: 0;
+    background-color: white;
+  }
+
+  .sectionSub1 {
+    background-color: black;
+    padding: 0.5rem;
+    height: 16.5rem;
+  }
+
+  .rela-type {
+    background-color: rgb(213, 21, 104);
+    height: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 1.1em
+  }
+
+  .section1 span {
+    font-size: 0.8rem;
+  }
+
+  .section1 label {
+    font-size: 0.85rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .dataprofile {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 6px 0px;
+  }
+
+  .dataprofile1 {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 10px 0px;
+  }
+
+
+  #profile-pic {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .last-online {
+    background-color: rgb(32, 18, 74);
+    border: 1px solid white;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+
+  }
+
+  .section2 p {
+    font-size: 12px;;
+  }
+
+  .htop {
+    background-color: rgb(32, 18, 74);
+    color: white;
+    margin-bottom: 0.5em;
+    border: 2px solid white;
+    padding: 0.5em, 0.5em, 0.5em, 0.5em;
+    height: 3em;
+  }
+
+  .section2 div {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 10px;
+    min-height: 4em;
+
+  }
+
+  /* button center */
+  .btn-cent {
+    margin: 1em 0em 1em 0em;
+    background-color: rgb(32, 18, 74);
+    width: 14em;
+    border-color: white;
+    font-size: 12px;;
+
+  }
 }
 
-.section2 p {
-  font-size: 12px;;
+
+@media (min-width: 1200px) {
+  main {
+    background-color: rgb(32, 21, 61);
+    color: white;
+  }
+
+  /*Section 1*/
+  .section1 {
+    padding: 0;
+    background-color: white;
+  }
+
+  .sectionSub1 {
+    background-color: black;
+    padding: 0.5rem;
+    height: 16.5rem;
+  }
+
+  .rela-type {
+    background-color: rgb(213, 21, 104);
+    height: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 1.1em
+  }
+
+  .section1 span {
+    font-size: 0.8rem;
+  }
+
+  .section1 label {
+    font-size: 0.85rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .dataprofile {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 6px 0px;
+  }
+
+  .dataprofile1 {
+    background-color: white;
+    color: rgb(32, 18, 74);
+    height: 2.5em;
+    font-size: 10px;
+    margin: 6px 0px 10px 0px;
+  }
+
+
+  #profile-pic {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .last-online {
+    background-color: rgb(32, 18, 74);
+    border: 1px solid white;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+
+  }
+
+  .section2 p {
+    font-size: 12px;;
+  }
+
+  .htop {
+    background-color: rgb(32, 18, 74);
+    color: white;
+    margin-bottom: 0.5em;
+    border: 2px solid white;
+    padding: 0.5em, 0.5em, 0.5em, 0.5em;
+    height: 3em;
+  }
+
+  .section2 div {
+    color: rgb(25, 26, 39);
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 10px;
+    min-height: 4em;
+
+  }
+
+  /* button center */
+  .btn-cent {
+    margin: 1em 0em 1em 0em;
+    background-color: rgb(32, 18, 74);
+    width: 14em;
+    border-color: white;
+    font-size: 12px;;
+
+  }
 }
 
-.htop {
-  background-color: rgb(32, 18, 74);
-  color: white;
-  margin-bottom: 0.5em;
-  border: 2px solid white;
-  padding: 0.5em, 0.5em, 0.5em, 0.5em;
-  height: 3em;
-}
-
-.section2 div {
-  color: rgb(25, 26, 39);
-  background-color: white;
-  margin-bottom: 1em;
-  padding: 10px;
-  min-height: 4em;
-
-}
-
-/* button center */
-.btn-cent {
-  margin: 1em 0em 1em 0em;
-  background-color: rgb(32, 18, 74);
-  width: 14em;
-  border-color: white;
-  font-size: 12px;;
-
-}
 

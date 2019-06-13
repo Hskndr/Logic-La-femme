@@ -1,0 +1,124 @@
+@media (max-width: 575.98px) {
+  /*header "Manage Profile"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8em;
+  }
+
+  header img {
+    height: 7em;
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    display: none;
+  }
+
+  .h7 {
+    font-size: 10px;
+  }
+
+  /*header "Manage Profile"*/
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*header "Manage Profile"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8em;
+  }
+
+  header img {
+    height: 7em;
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    display: none;
+  }
+
+  .h7 {
+    font-size: 10px;
+  }
+
+  /*header "Manage Profile"*/
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*header "Manage Profile"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8em;
+  }
+
+  header img {
+    height: 7em;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .h7 {
+    font-size: 10px;
+  }
+
+  /*header "Manage Profile"*/
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /*header "Manage Profile"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8em;
+  }
+
+  header img {
+    height: 7em;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .h7 {
+    font-size: 10px;
+  }
+
+  /*header "Manage Profile"*/
+}
+
+@media (min-width: 1200px) {
+  /*header "Manage Profile"*/
+  header {
+    background-color: black;
+    color: white;
+    height: 8em;
+  }
+
+  header img {
+    height: 7em;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .h7 {
+    font-size: 10px;
+  }
+
+  /*header "Manage Profile"*/
+}
+
+
+
+
+
+

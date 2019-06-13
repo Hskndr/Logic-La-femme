@@ -1,4 +1,6 @@
-
+.body-width{
+  max-width: 100vw;
+}
 @media (max-width: 575.98px) {
   .body-width {
     max-width: 100vw;
