@@ -2,55 +2,26 @@
   <div class="body-width container p-0">
 
 
-    <div class=" sticky-top ">
+    <header class=" sticky-top ">
       <app-mail-box-header></app-mail-box-header>
+    </header>
+    <!-- short nav -->
+    <div class="navBar">
+      <app-mail-box-navbar></app-mail-box-navbar>
     </div>
-
+    <!-- short nav -->
     <main class="container-fluid">
 
-      <!-- short nav -->
-      <div>
-        <app-mail-box-navbar></app-mail-box-navbar>
-      </div>
-      <!-- short nav -->
+      <section class="row mail-content d-flex">
 
-      <!-- sub nav -->
-      <div class=" row d-flex sub-nav ">
-        <div class="col-3 p-1 text-center ">
-          Mail Box
-        </div>
-        <div class="col-9 sub-nav-right">
-          <div class="row">
-            <div class="col-1 p-1"></div>
-            <div class="col-2 p-1">Inbox(37)</div>
-            <div class="col-1 p-1">Edit</div>
-            <div class="col-6 text-center p-1"> 20 of 68</div>
-            <div class="col-1 p-1">
-              <button type="button" class="btn btn-dark bttn-top-select d-flex  justify-content-center">
-                <img src="assets/image/icon/icon17.png">
-              </button>
-            </div>
-            <div class="col-1 p-1">
-              <button type="button" class="btn btn-dark bttn-top-select d-flex  justify-content-center">
-                <img src="assets/image/icon/icon18.png">
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- sub nav -->
-
-
-      <section class="row mail-content">
-
-        <!-- lateral nav -->
-        <div class="col-3 p-1  nav-lateral">
+        <!-- lateral nav-->
+       <!-- <div class="nav-lateral">
           <app-mail-box-lateralnav></app-mail-box-lateralnav>
-        </div>
-        <!-- lateral nav -->
+        </div>-->
+        <!--lateral nav -->
 
         <!--Messages-->
-        <div class="col-9 overflow-auto p-1 box-content  ">
+        <div class=" overflow-auto box-content  ">
           <app-mail-box-message></app-mail-box-message>
 
           <!-- column mail -->

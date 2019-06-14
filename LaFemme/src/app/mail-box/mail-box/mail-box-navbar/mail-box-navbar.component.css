@@ -2,32 +2,49 @@
   /*nav top*/
   nav {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid white;
   }
 
   /*Buttons top*/
   .bttn-top {
-    width: 50px !important;
-    height: 45px !important;
-
-  }
-
-  .bttn-top img {
-    width: 1em; /*put icons cdn*/
-    height: 1em;
-
+    width: 3rem !important;
+    height: 3rem !important;
+    margin: 0.5rem;
   }
 
   .bttn-top span {
     font-size: 10px;
   }
 
-  /*Buttons Logout*/
-  .btn-logout {
-    position: absolute;
-    right: 0;
-    font-size: 12px;
-    margin-right: 24px;
+  /*nav top*/
+  /*sub-nav*/
+  .sub-nav {
+    background-color: black;
+    font-size: 0.8rem;
+    color: white;
+
   }
+
+  .sub-nav-right {
+    background-color: rgb(50, 80, 110);
+  }
+
+  .bttn-top-select {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .bttn-top-select img {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  /*sub-nav*/
 
 }
 
@@ -36,33 +53,49 @@
   /*nav top*/
   nav {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid white;
   }
 
   /*Buttons top*/
   .bttn-top {
     width: 50px !important;
     height: 45px !important;
-
-  }
-
-  .bttn-top img {
-    width: 1em; /*put icons cdn*/
-    height: 1em;
-
+    margin: 0.5rem;
   }
 
   .bttn-top span {
     font-size: 10px;
   }
 
-  /*Buttons Logout*/
-  .btn-logout {
-    position: absolute;
-    right: 0;
-    font-size: 12px;
-    margin-right: 24px;
+  /*nav top*/
+  /*sub-nav*/
+  .sub-nav {
+    background-color: black;
+    font-size: 1rem;
+    color: white;
+
   }
 
+  .sub-nav-right {
+    background-color: rgb(50, 80, 110);
+  }
+
+  .bttn-top-select {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .bttn-top-select img {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  /*sub-nav*/
 }
 
 
@@ -70,37 +103,49 @@
   /*nav top*/
   nav {
     background-color: black;
-  }
-
-  .lower {
-    display: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid white;
   }
 
   /*Buttons top*/
   .bttn-top {
     width: 50px !important;
     height: 45px !important;
-
-  }
-
-  .bttn-top img {
-    width: 1em; /*put icons cdn*/
-    height: 1em;
-
+    margin: 0.5rem;
   }
 
   .bttn-top span {
     font-size: 10px;
   }
 
-  /*Buttons Logout*/
-  .btn-logout {
-    position: absolute;
-    right: 0;
-    font-size: 12px;
-    margin-right: 24px;
+  /*nav top*/
+  /*sub-nav*/
+  .sub-nav {
+    background-color: black;
+    font-size: 1rem;
+    color: white;
+
   }
 
+  .sub-nav-right {
+    background-color: rgb(50, 80, 110);
+  }
+
+  .bttn-top-select {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .bttn-top-select img {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  /*sub-nav*/
 }
 
 
@@ -108,37 +153,49 @@
   /*nav top*/
   nav {
     background-color: black;
-  }
-
-  .lower {
-    display: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid white;
   }
 
   /*Buttons top*/
   .bttn-top {
     width: 50px !important;
     height: 45px !important;
-
-  }
-
-  .bttn-top img {
-    width: 1em; /*put icons cdn*/
-    height: 1em;
-
+    margin: 0.5rem;
   }
 
   .bttn-top span {
     font-size: 10px;
   }
 
-  /*Buttons Logout*/
-  .btn-logout {
-    position: absolute;
-    right: 0;
-    font-size: 12px;
-    margin-right: 24px;
+  /*nav top*/
+  /*sub-nav*/
+  .sub-nav {
+    background-color: black;
+    font-size: 1rem;
+    color: white;
+
   }
 
+  .sub-nav-right {
+    background-color: rgb(50, 80, 110);
+  }
+
+  .bttn-top-select {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .bttn-top-select img {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  /*sub-nav*/
 }
 
 
@@ -146,37 +203,49 @@
   /*nav top*/
   nav {
     background-color: black;
-  }
-
-  .lower {
-    display: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid white;
   }
 
   /*Buttons top*/
   .bttn-top {
     width: 50px !important;
     height: 45px !important;
-
-  }
-
-  .bttn-top img {
-    width: 1em; /*put icons cdn*/
-    height: 1em;
-
+    margin: 0.5rem;
   }
 
   .bttn-top span {
     font-size: 10px;
   }
 
-  /*Buttons Logout*/
-  .btn-logout {
-    position: absolute;
-    right: 0;
-    font-size: 12px;
-    margin-right: 24px;
+  /*nav top*/
+  /*sub-nav*/
+  .sub-nav {
+    background-color: black;
+    font-size: 1rem;
+    color: white;
+
   }
 
+  .sub-nav-right {
+    background-color: rgb(50, 80, 110);
+  }
+
+  .bttn-top-select {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .bttn-top-select img {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  /*sub-nav*/
 }
 
 
