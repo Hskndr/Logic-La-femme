@@ -6,3 +6,8 @@ a{
 .body-width{
   max-width: 100vw;
 }
+
+.router-link-active{
+  background-color: gray;
+  color: maroon;
+}

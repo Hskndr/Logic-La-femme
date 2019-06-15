@@ -1,118 +1,42 @@
-
 @media (max-width: 575.98px) {
 
-  /* header "Dating"*/
+  .px1200 {
+    display: none !important;
+  }
 
-  #header, header {
+  .px575 {
     background-color: black;
     color: white;
-    height: 10em;
-    position: relative;
   }
 
-  header p {
-    font-size: 1rem;
-  }
-
-  header img {
-    display: none;
-  }
-
-  header a, header li, header a:hover {
-    font-size: 12px;
-    color: white;
-  }
-  /*New*/
-  .center-field, #center-field{
-    position: absolute;
-    left: 0;
-    height: 10em;
+  .px575 h4 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
   }
-  .center-field p{
-    width: 100%;
-  }
-  .h2{
-    font-size: 2rem!important;
-  }
-
-  /* logo */
-
-  #sub-img {
-    display: none;
-  }
-
-  #logo-text {
-    position: absolute;
-    right: 3.3rem;
-    top: 4.3rem;
-    display: none;
-  }
-
-  /* header "Dating"*/
-
 }
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-  /* header "Dating"*/
+  .px1200 {
+    display: none !important;
+  }
 
-  #header, header {
+  .px575 {
     background-color: black;
     color: white;
-    height: 10em;
-    position: relative;
   }
 
-  header p {
-    font-size: 1rem;
-  }
-
-  header img {
-    display: none;
-  }
-
-  header a, header li, header a:hover {
-    font-size: 12px;
-    color: white;
-  }
-  /*New*/
-  .center-field, #center-field{
-    position: absolute;
-    left: 0;
-    height: 10em;
+  .px575 h4 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
   }
-  .center-field p{
-    width: 100%;
-  }
-  .h2{
-    font-size: 2rem!important;
-  }
-
-  /* logo */
-
-  #sub-img {
-    display: none;
-  }
-
-  #logo-text {
-    position: absolute;
-    right: 3.3rem;
-    top: 4.3rem;
-    display: none;
-  }
-
-  /* header "Dating"*/
-
 }
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 
   /* header "Dating"*/
-
   #header, header {
     background-color: black;
     color: white;
@@ -132,22 +56,24 @@
     font-size: 12px;
     color: white;
   }
+
   /*New*/
-  .center-field, #center-field{
+  .center-field, #center-field {
     position: absolute;
     left: 0;
     height: 10em;
 
   }
-  .center-field p{
+
+  .center-field p {
     width: 260%;
   }
-  .h2{
-    font-size: 2rem!important;
+
+  .h2 {
+    font-size: 2rem !important;
   }
 
   /* logo */
-
   #sub-img {
     display: none;
   }
@@ -156,6 +82,10 @@
     position: absolute;
     right: 3.3rem;
     top: 4.3rem;
+    display: none;
+  }
+
+  .px575 {
     display: none;
   }
 
@@ -168,7 +98,6 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
   /* header "Dating"*/
-
   #header, header {
     background-color: black;
     color: white;
@@ -187,9 +116,10 @@
     font-size: 12px;
     color: white;
   }
-
+  .h2 {
+    font-size: 2rem !important;
+  }
   /* logo */
-
   #sub-img {
     height: 4em;
   }
@@ -198,6 +128,10 @@
     position: absolute;
     right: 3.3rem;
     top: 4.3rem;
+  }
+
+  .px575 {
+    display: none;
   }
 
   /* header "Dating"*/
@@ -209,7 +143,6 @@
 @media (min-width: 1200px) {
 
   /* header "Dating"*/
-
   #header, header {
     background-color: black;
     color: white;
@@ -228,9 +161,10 @@
     font-size: 12px;
     color: white;
   }
-
+  .h2 {
+    font-size: 2rem !important;
+  }
   /* logo */
-
   #sub-img {
     height: 4em;
   }
@@ -239,6 +173,10 @@
     position: absolute;
     right: 3.3rem;
     top: 4.3rem;
+  }
+
+  .px575 {
+    display: none;
   }
 
   /* header "Dating"*/

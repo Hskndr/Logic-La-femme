@@ -12,6 +12,10 @@
     padding: 2rem;
   }
 
+  h5 {
+    display: none
+  }
+
   /*Section 1*/
   .section1 {
     padding: 0;

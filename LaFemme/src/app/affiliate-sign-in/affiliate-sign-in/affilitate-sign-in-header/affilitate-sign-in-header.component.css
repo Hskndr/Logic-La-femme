@@ -1,29 +1,20 @@
 @media (max-width: 575.98px) {
-  /* header */
-  #header, header {
+  /* header affiliateSignIn */
+  .px1200 {
+    display: none !important;
+  }
+
+  .px575 {
     background-color: black;
     color: white;
-    height: 8rem;
-    padding-bottom: 1em;
-    width: 100%;
-    font-size: 1rem;
+  }
+
+  .px575 h4 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
   }
 
-  #logo-text{
-    display: none;
-  }
-
-  header a {
-    font-size: 10px;
-    color: white;
-
-  }
-
-  header img {
-    display: none;
-  }
-
+  /* header affiliateSignIn */
 
 
 }
@@ -31,30 +22,22 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-  /* header */
-  #header, header {
+  /* header affiliateSignIn */
+  .px1200 {
+    display: none !important;
+  }
+
+  .px575 {
     background-color: black;
     color: white;
-    height: 8rem;
-    padding-bottom: 1em;
-    width: 100%;
-    font-size: 1rem;
+  }
+
+  .px575 h4 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
   }
 
-  #logo-text{
-    display: none;
-  }
-
-  header a {
-    font-size: 10px;
-    color: white;
-
-  }
-
-  header img {
-    display: none;
-  }
+  /* header affiliateSignIn */
 
 }
 
@@ -81,6 +64,10 @@
 
   header img {
     height: 8em;
+  }
+
+  .px575 {
+    display: none;
   }
 
 }
@@ -110,6 +97,10 @@
     height: 8em;
   }
 
+  .px575 {
+    display: none;
+  }
+
 }
 
 
@@ -135,6 +126,10 @@
 
   header img {
     height: 8em;
+  }
+
+  .px575 {
+    display: none;
   }
 
 }

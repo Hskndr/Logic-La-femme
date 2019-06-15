@@ -1,7 +1,8 @@
 <div class="body-back">
   <div class="body-width container">
+
     <!-- Header "Manage Profile"-->
-    <div class=" sticky-top">
+    <div class=" sticky-top m-0 p-0">
      <app-manage-profile-header></app-manage-profile-header>
     </div>
     <!--  Header "Manage Profile"-->
@@ -23,7 +24,7 @@
               <h5 class="pr-4">Welcome: </h5>
               <h5> {{member.name}} {{member.lastName}}</h5>
             </div>
-            <div class="m-1 mb-3 proback  d-flex">
+            <div class="m-1 mb-4 proback  d-flex">
 
               <img id="profile-pic" class="img-thumbnail" src="assets/image/avatar/1. Attached Male Seeking Female-/AVATAR1-3.jpg"
                    alt="">
@@ -56,27 +57,48 @@
             <h5>View relevant information</h5>
           </div>
           <div class="p-1 ">
-            <button routerLink="/mailBox" type="button" class="text-left btn btn-secondary btn-lg btn-block"><img
-              src="assets/image/icon/icon1.png">Mail Box
+            <button routerLink="/mailBox" type="button" class="text-left btn btn-secondary btn-lg btn-block">
+              <i class="material-icons">
+                mail_outline
+              </i>
+             Mail Box
             </button>
-            <button type="button" class="text-left btn btn-secondary btn-lg btn-block"><img
-              src="assets/image/icon/icon2.png">Who Likes Me
+            <button type="button" class="text-left btn btn-secondary btn-lg btn-block">
+              <i class="material-icons">
+                favorite
+              </i>
+              Who Likes Me
             </button>
-            <button routerLink="/affiliateProgram" type="button" class="text-left btn btn-secondary btn-lg btn-block"><img
-              src="assets/image/icon/icon3.png">Affiliate's Program
+            <button routerLink="/affiliateProgram" type="button" class="text-left btn btn-secondary btn-lg btn-block">
+              <i class="material-icons">
+                favorite_border
+              </i>
+              Affiliate's Program
             </button>
-            <button type="button" class="text-left btn btn-secondary btn-lg btn-block"><img
-              src="assets/image/icon/icon4.png">Who Viewed Me
+            <button type="button" class="text-left btn btn-secondary btn-lg btn-block">
+              <i class="material-icons">
+                remove_red_eye
+              </i>
+              Who Viewed Me
             </button>
 
-            <button type="button" class="text-left btn btn-secondary btn-lg btn-block"><img
-              src="assets/image/icon/icon7.png">My Contacts
+            <button type="button" class="text-left btn btn-secondary btn-lg btn-block">
+              <i class="material-icons">
+                account_circle
+              </i>
+              My Contacts
             </button>
-            <button type="button" class="text-left btn btn-secondary btn-lg btn-block"><img
-              src="assets/image/icon/icon8.png">Search
+            <button type="button" class="text-left btn btn-secondary btn-lg btn-block">
+              <i class="material-icons">
+                place
+              </i>
+              Search
             </button>
-            <button type="button" class="text-left btn btn-secondary btn-lg btn-block"><img
-              src="assets/image/icon/icon9.png">My Travel Plans
+            <button type="button" class="text-left btn btn-secondary btn-lg btn-block">
+              <i class="material-icons">
+                airplanemode_active
+              </i>
+              My Travel Plans
             </button>
           </div>
         </div>

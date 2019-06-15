@@ -1,60 +1,18 @@
 @media (max-width: 575.98px) {
 
   /* header "Affiliate Program"*/
-  #header, header {
+  .px1200 {
+    display: none !important;
+  }
+
+  .px575 {
     background-color: black;
     color: white;
-    height: 10rem;
-    font-size: 1rem;
   }
 
-  header img {
-    height: 8rem;
-  }
+  .px575 h4 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
-  header p {
-    font-size: 0.9rem;
-  }
-
-  header a, header li, header a:hover {
-    font-size: 0.8rem;
-    color: white;
-  }
-
-  .first-column {
-    margin-left: -2rem;
-    display: none;
-  }
-
-  .second-column {
-    margin: auto;
-    margin-top: 0;
-  }
-
-  .second-column p {
-    text-align: center!important;
-    width: 100%!important;
-  }
-
-  .third-column {
-    display: none;
-  }
-
-  /* logo */
-  #sub-img {
-    height: 4em;
-  }
-
-  #logo-text {
-    position: absolute;
-    left: 12rem;
-    top: 4.5rem;
-    width: 10rem!important;
-  }
-
-  .float {
-    position: absolute;
-    bottom: 0;
   }
 
   /* header "Affiliate Program"*/
@@ -65,60 +23,18 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 
   /* header "Affiliate Program"*/
-  #header, header {
+  .px1200 {
+    display: none !important;
+  }
+
+  .px575 {
     background-color: black;
     color: white;
-    height: 10rem;
-    font-size: 1rem;
   }
 
-  header img {
-    height: 8rem;
-  }
+  .px575 h4 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
-  header p {
-    font-size: 0.9rem;
-  }
-
-  header a, header li, header a:hover {
-    font-size: 0.8rem;
-    color: white;
-  }
-
-  .first-column {
-    margin-left: -2rem;
-    display: none;
-  }
-
-  .second-column {
-    margin: auto;
-    margin-top: 0;
-  }
-
-  .second-column p {
-    text-align: center!important;
-    width: 100%!important;
-  }
-
-  .third-column {
-    display: none;
-  }
-
-  /* logo */
-  #sub-img {
-    height: 4em;
-  }
-
-  #logo-text {
-    position: absolute;
-    left: 12rem;
-    top: 4.5rem;
-    width: 10rem!important;
-  }
-
-  .float {
-    position: absolute;
-    bottom: 0;
   }
 
   /* header "Affiliate Program"*/
@@ -159,7 +75,7 @@
 
   .second-column p {
     position: absolute;
-    width: 20rem!important;
+    width: 20rem !important;
     margin-left: -3rem;
   }
 
@@ -176,12 +92,16 @@
     position: absolute;
     left: 12rem;
     top: 4.5rem;
-    width: 10rem!important;
+    width: 10rem !important;
   }
 
   .float {
     position: absolute;
     bottom: 0;
+  }
+
+  .px575 {
+    display: none;
   }
 
   /* header "Affiliate Program"*/
@@ -224,6 +144,10 @@
     bottom: 0;
   }
 
+  .px575 {
+    display: none;
+  }
+
   /* header "Affiliate Program"*/
 
 }
@@ -261,6 +185,10 @@
   .float {
     position: absolute;
     bottom: 0;
+  }
+
+  .px575 {
+    display: none;
   }
 
   /* header "Affiliate Program"*/

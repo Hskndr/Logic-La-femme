@@ -8,12 +8,15 @@
   }
   main{
     background-color: white;
+    padding: 0;
   }
 
   main img{
     display: none;
   }
-
+.remRes{
+  display: none;
+}
   form{
     background-color: rgb(31,21,58);
     color: white;
@@ -33,12 +36,15 @@
 
   main{
     background-color: white;
+    padding: 0;
   }
 
   main img{
     display: none;
   }
-
+  .remRes{
+    display: none;
+  }
   form{
     background-color: rgb(31,21,58);
     color: white;

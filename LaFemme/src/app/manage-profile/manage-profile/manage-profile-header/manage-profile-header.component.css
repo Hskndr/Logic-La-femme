@@ -1,23 +1,17 @@
 @media (max-width: 575.98px) {
   /*header "Manage Profile"*/
-  header {
+  .px1200 {
+    display: none !important;
+  }
+
+  .px575 {
     background-color: black;
     color: white;
-    height: 8em;
   }
 
-  header img {
-    height: 7em;
-    display: none;
-  }
+  .px575 h4 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
-  .subtitle {
-    font-size: 12px;
-    display: none;
-  }
-
-  .h7 {
-    font-size: 10px;
   }
 
   /*header "Manage Profile"*/
@@ -25,24 +19,18 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   /*header "Manage Profile"*/
-  header {
+  .px1200 {
+    display: none !important;
+  }
+
+  .px575 {
     background-color: black;
     color: white;
-    height: 8em;
   }
 
-  header img {
-    height: 7em;
-    display: none;
-  }
+  .px575 h4 {
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
-  .subtitle {
-    font-size: 12px;
-    display: none;
-  }
-
-  .h7 {
-    font-size: 10px;
   }
 
   /*header "Manage Profile"*/
@@ -68,6 +56,10 @@
     font-size: 10px;
   }
 
+  .px575 {
+    display: none!important;
+  }
+
   /*header "Manage Profile"*/
 }
 
@@ -91,6 +83,9 @@
     font-size: 10px;
   }
 
+  .px575 {
+    display: none!important;
+  }
   /*header "Manage Profile"*/
 }
 
@@ -112,6 +107,10 @@
 
   .h7 {
     font-size: 10px;
+  }
+
+  .px575 {
+    display: none!important;
   }
 
   /*header "Manage Profile"*/

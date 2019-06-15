@@ -3,32 +3,14 @@
 @media (max-width: 575.98px) {
   /* header "AboutUs"*/
 
-  #header, header {
+  .px1200{display: none!important;}
+  .px575{
     background-color: black;
     color: white;
-    height: 5rem;
-    font-size: 1rem;
-    width: 100vw;
   }
+  .px575 h4{
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
-  header img {
-    display: none;
-  }
-
-  header a, header li, header a:hover, span {
-    font-size: 0.7rem;
-    color: white;
-  }
-  .last{
-    display: none;
-  }
-  /* logo */
-  #sub-img, .last li, .last a {
-    display: none;
-  }
-
-  #logo-text, p, span  {
-    display: none;
   }
   /* header "AboutUs"*/
 }
@@ -36,32 +18,14 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* header "AboutUs"*/
-
-  #header, header {
+  .px1200{display: none!important;}
+  .px575{
     background-color: black;
     color: white;
-    height: 5rem;
-    font-size: 1rem;
   }
+  .px575 h4{
+    font-family: 'Futura Md BT', Tahoma, Geneva, Verdana, sans-serif;
 
-  header img {
-    display: none;
-  }
-
-  header a, header li, header a:hover, span {
-    font-size: 0.7rem;
-    color: white;
-  }
-  .last{
-    display: none;
-  }
-  /* logo */
-  #sub-img, .last li, .last a {
-    display: none;
-  }
-
-  #logo-text, p, span  {
-    display: none;
   }
   /* header "AboutUs"*/
 }
@@ -99,9 +63,7 @@ header a, header li, header a:hover, span {
   top: 4.5rem;
 }
 
-  .resp{
-    display: none;
-  }
+  .px575{display: none;}
 /* header "AboutUs"*/
 }
 
@@ -140,6 +102,8 @@ header a, header li, header a:hover, span {
   .resp{
     display: none;
   }
+
+  .px575{display: none;}
 
   /* header "AboutUs"*/
 }
@@ -181,6 +145,8 @@ header a, header li, header a:hover, span {
   .resp{
     display: none;
   }
+
+  .px575{display: none;}
 
   /* header "AboutUs"*/
 }

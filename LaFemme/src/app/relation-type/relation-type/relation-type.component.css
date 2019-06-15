@@ -1,13 +1,9 @@
 .body-width{
   max-width: 100vw;
+  min-height: 100vh;
 }
 @media (max-width: 575.98px) {
 
-
-  .body-width{
-    min-height: 100vh;
-    max-width: 100vw;
-  }
 
   main {
     background-color: rgb(32, 18, 74);
@@ -23,7 +19,7 @@
 
   #type-rel {
     border: 2px solid rgb(33, 21, 60);
-    height: 8em;
+    min-height: 8em;
     margin: 3px;
 
 
@@ -38,12 +34,12 @@
 
   #select-pic-men {
     background-color: gray;
-    height: 6em;
+    min-height: 6em;
   }
   #select-pic-women {
     background-color: #dc127b;
     color: white;
-    height: 6em;
+    min-height: 6em;
   }
 
   .content-avatar{

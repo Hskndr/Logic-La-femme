@@ -2,12 +2,16 @@
   max-width: 100vw;
 }
 @media (max-width: 575.98px) {
-  .body-width{
-    width: 100vw!important;
-  }
+
   /* Main */
   main {
     background-color: white;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
   /*article*/
 
@@ -67,6 +71,11 @@
   /* Main */
   main {
     background-color: white;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
   /*article*/
 
@@ -128,6 +137,7 @@
   main {
     background-color: white;
   }
+
   /*article*/
 
   .sectionBlue{

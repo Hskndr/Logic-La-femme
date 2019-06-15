@@ -7,8 +7,8 @@ import {UpdateComponent} from './member-sign-in/membercrud/update/update.compone
 import {ReadComponent} from './member-sign-in/membercrud/read/read.component';
 import {TermConditionComponent} from './member-sign-in/term-condition/term-condition.component';
 
-const routes: Routes = [
-  {path: 'termCondition', component: TermConditionComponent},
+const memberRoutes: Routes = [
+ {path: 'termCondition', component: TermConditionComponent},
   {path: 'view', component: ViewComponent},
   {path: 'create', component: CreateComponent},
   {path: 'update/:id', component: UpdateComponent},
@@ -19,7 +19,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(
+    memberRoutes
+  )],
   exports: [RouterModule]
 })
 export class MemberSignInRoutingModule {
