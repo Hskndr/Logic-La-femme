@@ -23,6 +23,9 @@
     color: rgb(32, 21, 61);
     width: 95vw;
   }
+  .form-group{
+    padding: 0.5rem;
+  }
   .content-button{
     display: flex;
     flex-direction: column;

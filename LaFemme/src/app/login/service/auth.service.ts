@@ -11,7 +11,7 @@ interface myData {
 })
 export class AuthService {
   // base api url
-  public url = 'http://lafemme1.com/testapp/backend/Web_API_Member/login-signin/';
+  public url = 'https://lafemme1.com/testapp/backend/Web_API_Member/login-signin/';
 
   private loggedInStatus = JSON.parse(localStorage.getItem('loggedIm') || 'false')
 

@@ -15,16 +15,23 @@
   }
   .three-img {
     height: 10rem;
+    width: 18rem;
 
+  }
+  .three-imgContent{
   }
   .hidden{
     display: none;
   }
 
   .two-img {
-    height: 8rem;
+    height: 10rem;
+    width: 18rem;
   }
-
+  .two-imgContent{
+    flex-direction: column;
+    align-items: center;
+  }
 
 }
 
