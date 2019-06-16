@@ -40,10 +40,30 @@
     margin-bottom: 1em;
     color: white;
     width: 100% !important;
+    height: 6.5rem;
+  }
+
+  .section2 img {
+    position: absolute;
+    z-index: 0;
+    width: 100vh;
+
   }
 
   .section2 p {
-    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 2%;
+    left: 23%;
+  }
+
+  .section2 span {
+    position: absolute;
+    z-index: 100;
+    bottom: 5%;
+    left: 23%;
+    font-size: 0.7rem;
+    line-height: 1;
   }
 
   .section2 .h2 {
@@ -186,10 +206,30 @@
     margin-bottom: 1em;
     color: white;
     width: 100% !important;
+    height: 7.5rem;
+  }
+
+  .section2 img {
+    position: absolute;
+    z-index: 0;
+    width: 100vh;
+
   }
 
   .section2 p {
-    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 2%;
+    left: 23%;
+  }
+
+  .section2 span {
+    position: absolute;
+    z-index: 100;
+    bottom: 5%;
+    left: 23%;
+    font-size: 1rem;
+    line-height: 1;
   }
 
   .section2 .h2 {
@@ -324,14 +364,42 @@
 
   /* section 1 */
   .section2 {
-    background-image: url('../../../assets/image/LF40.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 13.5em;
     margin-top: 1em;
+    margin-bottom: 1em;
     color: white;
-    padding-top: 1em;
-    width: 100%;
+    width: 100% !important;
+    height: 14rem;
+  }
+
+  .section2 img {
+    position: absolute;
+    z-index: 0;
+
+  }
+
+  .section2 p {
+    position: absolute;
+    z-index: 100;
+    top: 2%;
+    left: 23%;
+    font-size: 1.5rem;
+  }
+
+  .section2 h3 {
+    position: absolute;
+    z-index: 100;
+    top: 12%;
+    left: 42%;
+
+  }
+
+  .section2 span {
+    position: absolute;
+    z-index: 100;
+    bottom: 5%;
+    left: 23%;
+    font-size: 1rem;
+    line-height: 1;
   }
 
   .section3 {
@@ -409,15 +477,44 @@
 
   /* section 1 */
   .section2 {
-    background-image: url('../../../assets/image/LF40.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 13.5em;
     margin-top: 1em;
+    margin-bottom: 1em;
     color: white;
-    padding-top: 1em;
-    width: 100%;
+    width: 100% !important;
+    height: 14rem;
   }
+
+  .section2 img {
+    position: absolute;
+    z-index: 0;
+
+  }
+
+  .section2 p {
+    position: absolute;
+    z-index: 100;
+    top: 2%;
+    left: 23%;
+    font-size: 1.5rem;
+  }
+
+  .section2 h3 {
+    position: absolute;
+    z-index: 100;
+    top: 12%;
+    left: 42%;
+
+  }
+
+  .section2 span {
+    position: absolute;
+    z-index: 100;
+    bottom: 5%;
+    left: 23%;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
 
   .section3 {
     margin-top: 1em;
@@ -493,15 +590,44 @@
 
   /* section 1 */
   .section2 {
-    background-image: url('../../../assets/image/LF40.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 13.5em;
     margin-top: 1em;
+    margin-bottom: 1em;
     color: white;
-    padding-top: 1em;
-    width: 100%;
+    width: 100% !important;
+    height: 14rem;
   }
+
+  .section2 img {
+    position: absolute;
+    z-index: 0;
+
+  }
+
+  .section2 p {
+    position: absolute;
+    z-index: 100;
+    top: 2%;
+    left: 23%;
+    font-size: 1.5rem;
+  }
+
+  .section2 h3 {
+    position: absolute;
+    z-index: 100;
+    top: 12%;
+    left: 42%;
+
+  }
+
+  .section2 span {
+    position: absolute;
+    z-index: 100;
+    bottom: 5%;
+    left: 23%;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
 
   .section3 {
     margin-top: 1em;
