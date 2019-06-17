@@ -10,7 +10,7 @@ export class MembersFakeService {
       id: 1,
       name: 'Robin',
       lastName: 'Ohara',
-      age: 51,
+      age: 31,
       zodiacSign: 'picis',
       bodyType: 'slim',
       height: 'tall',
