@@ -48,7 +48,7 @@ export class UpdateComponent implements OnInit {
     memberData.append('email', values.email);
     memberData.append('password', values.password);
     this.memberService.updateMember(memberData).subscribe(result => {
-      this.router.navigate(['']);
+      this.router.navigate(['/memberSignIn/view']);
     });
   }
 

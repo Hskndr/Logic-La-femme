@@ -2,7 +2,7 @@
   <div class="row">
     <p class="border">View Member</p>
     <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
-      <button class="btn btn-success" (click)="getNavigation('create', '')">Create New Member</button>
+      <button class="btn btn-success" (click)="getNavigation('memberSignIn/create', '')">Create New Member</button>
     </div>
   </div>
   <br>
@@ -20,13 +20,14 @@
         </thead>
         <tbody>
         <tr *ngFor="let member of members; let i =index;">
-          <td>{{i + 1}}</td>
+          <!--<td>{{i + 1}}</td>-->
+          <td>image</td>
           <td>{{member.p_name}}</td>
           <td>{{member.p_email}}</td>
           <td>{{member.p_password}}</td>
           <td>
-            <button type="button" class="btn btn-success" (click)="getNavigation('view', member.p_id)">View</button>
-            <button type="button" class="btn btn-warning" (click)="getNavigation('update', member.p_id)">Edit</button>
+            <button type="button" class="btn btn-success" (click)="getNavigation('memberSignIn/view/', member.p_id)">View</button>
+            <button type="button" class="btn btn-warning" (click)="getNavigation('memberSignIn/update', member.p_id)">Edit</button>
             <button type="button" class="btn btn-danger" (click)="deleteMember(member.p_id)">Delete</button>
           </td>
         </tr>

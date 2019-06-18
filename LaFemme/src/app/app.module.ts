@@ -12,6 +12,8 @@ import {HomeModule} from './home/home.module';
 // services
 import {MembersService} from './services/members.service';
 import {MemberCrudService} from './services/member-crud.service';
+import {MemberRegisterService} from './services/member-register.service';
+
 // Forms
 import {FormsModule} from '@angular/forms';
 // Firebase
@@ -43,7 +45,8 @@ import * as $ from 'jquery';
   ],
   providers: [
     MembersService,
-    MemberCrudService
+    MemberCrudService,
+    MemberRegisterService
   ],
   bootstrap: [AppComponent]
 })

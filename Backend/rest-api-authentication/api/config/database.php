@@ -1,5 +1,7 @@
 <?php
-
+//
+// THIS NOT WORKING WITH POSTMAN
+//
 // used to get mysql database connection
 class Database
 {

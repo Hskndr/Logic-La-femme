@@ -2,22 +2,24 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: PUT, GET, POST");
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
- 
-// check if form was submitted
-if($_POST){
+if ($_POST) {
+
+// include database connection
     include 'config/database.php';
-    try{
-        // write update query
-        // in this case, it seemed like we have so many fields to pass and 
-        // it is better to label them and not use question marks
-        $query = "UPDATE memberRegister SET
+
+    try {
+
+// insert query
+
+        $query = "INSERT INTO memberRegister SET 
         p_userName=:userName, 
         p_password=:password, 
         p_country=:country, 
         p_state=:state, 
         p_postalZipCode=:postalZipCode, 
         p_dateOfBirth=:dateOfBirth, 
-        p_age=:age, p_raceEthnic=:raceEthnic, 
+        p_age=:age, 
+        p_raceEthnic=:raceEthnic, 
         p_email=:email, 
         p_typeRelation=:typeRelation, 
         p_invitationCode=:invitationCode, 
@@ -28,16 +30,14 @@ if($_POST){
         p_eyesColor=:eyesColor, 
         p_hairColor=:hairColor, 
         p_hairLength=:hairLength, 
-        p_tattoos=:tattoos                     
-                     
-        WHERE p_id = :id";
- 
-        // prepare query for excecution
-        $stmt = $con->prepare($query);
- 
-        // posted values
+        p_tattoos=:tattoos";
 
-        $id = $_POST['id'];
+// prepare query for execution
+
+        $stmt = $con->prepare($query);
+
+// posted values
+
         $userName = $_POST['userName'];
         $password = $_POST['password'];
         $country = $_POST['country'];
@@ -57,8 +57,8 @@ if($_POST){
         $hairColor = $_POST['hairColor'];
         $hairLength = $_POST['hairLength'];
         $tattoos = $_POST['tattoos'];
- 
-        // bind the parameters
+
+// bind the parameters
 
         $stmt->bindParam(':userName ', $userName);
         $stmt->bindParam(':password ', $password);
@@ -79,18 +79,15 @@ if($_POST){
         $stmt->bindParam(':hairColor ', $hairColor);
         $stmt->bindParam(':hairLength ', $hairLength);
         $stmt->bindParam(':tattoos ', $tattoos);
-         
-        // Execute the query
-        if($stmt->execute()){
-            echo json_encode(array('result'=>'success'));
-        }else{
-            echo json_encode(array('result'=>'fail'));
+
+// Execute the query
+        if ($stmt->execute()) {
+            echo json_encode(array('result' => 'success'));
+        } else {
+            echo json_encode(array('result' => 'fail'));
         }
-         
-    }
-     
-    // show errors
-    catch(PDOException $exception){
+    } // show error
+    catch (PDOException $exception) {
         die('ERROR: ' . $exception->getMessage());
     }
 }

@@ -19,7 +19,7 @@ export class CreateComponent implements OnInit {
     this.memberForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', Validators.compose([Validators.required, Validators.minLength(10), Validators.maxLength(1000)])],
-      password: ['', Validators.required],
+      password: [''],
     });
   }
 
@@ -32,7 +32,7 @@ export class CreateComponent implements OnInit {
     memberData.append('email', values.email);
     memberData.append('password', values.password);
     this.memberService.createMember(memberData).subscribe(result => {
-      this.router.navigate(['']);
+      this.router.navigate(['/memberSignIn/view']);
     });
   }
 
