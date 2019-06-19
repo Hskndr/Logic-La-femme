@@ -43,51 +43,125 @@
         <p class="h5 pb-3"> Someone will acknowledge you with Desire, Passion and Excitement. </p>
 
 
-        <form class="container-fluid col-md-9" action="" name="formmemb" (ngSubmit)="onSubmit()" #formmemb="ngForm">
+        <form class="container-fluid col-md-9" [formGroup]="memberRegisterForm"
+              (ngSubmit)="saveMemberRegister(memberRegisterForm.value)">
+
+
+          <!--<div class="form-group">
+            <label>User Name</label>
+            <input type="text" class="form-control" placeholder="Enter User Name" formControlName="userName" required>
+            <div class="alert-danger"
+                 *ngIf="!memberRegisterForm.controls['userName'].valid && (memberRegisterForm.controls['userName'].touched)">
+              <div [hidden]="!memberRegisterForm.controls['userName'].errors.required">
+                Name is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" placeholder="Email" formControlName="email" required>
+            <div class="alert-danger"
+                 *ngIf="!memberRegisterForm.controls['email'].valid && (memberRegisterForm.controls['email'].touched)">
+              <div [hidden]="!memberRegisterForm.controls['email'].errors.required">
+                Description is required.
+              </div>
+              <div [hidden]="!memberRegisterForm.controls['email'].errors.minlength">
+                Description must be have 10 character length.
+              </div>
+              <div [hidden]="!memberRegisterForm.controls['email'].errors.maxlength">
+                Description must be have 1000 character length.
+              </div>
+            </div>
+          </div>
+
+           <div class="form-group">
+             <label>Password</label>
+             <input type="number" class="form-control" placeholder="password" formControlName="password" required>
+             <div class="alert-danger"
+                  *ngIf="!memberRegisterForm.controls['password'].valid && (memberRegisterForm.controls['password'].touched)">
+               <div [hidden]="!memberRegisterForm.controls['password'].errors.required">
+                 Password is required.
+               </div>
+             </div>
+           </div>
+          <button type="submit" class="btn btn-primary" [disabled]="!memberRegisterForm.valid">Submit</button>-->
+
 
           <div class="form-group row d-flex align-items-center">
             <div class="col-sm-4">
 
               <label class=" col-form-label">CHOOSE RELATIONSHIP </label>
             </div>
-            <!-- ADD id="typeRelation"-->
+            <!-- ADD id="typeRelation" -->
 
-            <select class="form-control col-sm-8 " id="typeRelation" ngModel name="typeRelation">
+            <select
+              class="form-control col-sm-8 "
+              id="typeRelation"
+              formControlName="typeRelation"
+              required>
 
               <option value="">Select your Match</option>
               <option *ngFor="let typRel of typeRelation" [value]="typRel.id">{{typRel.description}}</option>
 
             </select>
+            <div class="alert-danger"
+                 *ngIf="!memberRegisterForm.controls['typeRelation'].valid && (memberRegisterForm.controls['typeRelation'].touched)">
+              <div [hidden]="!memberRegisterForm.controls['typeRelation'].errors.required">
+                Relationship is required.
+              </div>
+            </div>
           </div>
 
           <p class="h4"> Explore </p>
-          <div class="row">
+          <div class="form-group row">
             <div class="col-4">
               <label>Invitation ID Code </label>
             </div>
 
             <div class="col-4">
-              <input id="invitationCode" type="number" required class="w-75">
+              <input
+                id="invitationCode"
+                type="number"
+                required
+                class="form-control w-75"
+                placeholder=""
+                formControlName="invitationCode">
             </div>
 
-            <div class="col-4">
-              <label class=" justify-content-end ">If no one invited you, use ID Code 100</label>
+            <div class="col-4 alert-danger"
+                 *ngIf="!memberRegisterForm.controls['typeRelation'].valid && (memberRegisterForm.controls['typeRelation'].touched)">
+              <div class=" justify-content-end "
+                   [hidden]="!memberRegisterForm.controls['typeRelation'].errors.required">
+                If no one invited you, use ID Code 100
+              </div>
+
             </div>
           </div>
 
           <div class="form-group row d-flex align-items-center field-form">
             <div class="col-sm-3">
 
-              <label for="name" class="col-form-label"> User Name </label>
+              <label for="userName" class="col-form-label"> User Name </label>
             </div>
             <div class="col-sm-9">
-              <input id="name"
-                     name="userName"
-                     type="text"
-                     ngModel name="name"
-                     class="form-control"
-                     placeholder="Insert your name"
-                     required>
+              <input
+                id="userName"
+                name="userName"
+                type="text"
+
+                class="form-control"
+                placeholder="Insert your name"
+                required
+                formControlName="userName">
+
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['userName'].valid && (memberRegisterForm.controls['userName'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['userName'].errors.required">
+                  Name is required.
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -97,9 +171,21 @@
               <label for="password" class=" col-form-label">Password</label>
             </div>
             <div class="col-sm-9">
-              <input id="password" ngModel name="password" type="password"
-                     class="form-control" placeholder="Password"
-                     required>
+              <input id="password"
+
+                     name="password"
+                     type="password"
+                     class="form-control"
+                     placeholder="Password"
+                     required
+                     formControlName="password">
+
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['password'].valid && (memberRegisterForm.controls['password'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['password'].errors.required">
+                  Password is required.
+                </div>
+              </div>
             </div>
           </div>
 
@@ -111,13 +197,24 @@
               <label class=" col-form-label"> Country</label>
             </div>
             <div class=" col-sm-9">
-              <select name="country" class="form-control" id="country" ngModel name="country">
-                <!-- show mock-country  -->
+              <select
+                name="country"
+                class="form-control"
+                id="country"
+
+                formControlName="country">
+                <!-- show mock-country -->
                 <option value="">Select country</option>
                 <option *ngFor="let country of countries" [value]="country">
                   {{country.name}}
                 </option>
               </select>
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['country'].valid && (memberRegisterForm.controls['country'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['country'].errors.required">
+                  Country is required.
+                </div>
+              </div>
             </div>
           </div>
 
@@ -129,97 +226,138 @@
               <label class=" col-form-label"> State</label>
             </div>
             <div class=" col-sm-3">
-              <select [ngClass]="{ 'hidden' : formHidden }" name="state" class="form-control">
+              <select
+                [ngClass]="{ 'hidden' : formHidden }"
+                name="state"
+                class="form-control"
+
+                formControlName="state">
                 <!-- add selected condition -->
+                <option value="">Select</option>
                 <option *ngFor="let country of statesUsa">
                   {{country.name}}
                 </option>
               </select>
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['state'].valid && (memberRegisterForm.controls['state'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['state'].errors.required">
+                  State is required.
+                </div>
+              </div>
             </div>
             <div class="col-sm-3">
 
               <label for="postalZipCode" class=" col-form-label"> Postal Zip Code</label>
             </div>
             <div class="col-sm-3">
-              <input id="postalZipCode" type="text" class="form-control" placeholder=" ">
+              <input
+                id="postalZipCode"
+                type="text"
+                class="form-control"
+                placeholder="A 1234 AAAA"
+                formControlName="postalZipCode">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['postalZipCode'].valid && (memberRegisterForm.controls['postalZipCode'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['postalZipCode'].errors.required">
+                  Zip Code is required.
+                </div>
+              </div>
             </div>
+
           </div>
 
-          <div class="form-group row d-flex align-items-center field-form">
-            <div class="col-sm-3">
+          <!--
+                     <div class="form-group row d-flex align-items-center field-form">
+                       <div class="col-sm-3">
 
-              <label for="dateOfBirth" class=" col-form-label"> Date of Birth </label>
-            </div>
-            <div class="col-sm-9">
-              <input id="dateOfBirth" type="date" class="form-control" ngModel name="dateOfBirth"/>
-            </div>
-          </div>
+                         <label for="dateOfBirth" class=" col-form-label"> Date of Birth </label>
+                       </div>
+                       <div class="col-sm-9">
+                         <input
+                           id="dateOfBirth"
+                           type="date"
+                           class="form-control"
 
-          <div class="form-group row d-flex align-items-center field-form">
-            <div class="col-sm-3">
+                           name="dateOfBirth"
+                           placeholder="00-00-00"
+                           formControlName="dateOfBirth">
+                       </div>
+                     </div>
 
-              <label for="age" class=" col-form-label"> Age </label>
-            </div>
-            <div class="col-sm-9 text-left">
-              <input class="form-control" id="age"
-                     readonly type="text" [value]="CalculateAge()">
-            </div>
-          </div>
+                     <div class="form-group row d-flex align-items-center field-form">
+                       <div class="col-sm-3">
 
-          <!-- ADD id="zodiacSign" -->
+                         <label for="age" class=" col-form-label"> Age </label>
+                       </div>
+                       <div class="col-sm-9 text-left">
+                         <input
+                           class="form-control"
+                           id="age"
 
-          <div class="form-group row d-flex align-items-center field-form">
-            <div class="col-sm-3">
+                           type="text"
+                           formControlName="age">
+                       </div>
+                     </div>
 
-              <label class="col-form-label"> Zodiac Sign</label>
-            </div>
-            <div class="col-sm-9">
-              <select class="form-control " name="zodiac">
-                <option value="" disabled selected>--Please Select--</option>
-                <option value="aries">Aries (March 21 - April 19)</option>
-                <option value="taurus">Taurus (April 20 - May 20)</option>
-                <option value="gemini">Gemini (May 21 - June 20)</option>
-                <option value="cancer">Cancer (June 21 - July 22)</option>
-                <option value="leo">Leo (July 23 - August 22)</option>
-                <option value="virgo">Virgo (August 23 - September 22)</option>
-                <option value="libra">Libra (September 23 - October 22)</option>
-                <option value="scorpio">Scorpio (October 23 - November 21)</option>
-                <option value="sagittarius">Sagittarius (November 22 - December 21)</option>
-                <option value="capricorn">Capricorn (December 22 - January 19)</option>
-                <option value="aquarius">Aquarius (January 20 - February 18)</option>
-                <option value="pisces">Pisces (February 19 - March 20)</option>
-              </select>
-            </div>
-          </div>
+                     &lt;!&ndash; WARMING ADD id="zodiacSign" IN DATA BASE WARMING &ndash;&gt;
 
-          <!-- ADD id="raceEthnic" -->
+                     <div class="form-group row d-flex align-items-center field-form">
+                       <div class="col-sm-3">
 
-          <div class="form-group row d-flex align-items-center field-form">
-            <div class="col-sm-3">
-              <label class="col-form-label"> Race /Ethnic</label>
+                         <label class="col-form-label"> Zodiac Sign</label>
+                       </div>
+                       <div class="col-sm-9">
+                         <select
+                           class="form-control "
+                           name="zodiac">
 
-            </div>
-            <div class="col-sm-9">
-              <select class="form-control " name="chooseRelationship">
-                <option value="" disabled selected>I identify my ethnicity as:</option>
-                <option value="">Asian</option>
-                <option value="">Black/African</option>
-                <option value="">Caucasian</option>
-                <option value="">Hispanic/Latino</option>
-                <option value="">Native American</option>
-                <option value="">Pacific Islander</option>
-                <option value="">Mixed Race</option>
-                <option value="">Other</option>
-              </select>
-            </div>
-          </div>
+                           <option value="" disabled selected>&#45;&#45;Please Select&#45;&#45;</option>
+                           <option value="aries">Aries (March 21 - April 19)</option>
+                           <option value="taurus">Taurus (April 20 - May 20)</option>
+                           <option value="gemini">Gemini (May 21 - June 20)</option>
+                           <option value="cancer">Cancer (June 21 - July 22)</option>
+                           <option value="leo">Leo (July 23 - August 22)</option>
+                           <option value="virgo">Virgo (August 23 - September 22)</option>
+                           <option value="libra">Libra (September 23 - October 22)</option>
+                           <option value="scorpio">Scorpio (October 23 - November 21)</option>
+                           <option value="sagittarius">Sagittarius (November 22 - December 21)</option>
+                           <option value="capricorn">Capricorn (December 22 - January 19)</option>
+                           <option value="aquarius">Aquarius (January 20 - February 18)</option>
+                           <option value="pisces">Pisces (February 19 - March 20)</option>
+                         </select>
+                       </div>
+                     </div>
+
+                     &lt;!&ndash; ADD id="raceEthnic" &ndash;&gt;
+
+                     <div class="form-group row d-flex align-items-center field-form">
+                       <div class="col-sm-3">
+                         <label class="col-form-label"> Race /Ethnic</label>
+
+                       </div>
+                       <div class="col-sm-9">
+                         <select
+                           class="form-control"
+                           name="chooseRelationship"
+                           formControlName="raceEthnic">
+
+                           <option value="" disabled selected>I identify my ethnicity as:</option>
+                           <option value="">Asian</option>
+                           <option value="">Black/African</option>
+                           <option value="">Caucasian</option>
+                           <option value="">Hispanic/Latino</option>
+                           <option value="">Native American</option>
+                           <option value="">Pacific Islander</option>
+                           <option value="">Mixed Race</option>
+                           <option value="">Other</option>
+                         </select>
+                       </div>
+                     </div>-->
 
           <div class="form-group row d-flex align-items-center field-form">
             <div class="col-sm-3">
               <label for="email" class="col-form-label"> Email</label>
-              <!-- icon -->
-              <i class="fa fa-check-circle check" *ngIf="email.valid"></i>
-              <i class="fa fa-exclamation-circle uncheck" *ngIf="email.invalid && email.touched"></i>
+
 
             </div>
 
@@ -228,19 +366,37 @@
                      class="form-control"
                      id="email"
                      required
-                     ngModel
+
                      name="email"
-                     email #email="ngModel">
+
+                     placeholder="Insert Email "
+                     formControlName="email">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['email'].valid && (memberRegisterForm.controls['email'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['email'].errors.required">
+                  Email is required.
+                </div>
+                <div [hidden]="!memberRegisterForm.controls['email'].errors.minlength">
+                  Email must be have 10 character length.
+                </div>
+                <div [hidden]="!memberRegisterForm.controls['email'].errors.maxlength">
+                  Email must be have 1000 character length.
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="">
             <label>For maximum discretion we recommend using an email specific to this account.
             </label>
           </div>
-          <div class="d-flex p-2 bd-highlight row checkBox ">
+
+          <!--<div class="form-group d-flex p-2 bd-highlight row checkBox ">
             <div class="p-2 bd-highlight">
-              <input type="checkbox" name="verifyage" value="">
+              <input
+                type="checkbox"
+                name="verifyage"
+                value="">
             </div>
             <div class="p-2 bd-highlight">
               <label> I am 18 years or older </label>
@@ -248,7 +404,7 @@
           </div>
 
 
-          <div class="d-flex p-2 bd-highlight row checkBox">
+          <div class="form-group d-flex p-2 bd-highlight row checkBox">
             <div class="p-2 bd-highlight">
               <input type="checkbox" name="chtermsandconditions" value="1">
             </div>
@@ -258,16 +414,18 @@
                 <a routerLink="/termAndCondition">terms and
                   conditions </a></label>
             </div>
-          </div>
+          </div>-->
 
 
           <div class="d-flex justify-content-end">
             <!-- ACTIVE WHEN THE INPUTS ARE VALID-->
-            <button type="submit" class="btn btn-light btn-lg btn-block"> I Agree</button>
-
+            <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="!memberRegisterForm.valid"> I
+              Agree
+            </button>
 
           </div>
-          <!--          <p class="alert alert-danger " *ngIf="!formmemb.valid"> Please complete all fileds</p>-->
+
+
 
         </form>
 
