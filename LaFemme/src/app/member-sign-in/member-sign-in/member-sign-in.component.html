@@ -43,174 +43,349 @@
         <p class="h5 pb-3"> Someone will acknowledge you with Desire, Passion and Excitement. </p>
 
 
-        <form [formGroup]="memberRegisterForm" (ngSubmit)="saveMemberRegister(memberRegisterForm.value)">
+        <form class="container-fluid col-md-9" [formGroup]="memberRegisterForm"
+              (ngSubmit)="saveMemberRegister(memberRegisterForm.value)">
 
-          <!--     User Name     -->
+          <!--     Relation Type     -->
 
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" placeholder="Enter Name" formControlName="name" required>
+          <div class="form-group row d-flex align-items-center">
+            <div class="col-sm-4">
+              <label class=" col-form-label">CHOOSE RELATIONSHIP </label>
+            </div>
+            <select
+              class="form-control col-sm-8 "
+              id="typeRelation"
+              formControlName="typeRelation"
+              required>
+              <option value="">Select your Match</option>
+              <option *ngFor="let typRel of typeRelation" [value]="typRel.description">{{typRel.description}}</option>
+            </select>
             <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['name'].valid && (memberRegisterForm.controls['name'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['name'].errors.required">
-                Name is required.
+                 *ngIf="!memberRegisterForm.controls['typeRelation'].valid && (memberRegisterForm.controls['typeRelation'].touched)">
+              <div [hidden]="!memberRegisterForm.controls['typeRelation'].errors.required">
+                Please Select your Match
               </div>
             </div>
           </div>
 
-          <!--     Email     -->
+          <p class="h4"> Explore </p>
 
-          <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" placeholder="Email" formControlName="email" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['email'].valid && (memberRegisterForm.controls['email'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['email'].errors.required">
-                Description is required.
+          <!--   invitation Code    -->
+
+          <div class="form-group row">
+            <div class="col-4">
+              <label>Invitation ID Code </label>
+            </div>
+            <div class="col-4">
+              <input
+                id="invitationCode"
+                type="number"
+                required
+                class="form-control w-75"
+                placeholder=""
+                formControlName="invitationCode">
+            </div>
+            <div class="alert-danger col-4 "
+                 *ngIf="!memberRegisterForm.controls['invitationCode'].valid && (memberRegisterForm.controls['invitationCode'].touched)">
+              <div class=" justify-content-end "
+                   [hidden]="!memberRegisterForm.controls['invitationCode'].errors.required">
+                If no one invited you, use ID Code 100
               </div>
-              <div [hidden]="!memberRegisterForm.controls['email'].errors.minlength">
-                Description must be have 10 character length.
-              </div>
-              <div [hidden]="!memberRegisterForm.controls['email'].errors.maxlength">
-                Description must be have 1000 character length.
+            </div>
+          </div>
+
+          <!--     User Name     -->
+
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label for="name" class="col-form-label"> User Name </label>
+            </div>
+            <div class="col-sm-9">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="form-control"
+                placeholder="Insert your name"
+                required
+                formControlName="name">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['name'].valid && (memberRegisterForm.controls['name'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['name'].errors.required">
+                  Name is required.
+                </div>
               </div>
             </div>
           </div>
 
           <!--     Password      -->
 
-          <div class="form-group">
-            <label>Password</label>
-            <input type="text" class="form-control" placeholder="password" formControlName="password" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['password'].valid && (memberRegisterForm.controls['password'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['password'].errors.required">
-                Password is required.
-              </div>
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label for="password" class=" col-form-label">Password</label>
             </div>
-          </div>
-
-          <!--     Relation Type     -->
-
-          <div class="form-group">
-            <label>Relation Type</label>
-            <input type="text" class="form-control" placeholder="Enter reltype" formControlName="typeRelation" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['typeRelation'].valid && (memberRegisterForm.controls['typeRelation'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['typeRelation'].errors.required">
-                typeRelation is required.
-              </div>
-            </div>
-          </div>
-
-          <!--   invitation Code    -->
-
-          <div class="form-group">
-            <label>Invitation Code</label>
-            <input type="number" class="form-control" placeholder="Enter invitationCode" formControlName="invitationCode" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['invitationCode'].valid && (memberRegisterForm.controls['invitationCode'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['invitationCode'].errors.required">
-                typeRelation is required.
+            <div class="col-sm-9">
+              <input id="password"
+                     name="password"
+                     type="password"
+                     class="form-control"
+                     placeholder="Password"
+                     required
+                     formControlName="password">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['password'].valid && (memberRegisterForm.controls['password'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['password'].errors.required">
+                  Password is required.
+                </div>
               </div>
             </div>
           </div>
 
           <!--     Country    -->
 
-          <div class="form-group">
-            <label>Country</label>
-            <input type="text" class="form-control" placeholder="Enter country" formControlName="country" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['country'].valid && (memberRegisterForm.controls['country'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['country'].errors.required">
-                country is required.
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label class=" col-form-label"> Country</label>
+            </div>
+            <div class=" col-sm-9">
+              <select
+                name="country"
+                class="form-control"
+                id="country"
+                formControlName="country">
+
+                <option value="">Select country</option>
+                <option *ngFor="let country of countries" [value]="country.name">
+                  {{country.name}}
+                </option>
+              </select>
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['country'].valid && (memberRegisterForm.controls['country'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['country'].errors.required">
+                  Country is required.
+                </div>
               </div>
             </div>
           </div>
+
+          <!--     State & Zip Code    -->
 
           <!--     State    -->
 
-          <div class="form-group">
-            <label>State</label>
-            <input type="text" class="form-control" placeholder="Enter state" formControlName="state" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['state'].valid && (memberRegisterForm.controls['state'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['state'].errors.required">
-                country is required.
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label class=" col-form-label"> State</label>
+            </div>
+            <div class=" col-sm-3">
+              <select
+                [ngClass]="{ 'hidden' : formHidden }"
+                name="state"
+                class="form-control"
+                formControlName="state">
+                &lt;!&ndash; add selected condition &ndash;&gt;
+                <option value="">Select</option>
+                <option *ngFor="let country of statesUsa" [value]="country.name">{{country.name}}</option>
+              </select>
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['state'].valid && (memberRegisterForm.controls['state'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['state'].errors.required">
+                  State is required.
+                </div>
               </div>
             </div>
-          </div>
 
-          <!--     Postal Code    -->
+            <!--     Postal Code    -->
 
-         <div class="form-group">
-            <label>Postal Code</label>
-            <input type="text" class="form-control" placeholder="Enter postalZipCode" formControlName="postalZipCode" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['postalZipCode'].valid && (memberRegisterForm.controls['postalZipCode'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['postalZipCode'].errors.required">
-                postalZipCode is required.
+            <div class="col-sm-3">
+              <label for="postalZipCode" class=" col-form-label"> Postal Zip Code</label>
+            </div>
+            <div class="col-sm-3">
+              <input
+                id="postalZipCode"
+                type="text"
+                class="form-control"
+                placeholder="A 1234 AAAA"
+                formControlName="postalZipCode">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['postalZipCode'].valid && (memberRegisterForm.controls['postalZipCode'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['postalZipCode'].errors.required">
+                  Zip Code is required.
+                </div>
               </div>
             </div>
           </div>
 
           <!--     Birth Date    -->
 
-        <div class="form-group">
-            <label>dateOfBirth</label>
-            <input type="text" class="form-control" placeholder="Enter dateOfBirth" formControlName="dateOfBirth" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['dateOfBirth'].valid && (memberRegisterForm.controls['dateOfBirth'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['dateOfBirth'].errors.required">
-                dateOfBirth is required.
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label for="dateOfBirth" class=" col-form-label"> Date of Birth </label>
+            </div>
+            <div class="col-sm-9">
+              <input
+                id="dateOfBirth"
+                type="date"
+                class="form-control"
+                name="dateOfBirth"
+                placeholder="00-00-00"
+                formControlName="dateOfBirth">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['dateOfBirth'].valid && (memberRegisterForm.controls['dateOfBirth'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['dateOfBirth'].errors.required">
+                  Date of Birth is required.
+                </div>
               </div>
             </div>
           </div>
 
           <!--     age    -->
 
-        <div class="form-group">
-            <label> age</label>
-            <input type="text" class="form-control" placeholder="Enter age" formControlName="age" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['age'].valid && (memberRegisterForm.controls['age'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['age'].errors.required">
-                age is required.
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label for="age" class=" col-form-label"> Age </label>
+            </div>
+            <div class="col-sm-9 text-left">
+              <input
+                class="form-control"
+                id="age"
+                type="text"
+                formControlName="age">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['age'].valid && (memberRegisterForm.controls['age'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['age'].errors.required">
+                  Age is required.
+                </div>
               </div>
             </div>
           </div>
 
-
           <!--     Zodiac sign   -->
 
-          <div class="form-group">
-            <label>zodiacSign</label>
-            <input type="text" class="form-control" placeholder="Enter zodiacSign" formControlName="zodiacSign" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['zodiacSign'].valid && (memberRegisterForm.controls['zodiacSign'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['zodiacSign'].errors.required">
-                zodiacSign is required.
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label class="col-form-label"> Zodiac Sign</label>
+            </div>
+            <div class="col-sm-9">
+              <select
+                class="form-control "
+                name="zodiacSign"
+                formControlName="zodiacSign">
+                <option value="" disabled selected>&#45;&#45;Please Select&#45;&#45;</option>
+                <option value="aries">Aries (March 21 - April 19)</option>
+                <option value="taurus">Taurus (April 20 - May 20)</option>
+                <option value="gemini">Gemini (May 21 - June 20)</option>
+                <option value="cancer">Cancer (June 21 - July 22)</option>
+                <option value="leo">Leo (July 23 - August 22)</option>
+                <option value="virgo">Virgo (August 23 - September 22)</option>
+                <option value="libra">Libra (September 23 - October 22)</option>
+                <option value="scorpio">Scorpio (October 23 - November 21)</option>
+                <option value="sagittarius">Sagittarius (November 22 - December 21)</option>
+                <option value="capricorn">Capricorn (December 22 - January 19)</option>
+                <option value="aquarius">Aquarius (January 20 - February 18)</option>
+                <option value="pisces">Pisces (February 19 - March 20)</option>
+              </select>
+              <div class="alert-danger text-left"
+                   *ngIf="!memberRegisterForm.controls['zodiacSign'].valid && (memberRegisterForm.controls['zodiacSign'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['zodiacSign'].errors.required">
+                  Zodiac Sign is required.
+                </div>
               </div>
             </div>
           </div>
 
           <!--    race Ethnic    -->
 
-          <div class="form-group">
-            <label>raceEthnic</label>
-            <input type="text" class="form-control" placeholder="Enter raceEthnic" formControlName="raceEthnic" required>
-            <div class="alert-danger"
-                 *ngIf="!memberRegisterForm.controls['raceEthnic'].valid && (memberRegisterForm.controls['raceEthnic'].touched)">
-              <div [hidden]="!memberRegisterForm.controls['raceEthnic'].errors.required">
-                postalZipCode is required.
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label class="col-form-label"> Race /Ethnic</label>
+            </div>
+            <div class="col-sm-9">
+              <select
+                class="form-control"
+                name="raceEthnic"
+                formControlName="raceEthnic">
+                <option value="" selected>I identify my ethnicity as:</option>
+                <option *ngFor="let country of races" [value]="country.name">
+                  {{country.name}}
+                </option>
+              </select>
+              <div class="alert-danger text-left"
+                   *ngIf="!memberRegisterForm.controls['raceEthnic'].valid && (memberRegisterForm.controls['raceEthnic'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['raceEthnic'].errors.required">
+                  Race is required.
+                </div>
               </div>
+            </div>
+          </div>
+
+          <!--     Email     -->
+
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label for="email" class="col-form-label"> Email</label>
+            </div>
+            <div class="col-sm-9">
+              <input type="email"
+                     class="form-control"
+                     id="email"
+                     required
+                     name="email"
+                     placeholder="Insert Email "
+                     formControlName="email">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['email'].valid && (memberRegisterForm.controls['email'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['email'].errors.required">
+                  Email is required.
+                </div>
+                <div [hidden]="!memberRegisterForm.controls['email'].errors.minlength">
+                  Email must be have 10 character length.
+                </div>
+                <div [hidden]="!memberRegisterForm.controls['email'].errors.maxlength">
+                  Email must be have 1000 character length.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <label>For maximum discretion we recommend using an email specific to this account.
+            </label>
+          </div>
+
+          <!--     Check Verify Age     -->
+
+          <div class="form-group d-flex p-2 bd-highlight row checkBox ">
+            <div class="p-2 bd-highlight">
+              <input
+                type="checkbox"
+                name="verifyage"
+                value="">
+            </div>
+            <div class="p-2 bd-highlight">
+              <label> I am 18 years or older </label>
+            </div>
+          </div>
+
+          <!--     Check Verify Terms And Conditions     -->
+
+          <div class="form-group d-flex p-2 bd-highlight row checkBox">
+            <div class="p-2 bd-highlight">
+              <input type="checkbox" name="chtermsandconditions" value="1">
+            </div>
+            <div class="p-2 bd-highlight">
+              <label class="text-left"> I have read the La Femme Policy and <br>agree
+                to all
+                <a routerLink="/termAndCondition">terms and
+                  conditions </a></label>
             </div>
           </div>
 
           <!--     Button     -->
 
-          <button type="submit" class="btn btn-primary" [disabled]="!memberRegisterForm.valid">Submit</button>
+          <div class="d-flex justify-content-end">
+
+            <button type="submit" class="btn btn-light btn-lg btn-block" [disabled]="!memberRegisterForm.valid"> I Agree</button>
+          </div>
         </form>
 
       </div>

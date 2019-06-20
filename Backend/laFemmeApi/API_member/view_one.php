@@ -20,6 +20,7 @@ try {
         p_postalZipCode, 
         p_dateOfBirth, 
         p_age, 
+        p_zodiacSign,
         p_raceEthnic, 
         p_email, 
         p_typeRelation, 
