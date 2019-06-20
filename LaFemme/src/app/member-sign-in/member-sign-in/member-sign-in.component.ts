@@ -5,7 +5,14 @@ import {MemberRegisterService} from '../../services/member-register.service';
 
 import {Option} from '../../models/option.model';
 
-import {COUNTRIES, STATES_ARGENTINA, STATES_COLOMBIA, STATES_USA, RACE, STATES_VENEZUELA} from '../../mock/mock-country';
+import {
+  COUNTRIES,
+  STATES_ARGENTINA,
+  STATES_COLOMBIA,
+  STATES_USA,
+  RACE,
+  STATES_VENEZUELA
+} from '../../mock/mock-country';
 
 
 @Component({
@@ -23,7 +30,7 @@ export class MemberSignInComponent implements OnInit {
     private router: Router) {
     this.memberRegisterForm = this.fb.group({
 
-      userName: ['', Validators.required],
+      name: ['', Validators.required],
       password: ['', Validators.required],
       email: ['', Validators.compose([Validators.required, Validators.minLength(10), Validators.maxLength(1000)])],
       typeRelation: ['', Validators.required],
@@ -68,7 +75,7 @@ export class MemberSignInComponent implements OnInit {
     const memberData = new FormData();
 
 
-    memberData.append('userName', values.userName);
+    memberData.append('name', values.name);
     memberData.append('password', values.password);
     memberData.append('email', values.email);
     memberData.append('typeRelation', values.typeRelation);
@@ -78,7 +85,7 @@ export class MemberSignInComponent implements OnInit {
     memberData.append('postalZipCode', values.postalZipCode);
     memberData.append('dateOfBirth', values.dateOfBirth);
     memberData.append('age', values.age);
-    memberData.append(' ', values.zodiacSign);
+    memberData.append('zodiacSign', values.zodiacSign);
     memberData.append('raceEthnic', values.raceEthnic);
 
     /*    memberData.append('lookingFor', values.lookingFor);
