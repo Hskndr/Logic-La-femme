@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {MemberRegisterService} from '../../services/member-register.service';
+import {Router} from '@angular/router';
+
+
 
 @Component({
   selector: 'app-tell-us-more',
@@ -7,9 +12,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TellUsMoreComponent implements OnInit {
 
-  constructor() { }
+  memberRegisterForm: FormGroup;
+
+  constructor(private fb: FormBuilder,
+              private memberRegisterService: MemberRegisterService,
+              private router: Router) {
+    this.memberRegisterForm = this.fb.group({
+
+      lookingFor: ['', Validators.required],
+      bodyType: ['', Validators.required],
+      height: ['', Validators.required],
+      weight: ['', Validators.required],
+      eyesColor: ['', Validators.required],
+      hairColor: ['', Validators.required],
+      hairLength: ['', Validators.required],
+      tattoos: ['', Validators.required]
+    });
+  }
 
   ngOnInit() {
+  }
+
+  saveMemberRegister(values) {
+    const memberData = new FormData();
+    memberData.append('lookingFor', values.lookingFor);
+    memberData.append('bodyType', values.bodyType);
+    memberData.append('height', values.height);
+    memberData.append('weight', values.weight);
+    memberData.append('eyesColor', values.eyesColor);
+    memberData.append('hairColor', values.hairColor);
+    memberData.append('hairLength', values.hairLength);
+    memberData.append('tattoos', values.tattoos);
+
+    this.memberRegisterService.createMemberRegister(memberData).subscribe(result => {
+      this.router.navigate(['/relationType']);
+    });
   }
 
 }

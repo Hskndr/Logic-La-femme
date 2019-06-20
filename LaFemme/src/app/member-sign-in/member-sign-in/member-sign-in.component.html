@@ -90,20 +90,15 @@
 
           <div class="form-group row d-flex align-items-center">
             <div class="col-sm-4">
-
               <label class=" col-form-label">CHOOSE RELATIONSHIP </label>
             </div>
-            <!-- ADD id="typeRelation" -->
-
             <select
               class="form-control col-sm-8 "
               id="typeRelation"
               formControlName="typeRelation"
               required>
-
               <option value="">Select your Match</option>
               <option *ngFor="let typRel of typeRelation" [value]="typRel.id">{{typRel.description}}</option>
-
             </select>
             <div class="alert-danger"
                  *ngIf="!memberRegisterForm.controls['typeRelation'].valid && (memberRegisterForm.controls['typeRelation'].touched)">
@@ -113,12 +108,12 @@
             </div>
           </div>
 
+
           <p class="h4"> Explore </p>
           <div class="form-group row">
             <div class="col-4">
               <label>Invitation ID Code </label>
             </div>
-
             <div class="col-4">
               <input
                 id="invitationCode"
@@ -128,20 +123,18 @@
                 placeholder=""
                 formControlName="invitationCode">
             </div>
-
             <div class="col-4 alert-danger"
                  *ngIf="!memberRegisterForm.controls['typeRelation'].valid && (memberRegisterForm.controls['typeRelation'].touched)">
               <div class=" justify-content-end "
                    [hidden]="!memberRegisterForm.controls['typeRelation'].errors.required">
                 If no one invited you, use ID Code 100
               </div>
-
             </div>
           </div>
 
+
           <div class="form-group row d-flex align-items-center field-form">
             <div class="col-sm-3">
-
               <label for="userName" class="col-form-label"> User Name </label>
             </div>
             <div class="col-sm-9">
@@ -149,37 +142,32 @@
                 id="userName"
                 name="userName"
                 type="text"
-
                 class="form-control"
                 placeholder="Insert your name"
                 required
                 formControlName="userName">
-
               <div class="alert-danger"
                    *ngIf="!memberRegisterForm.controls['userName'].valid && (memberRegisterForm.controls['userName'].touched)">
                 <div [hidden]="!memberRegisterForm.controls['userName'].errors.required">
                   Name is required.
                 </div>
               </div>
-
             </div>
           </div>
 
+
           <div class="form-group row d-flex align-items-center field-form">
             <div class="col-sm-3">
-
               <label for="password" class=" col-form-label">Password</label>
             </div>
             <div class="col-sm-9">
               <input id="password"
-
                      name="password"
                      type="password"
                      class="form-control"
                      placeholder="Password"
                      required
                      formControlName="password">
-
               <div class="alert-danger"
                    *ngIf="!memberRegisterForm.controls['password'].valid && (memberRegisterForm.controls['password'].touched)">
                 <div [hidden]="!memberRegisterForm.controls['password'].errors.required">
@@ -193,7 +181,6 @@
 
           <div class="form-group row d-flex align-items-center field-form">
             <div class="col-sm-3">
-
               <label class=" col-form-label"> Country</label>
             </div>
             <div class=" col-sm-9">
@@ -201,7 +188,6 @@
                 name="country"
                 class="form-control"
                 id="country"
-
                 formControlName="country">
                 <!-- show mock-country -->
                 <option value="">Select country</option>
@@ -222,7 +208,6 @@
 
           <div class="form-group row d-flex align-items-center field-form">
             <div class="col-sm-3">
-
               <label class=" col-form-label"> State</label>
             </div>
             <div class=" col-sm-3">
@@ -230,7 +215,6 @@
                 [ngClass]="{ 'hidden' : formHidden }"
                 name="state"
                 class="form-control"
-
                 formControlName="state">
                 <!-- add selected condition -->
                 <option value="">Select</option>
@@ -245,8 +229,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
 
+
+            <div class="col-sm-3">
               <label for="postalZipCode" class=" col-form-label"> Postal Zip Code</label>
             </div>
             <div class="col-sm-3">
@@ -263,112 +248,122 @@
                 </div>
               </div>
             </div>
-
           </div>
 
+
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label for="dateOfBirth" class=" col-form-label"> Date of Birth </label>
+            </div>
+            <div class="col-sm-9">
+              <input
+                id="dateOfBirth"
+                type="date"
+                class="form-control"
+                name="dateOfBirth"
+                placeholder="00-00-00"
+                formControlName="dateOfBirth">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['dateOfBirth'].valid && (memberRegisterForm.controls['dateOfBirth'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['dateOfBirth'].errors.required">
+                  Date of Birth is required.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label for="age" class=" col-form-label"> Age </label>
+            </div>
+            <div class="col-sm-9 text-left">
+              <input
+                class="form-control"
+                id="age"
+                type="text"
+                formControlName="age">
+              <div class="alert-danger"
+                   *ngIf="!memberRegisterForm.controls['age'].valid && (memberRegisterForm.controls['age'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['age'].errors.required">
+                  Age is required.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <!--
-                     <div class="form-group row d-flex align-items-center field-form">
-                       <div class="col-sm-3">
+                WARMING ADD id="zodiacSign" IN DATA BASE WARMING -->
 
-                         <label for="dateOfBirth" class=" col-form-label"> Date of Birth </label>
-                       </div>
-                       <div class="col-sm-9">
-                         <input
-                           id="dateOfBirth"
-                           type="date"
-                           class="form-control"
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label class="col-form-label"> Zodiac Sign</label>
+            </div>
+            <div class="col-sm-9">
+              <select
+                class="form-control "
+                name="zodiacSign"
+                formControlName="zodiacSign">
+                <option value="" disabled selected>&#45;&#45;Please Select&#45;&#45;</option>
+                <option value="aries">Aries (March 21 - April 19)</option>
+                <option value="taurus">Taurus (April 20 - May 20)</option>
+                <option value="gemini">Gemini (May 21 - June 20)</option>
+                <option value="cancer">Cancer (June 21 - July 22)</option>
+                <option value="leo">Leo (July 23 - August 22)</option>
+                <option value="virgo">Virgo (August 23 - September 22)</option>
+                <option value="libra">Libra (September 23 - October 22)</option>
+                <option value="scorpio">Scorpio (October 23 - November 21)</option>
+                <option value="sagittarius">Sagittarius (November 22 - December 21)</option>
+                <option value="capricorn">Capricorn (December 22 - January 19)</option>
+                <option value="aquarius">Aquarius (January 20 - February 18)</option>
+                <option value="pisces">Pisces (February 19 - March 20)</option>
+              </select>
+              <div class="alert-danger text-left"
+                   *ngIf="!memberRegisterForm.controls['zodiacSign'].valid && (memberRegisterForm.controls['zodiacSign'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['zodiacSign'].errors.required">
+                  Zodiac Sign is required.
+                </div>
+              </div>
+            </div>
+          </div>
 
-                           name="dateOfBirth"
-                           placeholder="00-00-00"
-                           formControlName="dateOfBirth">
-                       </div>
-                     </div>
+          <!-- ADD id="raceEthnic" -->
 
-                     <div class="form-group row d-flex align-items-center field-form">
-                       <div class="col-sm-3">
+          <div class="form-group row d-flex align-items-center field-form">
+            <div class="col-sm-3">
+              <label class="col-form-label"> Race /Ethnic</label>
+            </div>
+            <div class="col-sm-9">
+              <select
+                class="form-control"
+                name="raceEthnic"
+                formControlName="raceEthnic">
+                <option value="" selected>I identify my ethnicity as:</option>
+                <option *ngFor="let country of races">
+                  {{country.name}}
+                </option>
+              </select>
+              <div class="alert-danger text-left"
+                   *ngIf="!memberRegisterForm.controls['raceEthnic'].valid && (memberRegisterForm.controls['raceEthnic'].touched)">
+                <div [hidden]="!memberRegisterForm.controls['raceEthnic'].errors.required">
+                  Race is required.
+                </div>
+              </div>
+            </div>
+          </div>
 
-                         <label for="age" class=" col-form-label"> Age </label>
-                       </div>
-                       <div class="col-sm-9 text-left">
-                         <input
-                           class="form-control"
-                           id="age"
-
-                           type="text"
-                           formControlName="age">
-                       </div>
-                     </div>
-
-                     &lt;!&ndash; WARMING ADD id="zodiacSign" IN DATA BASE WARMING &ndash;&gt;
-
-                     <div class="form-group row d-flex align-items-center field-form">
-                       <div class="col-sm-3">
-
-                         <label class="col-form-label"> Zodiac Sign</label>
-                       </div>
-                       <div class="col-sm-9">
-                         <select
-                           class="form-control "
-                           name="zodiac">
-
-                           <option value="" disabled selected>&#45;&#45;Please Select&#45;&#45;</option>
-                           <option value="aries">Aries (March 21 - April 19)</option>
-                           <option value="taurus">Taurus (April 20 - May 20)</option>
-                           <option value="gemini">Gemini (May 21 - June 20)</option>
-                           <option value="cancer">Cancer (June 21 - July 22)</option>
-                           <option value="leo">Leo (July 23 - August 22)</option>
-                           <option value="virgo">Virgo (August 23 - September 22)</option>
-                           <option value="libra">Libra (September 23 - October 22)</option>
-                           <option value="scorpio">Scorpio (October 23 - November 21)</option>
-                           <option value="sagittarius">Sagittarius (November 22 - December 21)</option>
-                           <option value="capricorn">Capricorn (December 22 - January 19)</option>
-                           <option value="aquarius">Aquarius (January 20 - February 18)</option>
-                           <option value="pisces">Pisces (February 19 - March 20)</option>
-                         </select>
-                       </div>
-                     </div>
-
-                     &lt;!&ndash; ADD id="raceEthnic" &ndash;&gt;
-
-                     <div class="form-group row d-flex align-items-center field-form">
-                       <div class="col-sm-3">
-                         <label class="col-form-label"> Race /Ethnic</label>
-
-                       </div>
-                       <div class="col-sm-9">
-                         <select
-                           class="form-control"
-                           name="chooseRelationship"
-                           formControlName="raceEthnic">
-
-                           <option value="" disabled selected>I identify my ethnicity as:</option>
-                           <option value="">Asian</option>
-                           <option value="">Black/African</option>
-                           <option value="">Caucasian</option>
-                           <option value="">Hispanic/Latino</option>
-                           <option value="">Native American</option>
-                           <option value="">Pacific Islander</option>
-                           <option value="">Mixed Race</option>
-                           <option value="">Other</option>
-                         </select>
-                       </div>
-                     </div>-->
 
           <div class="form-group row d-flex align-items-center field-form">
             <div class="col-sm-3">
               <label for="email" class="col-form-label"> Email</label>
-
-
             </div>
-
             <div class="col-sm-9">
               <input type="email"
                      class="form-control"
                      id="email"
                      required
-
                      name="email"
-
                      placeholder="Insert Email "
                      formControlName="email">
               <div class="alert-danger"
@@ -386,12 +381,15 @@
             </div>
           </div>
 
+
           <div class="">
             <label>For maximum discretion we recommend using an email specific to this account.
             </label>
           </div>
 
-          <!--<div class="form-group d-flex p-2 bd-highlight row checkBox ">
+          <!-- Function check -->
+
+          <div class="form-group d-flex p-2 bd-highlight row checkBox ">
             <div class="p-2 bd-highlight">
               <input
                 type="checkbox"
@@ -403,6 +401,7 @@
             </div>
           </div>
 
+          <!-- Function check -->
 
           <div class="form-group d-flex p-2 bd-highlight row checkBox">
             <div class="p-2 bd-highlight">
@@ -414,17 +413,16 @@
                 <a routerLink="/termAndCondition">terms and
                   conditions </a></label>
             </div>
-          </div>-->
+          </div>
+
 
 
           <div class="d-flex justify-content-end">
             <!-- ACTIVE WHEN THE INPUTS ARE VALID-->
-            <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="!memberRegisterForm.valid"> I
+            <button type="submit" class="btn btn-light btn-lg btn-block" [disabled]="!memberRegisterForm.valid"> I
               Agree
             </button>
-
           </div>
-
 
 
         </form>

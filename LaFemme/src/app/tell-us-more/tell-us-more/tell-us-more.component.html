@@ -16,11 +16,16 @@
         <div class="row content-sections">
           <div class="col-6 p-4">
 
-            <form action="" class="">
+            <form [formGroup]="memberRegisterForm"
+                  (ngSubmit)="saveMemberRegister(memberRegisterForm.value)">
 
               <div class="form-group row d-flex align-items-center ">
                 <label for="" class="col-sm-4 col-form-label"> I'm looking for </label>
-                <select class="form-control col-sm-8" name="imLookingFor">
+                <select
+                  class="form-control col-sm-8"
+                  required
+                  name="imLookingFor"
+                  formControlName="lookingFor">
                   <option selected value="Undecided"> Undecided</option>
                   <option value="Limits"> Limits</option>
                   <option value="SomethingShortTerm"> Something Short Term</option>
@@ -29,11 +34,15 @@
                   <option value="WhateverExcitesMe"> Whatever Excites Me</option>
                   <option value="AnythingGoes"> Anything Goes</option>
                 </select>
+
               </div>
+
 
               <div class="form-group row d-flex align-items-center">
                 <label for="" class="col-sm-4 col-form-label"> Body Type </label>
-                <select class="form-control col-sm-8" name="bodyType">
+                <select class="form-control col-sm-8"
+                        name="bodyType"
+                        formControlName="bodyType">
                   <option selected value="Body Type"> Body Type</option>
                   <option value="Ask me"> Ask me</option>
                   <option value="Slim"> Slim</option>
@@ -50,7 +59,9 @@
               <div class="form-group row d-flex align-items-center">
                 <label for="" class="col-sm-2 col-form-label"> Height </label>
                 <div class="col-sm-4">
-                  <select class="form-control" name="height">
+                  <select class="form-control"
+                          name="height"
+                          formControlName="height">
                     <option selected value="Ask me"> Ask me</option>
                     <option value="4´2´´(1.27m)"> 4'2"(1.27m)</option>
                     <option value="4´4´´(1.32m)"> 4'4"(1.32m)</option>
@@ -74,7 +85,9 @@
                 </div>
                 <label for="" class="col-sm-2 col-form-label"> Weight </label>
                 <div class="col-sm-4">
-                  <select class="form-control" name="weight">
+                  <select class="form-control"
+                          name="weight"
+                          formControlName="weight">
                     <option selected value="Ask me"> Ask me</option>
                     <option value="80 lbs (36 kg)"> 80 lbs (36 kg)</option>
                     <option value="85 lbs (38 kg)"> 85 lbs (38 kg)</option>
@@ -128,7 +141,9 @@
               <div class="form-group row d-flex align-items-center">
                 <label for="" class="col-sm-3 col-form-label"> Color Eyes </label>
                 <div class="col-sm-3">
-                  <select class="form-control" name="">
+                  <select class="form-control"
+                          name=""
+                          formControlName="eyesColor">
                     <option value="Amber">Amber</option>
                     <option value="Blue ">Blue</option>
                     <option value="Brown">Brown</option>
@@ -139,7 +154,9 @@
                 </div>
                 <label for="" class="col-sm-3 col-form-label"> Hair Color </label>
                 <div class="col-sm-3">
-                  <select class="form-control" name="">
+                  <select class="form-control"
+                          name=""
+                          formControlName="hairColor">
                     <option value="Black">Black</option>
                     <option value="Blonde">Blonde</option>
                     <option value="Brown">Brown</option>
@@ -153,7 +170,9 @@
               <div class="form-group row d-flex align-items-center">
                 <label for="" class="col-sm-3 col-form-label"> Hair Length </label>
                 <div class="col-sm-3">
-                  <select class="form-control" name="hairLength">
+                  <select class="form-control"
+                          name="hairLength"
+                          formControlName="hairLength">
                     <option value="long">Long</option>
                     <option value="Medium">Medium</option>
                     <option value="Short">Short</option>
@@ -161,7 +180,9 @@
                 </div>
                 <label for="" class="col-sm-3 col-form-label"> Tattoos? </label>
                 <div class="col-sm-3">
-                  <select class="form-control" name="tatoos" id="">
+                  <select class="form-control"
+                          name="tatoos"
+                          formControlName="tattoos">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                   </select>
@@ -208,7 +229,7 @@
               <div class="col-md-6 ">
 
                 <div class="d-flex justify-content-end content-button-two ">
-                  <button type="file" class="btn btn-outline-secondary btn-sm m-1"
+                  <button type="submit" class="btn btn-light btn-sm m-1"
                           routerLink="/relationType">Upload Photo
                   </button>
                 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-relation-type',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RelationTypeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+// button file
+  change() {
+    let pdrs = (<HTMLInputElement>document.getElementById('file-upload')).files[0].name;
+    document.getElementById('info').innerHTML = pdrs;
+  }
+
+  // button file
 }

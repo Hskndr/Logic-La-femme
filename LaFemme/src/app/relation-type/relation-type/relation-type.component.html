@@ -27,7 +27,14 @@
             default Avatar pictures.</p>
           <div class="d-flex justify-content-end align-items-center">
             <p class="mt-2 h6">To Upload Photo: </p>
-            <button type="button" class="btn btn-outline-light m-2 h6">Upload Photo</button>
+
+            <!-- button file -->
+            <label for="file-upload" class="btn btn-light m-2 h6">
+              Upload Photo
+            </label>
+            <input id="file-upload" onchange='change()' type="file" style='display: none;'/>
+            <div id="info"></div>
+            <!-- button file -->
 
           </div>
 

@@ -5,7 +5,7 @@ import {MemberRegisterService} from '../../services/member-register.service';
 
 import {Option} from '../../models/option.model';
 
-import {COUNTRIES, STATES_ARGENTINA, STATES_COLOMBIA, STATES_USA, STATES_VENEZUELA} from '../../mock/mock-country';
+import {COUNTRIES, STATES_ARGENTINA, STATES_COLOMBIA, STATES_USA, RACE, STATES_VENEZUELA} from '../../mock/mock-country';
 
 
 @Component({
@@ -31,13 +31,11 @@ export class MemberSignInComponent implements OnInit {
       country: ['', Validators.required],
       state: ['', Validators.required],
       postalZipCode: ['', Validators.required],
+      dateOfBirth: ['', Validators.required],
+      age: ['', Validators.required],
+      zodiacSign: ['', Validators.required],
+      raceEthnic: ['', Validators.required],
 
-      /*
-
-          dateOfBirth: ['', Validators.required],
-          age: ['', Validators.required],
-          raceEthnic: ['', Validators.required],
-          */
 
       /* lookingFor: ['', Validators.required],
        bodyType: ['', Validators.required],
@@ -78,14 +76,10 @@ export class MemberSignInComponent implements OnInit {
     memberData.append('country', values.country);
     memberData.append('state', values.state);
     memberData.append('postalZipCode', values.postalZipCode);
-
-    /*
-
     memberData.append('dateOfBirth', values.dateOfBirth);
     memberData.append('age', values.age);
+    memberData.append(' ', values.zodiacSign);
     memberData.append('raceEthnic', values.raceEthnic);
-*/
-
 
     /*    memberData.append('lookingFor', values.lookingFor);
         memberData.append('bodyType', values.bodyType);
@@ -105,6 +99,7 @@ export class MemberSignInComponent implements OnInit {
   /* countries and states mock */
   countries = COUNTRIES;
   statesUsa = STATES_USA;
+  races = RACE;
   public formHidden = false;
 
 }
