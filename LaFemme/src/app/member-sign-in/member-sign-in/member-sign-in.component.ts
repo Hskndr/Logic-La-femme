@@ -31,15 +31,17 @@ export class MemberSignInComponent implements OnInit {
     this.memberRegisterForm = this.fb.group({
 
       name: ['', Validators.required],
-      password: ['', Validators.required],
-      email: ['', Validators.compose([Validators.required, Validators.minLength(10), Validators.maxLength(1000)])],
+      password: ['', Validators.compose([Validators.required, Validators.pattern('^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$')])],
+      email: ['', Validators.compose([Validators.required,
+        Validators.pattern('^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$'),
+        Validators.email])],
       typeRelation: ['', Validators.required],
       invitationCode: ['', Validators.required],
       country: ['', Validators.required],
       state: ['', Validators.required],
       postalZipCode: ['', Validators.required],
       dateOfBirth: ['', Validators.required],
-      age: ['', Validators.required],
+      age: ['', Validators.compose([Validators.required, Validators.min(18)])],
       zodiacSign: ['', Validators.required],
       raceEthnic: ['', Validators.required],
 
@@ -109,4 +111,18 @@ export class MemberSignInComponent implements OnInit {
   races = RACE;
   public formHidden = false;
 
+  /* calculate age */
+
+  calculateAge() {
+    // const ageByCalculate = document.querySelector('#dateOfBirth');
+    // const ageByCalculate = 20 - 2;
+
+    // return ageByCalculate;
+  }
+
+  /* verify age */
+  veriAge() {
+    const element = <HTMLInputElement>document.getElementById('verifyage');
+    const isChecked = element.checked;
+  }
 }

@@ -1,4 +1,4 @@
-/* class member */
+/* class member example  review var type in "typeRelation"*/
 
 export class Member {
   public id: number;

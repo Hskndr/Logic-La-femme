@@ -19,14 +19,14 @@ export class TellUsMoreComponent implements OnInit {
               private router: Router) {
     this.memberRegisterForm = this.fb.group({
 
-      lookingFor: ['', Validators.required],
-      bodyType: ['', Validators.required],
-      height: ['', Validators.required],
-      weight: ['', Validators.required],
-      eyesColor: ['', Validators.required],
-      hairColor: ['', Validators.required],
-      hairLength: ['', Validators.required],
-      tattoos: ['', Validators.required]
+      lookingFor: [''],
+      // bodyType: [''],
+      // height: [''],
+      // weight: [''],
+      // eyesColor: [''],
+      // hairColor: [''],
+      // hairLength: [''],
+      // tattoos: ['']
     });
   }
 
@@ -36,13 +36,13 @@ export class TellUsMoreComponent implements OnInit {
   saveMemberRegister(values) {
     const memberData = new FormData();
     memberData.append('lookingFor', values.lookingFor);
-    memberData.append('bodyType', values.bodyType);
-    memberData.append('height', values.height);
-    memberData.append('weight', values.weight);
-    memberData.append('eyesColor', values.eyesColor);
-    memberData.append('hairColor', values.hairColor);
-    memberData.append('hairLength', values.hairLength);
-    memberData.append('tattoos', values.tattoos);
+    // memberData.append('bodyType', values.bodyType);
+    // memberData.append('height', values.height);
+    // memberData.append('weight', values.weight);
+    // memberData.append('eyesColor', values.eyesColor);
+    // memberData.append('hairColor', values.hairColor);
+    // memberData.append('hairLength', values.hairLength);
+    // memberData.append('tattoos', values.tattoos);
 
     this.memberRegisterService.createMemberRegister(memberData).subscribe(result => {
       this.router.navigate(['/relationType']);

@@ -137,6 +137,10 @@
                 <div [hidden]="!memberRegisterForm.controls['password'].errors.required">
                   Password is required.
                 </div>
+                <div [hidden]="!memberRegisterForm.controls['password'].errors.pattern">
+                  Password must be at least 4 characters, no more than 8 characters, and must include at least one upper
+                  case letter, one lower case letter, and one numeric digit.
+                </div>
               </div>
             </div>
           </div>
@@ -227,7 +231,7 @@
                 type="date"
                 class="form-control"
                 name="dateOfBirth"
-                placeholder="00-00-00"
+                placeholder="01/01/2000"
                 formControlName="dateOfBirth">
               <div class="alert-danger"
                    *ngIf="!memberRegisterForm.controls['dateOfBirth'].valid && (memberRegisterForm.controls['dateOfBirth'].touched)">
@@ -249,11 +253,15 @@
                 class="form-control"
                 id="age"
                 type="text"
+                [value]="calculateAge()"
                 formControlName="age">
               <div class="alert-danger"
                    *ngIf="!memberRegisterForm.controls['age'].valid && (memberRegisterForm.controls['age'].touched)">
                 <div [hidden]="!memberRegisterForm.controls['age'].errors.required">
                   Age is required.
+                </div>
+                <div [hidden]="!memberRegisterForm.controls['age'].errors.min">
+                  +18
                 </div>
               </div>
             </div>
@@ -337,11 +345,11 @@
                 <div [hidden]="!memberRegisterForm.controls['email'].errors.required">
                   Email is required.
                 </div>
-                <div [hidden]="!memberRegisterForm.controls['email'].errors.minlength">
-                  Email must be have 10 character length.
+                <div [hidden]="!memberRegisterForm.controls['email'].errors.email">
+                  Please, insert your email.
                 </div>
-                <div [hidden]="!memberRegisterForm.controls['email'].errors.maxlength">
-                  Email must be have 1000 character length.
+                <div [hidden]="!memberRegisterForm.controls['email'].errors.pattern">
+                  sample@sample.com
                 </div>
               </div>
             </div>
@@ -358,8 +366,10 @@
             <div class="p-2 bd-highlight">
               <input
                 type="checkbox"
+                id="verifyage"
                 name="verifyage"
-                value="">
+                value="+18"
+                checked="checked">
             </div>
             <div class="p-2 bd-highlight">
               <label> I am 18 years or older </label>
@@ -384,7 +394,9 @@
 
           <div class="d-flex justify-content-end">
 
-            <button type="submit" class="btn btn-light btn-lg btn-block" [disabled]="!memberRegisterForm.valid"> I Agree</button>
+            <button type="submit" class="btn btn-light btn-lg btn-block" [disabled]="!memberRegisterForm.valid"> I
+              Agree
+            </button>
           </div>
         </form>
 
