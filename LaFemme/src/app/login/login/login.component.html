@@ -2,26 +2,27 @@
 
   <div class="body-width container border">
     <form (submit)="loginUser($event)">
+      <h3 class="text-center">Login</h3>
       <div class="form-group">
-        <h3 class="text-center">Login</h3>
-        <label for="username">Username</label>
+
+        <label for="username">User</label>
         <input type="text" class="form-control" id="username" aria-describedby="userHelp"
-               placeholder="user name">
+               placeholder="Insert user">
 
       </div>
       <div class="form-group">
         <label for="password">Password</label>
         <input type="password" class="form-control" id="password" placeholder="Password">
       </div>
-      <div class="form-group form-check">
+      <!--<div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="rememberme">
         <label class="form-check-label" for="rememberme">Remember Me</label>
-      </div>
-      <button type="submit" value="submit" class="btn btn-block btn-primary">LOGIN</button>
+      </div>-->
+      <input type="submit" value="LOGIN" class="btn btn-block btn-primary">
       <div class="form-group form-check text-center">
     <span>
       <a href="#">Lost Login?</a>
-      <a routerLink="admin">admin</a>
+      <a routerLink="login/admin">admin</a>
     </span>
       </div>
 

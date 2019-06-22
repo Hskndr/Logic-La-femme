@@ -8,6 +8,8 @@ import {Router} from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  // review records or AppComponent
+  records = [];
 
   constructor(
     private Auth: AuthService,
@@ -29,7 +31,7 @@ export class LoginComponent implements OnInit {
     this.Auth.getUserDetails(username, password).subscribe(data => {
       if (data.success) {
         // redirect the person to /admin
-        this.router.navigate(['login']);
+        this.router.navigate(['login/admin']); // TO PROFILE
         this.Auth.setLoggedIn(true);
       } else {
         window.alert(data.message);

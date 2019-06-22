@@ -11,9 +11,9 @@ interface myData {
 })
 export class AuthService {
   // base api url
-  public url = 'https://lafemme1.com/testapp/backend/Web_API_Member/login-signin/';
+  public url = 'https://lafemme1.com/testapp/backend/laFemmeApi/API_login/';
 
-  private loggedInStatus = JSON.parse(localStorage.getItem('loggedIm') || 'false')
+  private loggedInStatus = JSON.parse(localStorage.getItem('loggedIn') || 'false')
 
   constructor(
     private http: HttpClient
@@ -22,11 +22,11 @@ export class AuthService {
 
   setLoggedIn(value: boolean) {
     this.loggedInStatus = value;
-    localStorage.setItem('LoggedIn', 'true');
+    localStorage.setItem('loggedIn', 'true');
   }
 
   get isLoggedIn() {
-    return JSON.parse(localStorage.getItem('loggedIm') || this.loggedInStatus.toString());
+    return JSON.parse(localStorage.getItem('loggedIn') || this.loggedInStatus.toString());
   }
 
   getUserDetails(username, password) {

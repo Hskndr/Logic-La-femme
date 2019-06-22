@@ -22,7 +22,8 @@ p_postalZipCode=:postalZipCode,
 p_dateOfBirth=:dateOfBirth,
 p_age=:age,
 p_zodiacSign=:zodiacSign,
-p_raceEthnic=:raceEthnic";
+p_raceEthnic=:raceEthnic,
+p_lookingFor=:lookingFor";
 
 // prepare query for execution
         $stmt = $con->prepare($query);
@@ -39,6 +40,7 @@ p_raceEthnic=:raceEthnic";
         $age = $_POST['age'];
         $zodiacSign = $_POST['zodiacSign'];
         $raceEthnic = $_POST['raceEthnic'];
+        $lookingFor = $_POST['lookingFor'];
 
 // bind the parameters
         $stmt->bindParam(':name', $name);
@@ -53,6 +55,7 @@ p_raceEthnic=:raceEthnic";
         $stmt->bindParam(':age', $age);
         $stmt->bindParam(':zodiacSign', $zodiacSign);
         $stmt->bindParam(':raceEthnic', $raceEthnic);
+        $stmt->bindParam(':lookingFor', $lookingFor);
 
 // Execute the query
         if($stmt->execute()){

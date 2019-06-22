@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import {MemberSignInComponent} from './member-sign-in/member-sign-in.component';
 import {MemberSignInRoutingModule} from './member-sign-in-routing.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 import {SignInHeaderComponent} from './member-sign-in/sign-in-header/sign-in-header.component';
 import {SignInFooterComponent} from './member-sign-in/sign-in-footer/sign-in-footer.component';
 import {TermConditionComponent} from './member-sign-in/term-condition/term-condition.component';
