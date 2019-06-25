@@ -45,7 +45,6 @@ export class MemberSignInComponent implements OnInit {
       zodiacSign: ['', Validators.required],
       raceEthnic: ['', Validators.required],
 
-
       /* lookingFor: ['', Validators.required],
        bodyType: ['', Validators.required],
        height: ['', Validators.required],
@@ -100,7 +99,7 @@ export class MemberSignInComponent implements OnInit {
         memberData.append('tattoos', values.tattoos);*/
 
     this.memberRegisterService.createMemberRegister(memberData).subscribe(result => {
-      this.router.navigate(['/tellUsMore']);
+      this.router.navigate(['/profile']);
     });
   }
 

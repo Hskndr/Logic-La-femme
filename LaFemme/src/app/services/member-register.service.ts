@@ -9,8 +9,10 @@ import {HttpClient} from '@angular/common/http';
 })
 export class MemberRegisterService {
   // base api url
-  public url = 'https://lafemme1.com/testapp/backend/laFemmeApi/API_member/';
+  // public url = 'http://lafemme1.com/testapp/backend/laFemmeApi/API_member/';
 
+  // LOcal Host
+  public url = 'https://lafemme1.com/testapp/test/lafemmeNita/';
   constructor(private http: HttpClient) {
   }
 
@@ -23,7 +25,9 @@ export class MemberRegisterService {
   }
 
   createMemberRegister(data) {
-    return this.http.post(this.url + 'create.php', data);
+    // return this.http.post(this.url + 'create.php', data);
+     return this.http.post(this.url + 'create-account2.php', data);
+
   }
 
   updateMemberRegister(data) {

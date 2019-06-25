@@ -24,11 +24,11 @@ export class LoginComponent implements OnInit {
     event.preventDefault();
 
     const target = event.target;
-    const username = target.querySelector('#username').value;
+    const email = target.querySelector('#email').value;
     const password = target.querySelector('#password').value;
 
     // Inject AuthService
-    this.Auth.getUserDetails(username, password).subscribe(data => {
+    this.Auth.getUserDetails(email, password).subscribe(data => {
       if (data.success) {
         // redirect the person to /admin
         this.router.navigate(['login/admin']); // TO PROFILE
@@ -37,6 +37,6 @@ export class LoginComponent implements OnInit {
         window.alert(data.message);
       }
     });
-    console.log(username, password);
+    console.log(email, password);
   }
 }

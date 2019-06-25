@@ -1,0 +1,39 @@
+<p>
+  dashboard works!
+</p>
+
+<div class="container">
+  <div class="row">
+    <p class="border">View Member</p>
+
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+      <table #membersTable class="display" style="width:100%">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let member of members; let i =index;">
+          <td>{{i + 1}}</td>
+          <td>{{member.p_name}}</td>
+          <td>{{member.p_email}}</td>
+          <td>{{member.p_password}}</td>
+          <td>
+            <button type="button" class="btn btn-success" (click)="getNavigation('memberSignIn/view/', member.p_id)">View</button>
+            <button type="button" class="btn btn-warning" (click)="getNavigation('memberSignIn/update', member.p_id)">Edit</button>
+            <button type="button" class="btn btn-danger" (click)="deleteMember(member.p_id)">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
